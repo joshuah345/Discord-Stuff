@@ -1,0 +1,98 @@
+:root {
+    --threads-margin-right: 10px;
+    --guilds-margin-left: 10px;
+    --ui-inset: 8px;
+    --ui-radius: 18px;
+}
+
+:root.theme-dark {
+    --ui-opacity: 1;
+    --background-image: url("https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png");
+    --float-background-color: rgba(var(--brand-900-rgb), 0.5);
+    --background-blur: 10px;
+    --ui-radius: 18px;
+    --guilds-background: var(--background-tertiary);
+    --guilds-border-color: var(--brand-600);
+    --guilds-border-width: 2px;
+    --chat-border-color: var(--brand-300);
+    --chat-border-width: 2px;
+    --sidebar-border-color: var(--brand-experiment);
+    --sidebar-border-width: 2px;
+}
+
+:root.theme-light {
+    --ui-opacity: 1;
+    --background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9d6rd8.jpg");
+    --float-background-color: rgba(var(--brand-900-rgb), 0.2);
+    --background-blur: 10px;    
+    --guilds-background: var(--background-tertiary);
+    --guilds-border-color: var(--brand-600);
+    --guilds-border-width: 2px;
+    --chat-border-color: var(--interactive-active);
+    --chat-border-width: 2px;
+    --sidebar-border-color: var(--brand-experiment);
+    --sidebar-border-width: 2px;
+    --threads-border-color: var(--brand-experiment);
+    --threads-border-width: 2px;
+}
+
+.chat-2ZfjoI,
+.chat-2ZfjoI.threadSidebarOpen-1LSXvU,
+.container-2cd8Mz {
+    border-radius: var(--ui-radius);
+    margin: var(--ui-inset);
+    border: var(--chat-border-width, 0) solid var(--chat-border-color, transparent);
+    opacity: var(--ui-opacity, 1);
+}
+
+.sidebar-1tnWFu,
+.sidebar-1tnWFu>.container-1NXEtd {
+    border-radius: var(--ui-radius);
+}
+
+.sidebar-1tnWFu {
+    border: var(--sidebar-border-width, 0) solid var(--sidebar-border-color, transparent);
+    border-radius: var(--ui-radius);
+    margin: var(--ui-inset);
+    opacity: var(--ui-opacity, 1);
+    overflow: hidden;
+}
+
+.container-3XgAHv {
+    border: var(--threads-border-width, 0) solid var(--threads-border-color, transparent);
+    border-radius: var(--ui-radius);
+    margin: var(--ui-inset);
+    opacity: var(--ui-opacity, 1);
+    overflow: hidden;
+    margin-right: var(--threads-margin-right, var(--ui-inset));
+}
+
+.wrapper-1_HaEi>ul {
+    background-color: var(--guilds-background);
+}
+
+.wrapper-1_HaEi {
+    border-radius: var(--ui-radius);
+    margin-top: var(--ui-inset);
+    margin-left: var(--guilds-margin-left, 10px);
+    margin-bottom: var(--ui-inset);
+
+    border: var(--guilds-border-width, 0) solid var(--guilds-border-color, transparent);
+    opacity: var(--ui-opacity);
+}
+
+.bg-1QIAus {
+    background-image: var(--background-image, unset);
+    background-color: var(--float-background-color);
+    background-blend-mode: multiply;
+    background-size: auto;
+}
+
+.bg-1QIAus::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    backdrop-filter: blur(var(--background-blur, 0));
+    pointer-events: none;
+}
