@@ -94,5 +94,4 @@
     height: 100%;
     display: block;
     backdrop-filter: blur(var(--background-blur, 0));
-    pointer-events: none;
 }

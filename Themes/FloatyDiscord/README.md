@@ -8,3 +8,4 @@ TODO:
 
 * [ ] Support Settings Overlay
 * [ ] Background image for other elements(?)
+* [ ] Finish this readme
