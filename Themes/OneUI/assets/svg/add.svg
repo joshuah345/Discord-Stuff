@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:android="http://schemas.android.com/apk/res/android" android:tint="@color/sec_display_ic_plus_mtrl_color" height="24.0" width="24.0" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20,13h-7v7h-2v-7H4v-2h7V4h2v7h7V13z" fill=""/>
+</svg>
