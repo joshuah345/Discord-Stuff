@@ -2,97 +2,126 @@
 * @name FloatyDiscord
 * @author Superuser#1958
 * @description Give Discord a little breathing room...
-* @version 1.0.0
+* @version 1.0.1
 * @authorId 419610859392860162
 * @website https://github.com/joshuah345
-* @source https://https://github.com/joshuah345/Discord-Stuff/Themes/FloatyDiscord
+* @source https://github.com/joshuah345/Discord-Stuff/tree/master/Themes/FloatyDiscord
 */
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/FloatyDiscord/FloatyDiscord.css");
 
+ @import url("https://joshuah345.github.io/Discord-Stuff/Themes/FloatyDiscord/FloatyDiscord.css"); 
+
+/* 
+-------------------- VARIABLE GUIOE -------------------- 
+
+Variables in :root{} can be moved into a respective :root.theme- selctor to have their setting applied per-theme and vice versa. 
+All variables existing in :root {} are constant regardless of the current theme. 
+
+
+--threads-margin-right: ;
+How far over to move floating threads from the right edge.
+
+--guilds-margin-left: ;
+How far to push the guilds list from the left edge 
+
+--guilds-top-bottom-inset: ; 
+Set this if you want to have the guild list to have a height independent from --ui-inset. value in px preferred.
+
+--ui-inset: ; 
+margin for sidebar/guild list/chat. with a few exceptions that have already been covered.
+
+--ui-radius: ; 
+How much to round corners.
+
+--ui-opacity: ;
+Makes everything (entire elements, not just backgrounds) a bit more see-through. --floaty-background-* will remain unchanged
+Can be a percentage or a value from 0-1. 1 being opaque (100%) and 0 being completely transparent (though that would be unusable).
+
+--X-Y-Z
+Where X is floaty, guilds, chat, sidebar, or threads. Where Y is background,or border. Where Z is blur, color, width, or image
+Not all combinations of these exist. These should be self explanatory.
+
+"floaty" refers to the main theme itself.
+guilds means the server list (leftmost area).
+sidebar is typically the channel/user list (middle area).
+chat is the chat area (rightmost unless a thread is open).
+threads refer to the overlay that appears above chat when you open a message request or a discussion.
+
+Things to note:
+1. All background images must be in the format of url("link-to-image").
+2. Blur will not render/appear unless you have a transparent color or a background image.
+3. Background images can be used at the same time as colors in this theme. If your color has alpha (transparency) it will tint the background image to that color (or multiply the values).
+4. Borders will not appear if you don't have a color set. Borders can have transparency as well.
+5. Setting border widths to 0 is the same as disabling them.
+6. you can also set a variable to "unset" if you are not using it.
+
+If you would like a transparent color, i suggest using rgba(). format is rgba(red,green,blue,alpha), where rgb can be from 0-255 and alpha can be from 0-1
+
+*/
 :root {
-
-    /* These variables can be moved into a respective :root.theme selctor below to have their setting applied per-theme.*/
-
-
-    --threads-margin-right:10px;
-    /* How far over to move floating threads from the right edge (in px)| Default: 10px  */
-
-    --guilds-margin-left: 10px;
-    /* How far to push the guilds list from the left edge (in px) | Default: 10px */
-
-    --ui-inset: 8px; 
-     /* How much to "compress" items | Default: 8px */ 
-
-     --ui-radius: 18px; 
-     /* How much to round corners. | Default: 18px*/
+    --threads-margin-right: 10px;
+    --guilds-margin-left: 15px;
+    --guilds-top-bottom-inset: 50px;
+    --ui-inset: 8px;
+    --ui-radius: 18px;
 }
 
-:root.theme-dark {
-    /* ! CONFIG FOR DARK MODE ! */
+:root.theme-dark {                       /* ! CONFIG FOR DARK MODE ! */
     
     --ui-opacity: 1;
-    /* Makes everything a bit more see-through
-    Can be a percentage or a value from 0-1. 1 being opaque (100%) and 0 being completely transparent. */
+ 
+    --floaty-background-image: url("https://w.wallhaven.cc/full/ex/wallhaven-exo2gr.jpg");
+    --floaty-background-color: rgba(var(--black-500-rgb), 0.4);
+    --floaty-background-blur: unset;
     
-    --background-image: url("https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png");
-    /* Background image. Must use url(link) format. */
-    
-    --float-background-color: rgba(var(--brand-900-rgb), 0.5);
-    /* Note, you can set both a background image and color. 
-    The image will be tinted to the color you set. give the color an alpha for less tinting.  
-    All CSS color types are allowed.
-    Default: rgba(var(--brand-900-rgb), 0.5) */
-    
-    --background-blur: 10px; /* How much to blur background behind views. values ending in px are suggested. | Default: 10px */
-    
-    --guilds-background: var(--background-tertiary);
-    /* Background for guild list. All CSS color types are allowed. | default: var(--background-tertiary) */
-    
-    --guilds-border-color: var(--brand-600) /* Color of guilds border | Default: var(--brand-600) */
-    --guilds-border-width: 2px; /* Width of chat border in px | Set to 0 to disable | Default: 2px */
-    
-    --chat-border-color: var(--brand-300);  /* Color of chat border */
-    --chat-border-width: 2px;  /* Width of chat border in px | Set to 0 to disable | Default: 2px */
-    
-    --sidebar-border-color: var(--brand-experiment-500);  /* Color of sidebar border */
-    --sidebar-border-width: 2px;  /* Width of sidebar border in px | Set to 0 to disable | Default: 2px */
+    --guilds-background-color: rgba(var(--black-500-rgb), 0.3);
+    --guilds-background-image: unset;
+    --guilds-background-blur: 3px;
+    --guilds-border-color: var(--brand-600); 
+    --guilds-border-width: 1px;
 
-    --threads-border-color: var(--brand-experiment); /* Border color for thread overlay */
-    --threads-border-width: 2px; /* Width of floating thread border | Set to 0 to disable | Default: 2px */
+    --sidebar-background-color: rgba(var(--brand-900-rgb), 0.3)  ;
+    --sidebar-background-image: unset;
+    --sidebar-background-blur: 0px;
+    --sidebar-border-color: var(--brand-experiment-600);
+    --sidebar-border-width: 1px;
+ 
+    --chat-background-color: rgba(var(--brand-900-rgb), 0.5);
+    --chat-background-image:unset;
+    --chat-background-blur: 0px;
+    --chat-border-color: var(--brand-600);
+    --chat-border-width: 1px;
+    
+    --threads-border-color: var(--brand-experiment);
+    --threads-border-width: 1px; 
 }
 
-:root.theme-light {
-    /* ! CONFIG FOR LIGHT MODE ! */
-    
+:root.theme-light {          /* ! CONFIG FOR LIGHT MODE ! */
+ 
     --ui-opacity: 1;
-    /* Makes everything a bit more see-through
-    Can be a percentage or a value from 0-1. 1 being opaque (100%) and 0 being completely transparent. */
     
-    --background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9d6rd8.jpg");
-    /* Background image. Must use url(link) format. */
+    --floaty-background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9d6rd8.jpg");
+    --floaty-background-color: rgba(var(--brand-900-rgb), 0.2);
+    --floaty-background-blur: 10px; 
+ 
+    --guilds-background-color: var(--background-tertiary); 
+    --guilds-background-image: unset ;
+    --guilds-background-blur: 5px;
+    --guilds-border-color: var(--black-500);
+    --guilds-border-width: 2px;
     
-    --float-background-color: rgba(var(--brand-900-rgb), 0.2);
-    /* Note, you can set both a background image and color. 
-    The image will be tinted to the color you set. give the color an alpha for less tinting.  
-    All CSS color types are allowed.
-    Default: rgba(var(--brand-900-rgb), 0.5) */
-    
-    --background-blur: 10px; /* How much to blur background behind views. values ending in px are suggested. | Default: 10px */
-    
-    --ui-radius: 18px; /* How much to round corners. | Default: 18px*/
-    --ui-inset: 8px;  /* How much to "compress" items | Default: 8px */
-    
-    --guilds-background: var(--background-tertiary);
-    /* All CSS color types are allowed. | default: var(--background-tertiary)) */
-    --guilds-border-color: var(--brand-600) /* Color of guilds border | Default: var(--brand-600) */
-    --guilds-border-width: 2px; /* Width of chat border in px | Set to 0 to disable | Default: 2px */
-    
-    --chat-border-color: var(--interactive-active);  /* Color of chat border */
-    --chat-border-width: 2px;  /* Width of chat border in px | Set to 0 to disable | Default: 2px */
+    --sidebar-background-color:rgba(var(--white-500-rgb), 0.7);
+    --sidebar-background-image: unset ;
+    --sidebar-background-blur: 5px;
+    --sidebar-border-color: var(--brand-700);
+    --sidebar-border-width: 2px;
 
-    --sidebar-border-color: var(--brand-700);  /* Color of sidebar border */
-    --sidebar-border-width: 2px;  /* Width of sidebar border in px | Set to 0 to disable | Default: 2px */
-
-    --threads-border-color: var(--brand-800); /* Border color for thread overlay */
-    --threads-border-width: 2px; /* Width of floating thread border | Set to 0 to disable | Default: 2px */
+    --chat-background-color: rgba(var(--white-300-rgb), 0.6);
+    --chat-background-image: ;
+    --chat-background-blur: 5px;
+    --chat-border-color: var(--interactive-active);
+    --chat-border-width: 2px;
+    
+    --threads-border-color: var(--brand-800);
+    --threads-border-width: 2px;
 }
+

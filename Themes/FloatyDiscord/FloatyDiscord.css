@@ -1,97 +1,188 @@
 :root {
     --threads-margin-right: 10px;
-    --guilds-margin-left: 10px;
+    --guilds-margin-left: 15px;
+    --guilds-top-bottom-inset: 50px;
     --ui-inset: 8px;
     --ui-radius: 18px;
 }
 
-:root.theme-dark {
+
+:root.theme-dark {                       /* ! CONFIG FOR DARK MODE ! */
+    
     --ui-opacity: 1;
-    --background-image: url("https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png");
-    --float-background-color: rgba(var(--brand-900-rgb), 0.5);
-    --background-blur: 10px;
-    --ui-radius: 18px;
-    --guilds-background: var(--background-tertiary);
-    --guilds-border-color: var(--brand-600);
-    --guilds-border-width: 2px;
-    --chat-border-color: var(--brand-300);
-    --chat-border-width: 2px;
-    --sidebar-border-color: var(--brand-experiment);
-    --sidebar-border-width: 2px;
+ 
+    --floaty-background-image: url("https://w.wallhaven.cc/full/ex/wallhaven-exo2gr.jpg");
+    --floaty-background-color: rgba(var(--black-500-rgb), 0.4);
+    --floaty-background-blur: unset;
+    
+    --guilds-background-color: rgba(var(--black-500-rgb), 0.3);
+    --guilds-background-image: unset;
+    --guilds-background-blur: 3px;
+    --guilds-border-color: var(--brand-600); 
+    --guilds-border-width: 1px;
+
+    --sidebar-background-color: rgba(var(--brand-900-rgb), 0.3)  ;
+    --sidebar-background-image: unset;
+    --sidebar-background-blur: 0px;
+    --sidebar-border-color: var(--brand-experiment-600);
+    --sidebar-border-width: 1px;
+ 
+    --chat-background-color: rgba(var(--brand-900-rgb), 0.5);
+    --chat-background-image:unset;
+    --chat-background-blur: 0px;
+    --chat-border-color: var(--brand-600);
+    --chat-border-width: 1px;
+    
+    --threads-border-color: var(--brand-experiment);
+    --threads-border-width: 1px;
 }
 
-:root.theme-light {
+:root.theme-light {          /* ! CONFIG FOR LIGHT MODE ! */
+    
     --ui-opacity: 1;
-    --background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9d6rd8.jpg");
-    --float-background-color: rgba(var(--brand-900-rgb), 0.2);
-    --background-blur: 10px;    
-    --guilds-background: var(--background-tertiary);
-    --guilds-border-color: var(--brand-600);
+    
+    --floaty-background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9d6rd8.jpg");
+    --floaty-background-color: rgba(var(--brand-900-rgb), 0.2);
+    --floaty-background-blur: 10px; 
+ 
+    --guilds-background-color: var(--background-tertiary); 
+    --guilds-background-image: unset ;
+    --guilds-background-blur: 5px;
+    --guilds-border-color: var(--black-500);
     --guilds-border-width: 2px;
+    
+    --sidebar-background-color:rgba(var(--white-500-rgb), 0.7);
+    --sidebar-background-image: unset ;
+    --sidebar-background-blur: 5px;
+    --sidebar-border-color: var(--brand-700);
+    --sidebar-border-width: 2px;
+
+    --chat-background-color: rgba(var(--white-300-rgb), 0.6);
+    --chat-background-image: ;
+    --chat-background-blur: 5px;
     --chat-border-color: var(--interactive-active);
     --chat-border-width: 2px;
-    --sidebar-border-color: var(--brand-experiment);
-    --sidebar-border-width: 2px;
-    --threads-border-color: var(--brand-experiment);
+    
+    --threads-border-color: var(--brand-800);
     --threads-border-width: 2px;
 }
 
-.chat-2ZfjoI,
-.chat-2ZfjoI.threadSidebarOpen-1LSXvU,
+.scroller-3X7KbA, /* Guild List Scroller */
+.scroller-WSmht3, /* Friends list scroller */
+.panels-3wFtMD, /* User info panel (below sidebar) */ 
+.sidebar-1tnWFu>.container-1NXEtd, /* Container inside sidebar */
+.sidebar-1tnWFu>nav, /* Another container inside sidebar */
+.nowPlayingColumn-1eCBCN, .nowPlayingColumn-1eCBCN > aside /* Active Now list */
+.container-3wLKDe, /* Threads List | !important is required for this one */
+.wrapper-3HVHpV, .container-3YcgdM, .wrapper-15CKyy, /* Placeholders when channel is loading */
+.container-ZMc96U.themed-Hp1KC_, /* header bar in chat */
+.container-2o3qEW, .member-48YF_l, .members-3WRCEx, /* Member List */
+.channelTextArea-1FufC0 /* Chat text area */ {
+    background-color: transparent !important; /* Set backgrounds to transparent so we can see wrapper's background */
+}
+
+.channelTextArea-1FufC0 {
+    padding-top:10px;
+}
+/* Wrapper that contains the guild list and the scrolling element */
+.wrapper-1_HaEi {
+    border-radius: var(--ui-radius);
+    border: var(--guilds-border-width, 0) solid var(--guilds-border-color, transparent);
+    margin-top: var(--guilds-top-bottom-inset, var(--ui-inset)) !important;
+    margin-bottom: var(--guilds-top-bottom-inset, var(--ui-inset));
+    margin-right: var(--ui-inset);
+    margin-left: var(--guilds-margin-left, 10px);
+    opacity: var(--ui-opacity);
+    background-color: var(--guilds-background-color);
+    background-image: var(--guilds-background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; /* blends background color and image if set */
+    backdrop-filter: blur(var(--guilds-background-blur, 0px));
+}
+
+/* Round only top of sidebar list container as user info + buttons is separate */
+.sidebar-1tnWFu>.container-1NXEtd {
+    border-radius:var(--ui-radius) var(--ui-radius) 0px 0px ;
+}
+
+.sidebar-1tnWFu, .sidebar-1tnWFu.hasNotice-1s68so /* Channel/User list sidebar wrapper */ {
+    background-color: var(--sidebar-background-color, var(--background-secondary)); 
+    background-image: var(--sidebar-background-image); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; /* blends background color and image if set */
+    backdrop-filter: blur(var(--sidebar-background-blur, 0px));
+    border: var(--sidebar-border-width, 0) solid var(--sidebar-border-color, transparent);
+    border-radius: var(--ui-radius);
+    margin: var(--ui-inset);
+    opacity: var(--ui-opacity, 1);
+    overflow: hidden; /* hide overflow so borders will actually be rounded */
+}
+
+.noChannel-1GDIAZ, /* Favorites tab */
+.sidebar-1tnWFu + *, /* Anything next to (sibling of) the sidebar */
+.chat-2ZfjoI, /* Just selects chat area */
+.chat-2ZfjoI.threadSidebarOpen-1LSXvU, /* chat area when thread is opened */
 .container-2cd8Mz {
     border-radius: var(--ui-radius);
     margin: var(--ui-inset);
     border: var(--chat-border-width, 0) solid var(--chat-border-color, transparent);
     opacity: var(--ui-opacity, 1);
+    background-color: var(--chat-background-color, transparent) !important;
+    background-image: var(--chat-background-image);
+    background-blend-mode: multiply; /* blends background color and image if set */
+    background-size: cover;
+    background-repeat: no-repeat; /* disable tiling of image */
+    backdrop-filter: blur(var(--chat-background-blur, 0px));
 }
 
-.sidebar-1tnWFu,
-.sidebar-1tnWFu>.container-1NXEtd {
-    border-radius: var(--ui-radius);
-}
 
-.sidebar-1tnWFu {
-    border: var(--sidebar-border-width, 0) solid var(--sidebar-border-color, transparent);
-    border-radius: var(--ui-radius);
-    margin: var(--ui-inset);
-    opacity: var(--ui-opacity, 1);
-    overflow: hidden;
-}
-
-.container-3XgAHv {
+.container-3XgAHv /* floating container for open thread */ {
     border: var(--threads-border-width, 0) solid var(--threads-border-color, transparent);
     border-radius: var(--ui-radius);
     margin: var(--ui-inset);
     opacity: var(--ui-opacity, 1);
-    overflow: hidden;
+    overflow: hidden; /* hide overflow so borders will actually be rounded */
     margin-right: var(--threads-margin-right, var(--ui-inset));
 }
 
-.wrapper-1_HaEi>ul {
-    background-color: var(--guilds-background);
-}
-
-.wrapper-1_HaEi {
-    border-radius: var(--ui-radius);
-    margin-top: var(--ui-inset);
-    margin-left: var(--guilds-margin-left, 10px);
-    margin-bottom: var(--ui-inset);
-
-    border: var(--guilds-border-width, 0) solid var(--guilds-border-color, transparent);
-    opacity: var(--ui-opacity);
-}
-
 .bg-1QIAus {
-    background-image: var(--background-image, unset);
-    background-color: var(--float-background-color);
-    background-blend-mode: multiply;
-    background-size: auto;
+    background-image: var(--floaty-background-image, unset);
+    background-color: var(--floaty-background-color);
+    background-blend-mode: multiply; /* blends background color and image if set */
+    background-size: cover;
+    background-repeat: no-repeat; /* disable tiling of image */
 }
 
+/* pseudo-element so i can blur the background */
 .bg-1QIAus::after {
-    content: "";
-    width: 100%;
-    height: 100%;
+    content: ""; /* content is one of the requirements for a pseudo-element to display, so set it to nothing */
+    width: 100%; /* use full width of the element */
+    height: 100%; /* use full height of the element */
     display: block;
     backdrop-filter: blur(var(--background-blur, 0));
+}
+
+.scroller-kQBbkU::-webkit-scrollbar-track {
+background: transparent;
+}
+
+/* "Fix" BD Notices */
+.base-2jDfDU > #bd-notices {
+    margin-left: calc(var(--ui-inset)* 2);
+    margin-right: calc(var(--ui-inset)* 2);
+    margin-top: 5px;
+    overflow:hidden;
+}
+
+.bd-notice {
+    border-radius: 0px;
+}
+
+/* remove some pesky shadows */
+
+.form-3gdLxP::before,
+.children-3xh0VB::after {
+    display: none;
 }
