@@ -19,7 +19,7 @@ rect[fill="#3ba55c"] {
 }
 
 foreignObject[mask="url(#svg-mask-status-online)"]>div.status-2DiCMd {
-    background-color: azure !important;
+    background-color: var(--status-online-color) !important;
 }
 
 /* DND */
@@ -29,7 +29,7 @@ rect[fill="#ed4245"] {
 }
 
 foreignObject[mask="url(#svg-mask-status-dnd)"]>div.status-2DiCMd {
-    background-color: orange !important;
+    background-color: var(--status-dnd-color) !important;
 }
 
 /* Idle */
