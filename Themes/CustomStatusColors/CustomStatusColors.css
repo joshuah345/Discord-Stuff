@@ -1,0 +1,53 @@
+:root.theme-dark {
+    --status-online-color: #3ba55c;
+    --status-dnd-color: #ed4245;
+    --status-idle-color: #faa61a;
+    --status-offline-color: #747f8d;
+}
+
+:root.theme-light {
+    --status-online-color: #3ba55c;
+    --status-dnd-color: #ed4245;
+    --status-idle-color: #faa61a;
+    --status-offline-color: #747f8d;
+}
+
+/* Online */
+rect[mask="url(#svg-mask-status-online)"],
+rect[fill="#3ba55c"] {
+    fill: var(--status-online-color)
+}
+
+foreignObject[mask="url(#svg-mask-status-online)"]>div.status-2DiCMd {
+    background-color: azure !important;
+}
+
+/* DND */
+rect[mask="url(#svg-mask-status-dnd)"],
+rect[fill="#ed4245"] {
+    fill: var(--status-dnd-color);
+}
+
+foreignObject[mask="url(#svg-mask-status-dnd)"]>div.status-2DiCMd {
+    background-color: orange !important;
+}
+
+/* Idle */
+rect[mask="url(#svg-mask-status-idle)"],
+rect[fill="#faa61a"] {
+    fill: var(--status-idle-color);
+}
+
+foreignObject[mask="url(#svg-mask-status-idle)"]>div.status-2DiCMd {
+    background-color: var(--status-idle-color) !important;
+}
+
+/* Invisible/Offline */
+rect[mask="url(#svg-mask-status-offline)"],
+rect[fill="#747f8d"] {
+    fill: var(--status-offline-color);
+}
+
+foreignObject[mask="url(#svg-mask-status-offline)"]>div.status-2DiCMd {
+    background-color: var(--status-offline-color) !important;
+}

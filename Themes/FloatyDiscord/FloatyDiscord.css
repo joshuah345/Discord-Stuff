@@ -58,7 +58,7 @@
     --sidebar-border-width: 2px;
 
     --chat-background-color: rgba(var(--white-300-rgb), 0.6);
-    --chat-background-image: ;
+    --chat-background-image: unset;
     --chat-background-blur: 5px;
     --chat-border-color: var(--interactive-active);
     --chat-border-width: 2px;
@@ -72,7 +72,7 @@
 .panels-3wFtMD, /* User info panel (below sidebar) */ 
 .sidebar-1tnWFu>.container-1NXEtd, /* Container inside sidebar */
 .sidebar-1tnWFu>nav, /* Another container inside sidebar */
-.nowPlayingColumn-1eCBCN, .nowPlayingColumn-1eCBCN > aside /* Active Now list */
+.nowPlayingColumn-1eCBCN, .nowPlayingColumn-1eCBCN > .container-1oAagU /* Active Now list */
 .container-3wLKDe, /* Threads List | !important is required for this one */
 .wrapper-3HVHpV, .container-3YcgdM, .wrapper-15CKyy, /* Placeholders when channel is loading */
 .container-ZMc96U.themed-Hp1KC_, /* header bar in chat */

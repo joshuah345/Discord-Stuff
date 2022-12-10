@@ -1,0 +1,25 @@
+/**
+* @name CustomStatusColors
+* @author Superuser#1958
+* @description Simple CSS to change status colors everywhere. (With light/dark mode support). Edit theme for options.
+* @version 1.0.0
+* @authorId 419610859392860162
+* @website https://github.com/joshuah345
+* @source https://github.com/joshuah345/Discord-Stuff/tree/master/Themes/CustomStatusColors
+*/
+
+@import url("https://joshuah345.github.io/Discord-Stuff/Themes/CustomStatusColors/CustomStatusColors.css");
+
+:root.theme-dark {
+    --status-online-color: #3ba55c;
+    --status-dnd-color: #ed4245;
+    --status-idle-color: #faa61a;
+    --status-offline-color: #747f8d;
+}
+
+:root.theme-light {
+    --status-online-color: #3ba55c;
+    --status-dnd-color: #ed4245;
+    --status-idle-color: #faa61a;
+    --status-offline-color: #747f8d;
+}

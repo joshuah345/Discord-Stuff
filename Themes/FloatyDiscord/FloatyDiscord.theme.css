@@ -116,7 +116,7 @@ If you would like a transparent color, i suggest using rgba(). format is rgba(re
     --sidebar-border-width: 2px;
 
     --chat-background-color: rgba(var(--white-300-rgb), 0.6);
-    --chat-background-image: ;
+    --chat-background-image:unset ;
     --chat-background-blur: 5px;
     --chat-border-color: var(--interactive-active);
     --chat-border-width: 2px;
