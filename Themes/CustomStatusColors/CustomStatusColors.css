@@ -3,6 +3,7 @@
     --status-dnd-color: #ed4245;
     --status-idle-color: #faa61a;
     --status-offline-color: #747f8d;
+    --status-streaming-color:#593695;
 }
 
 :root.theme-light {
@@ -10,11 +11,11 @@
     --status-dnd-color: #ed4245;
     --status-idle-color: #faa61a;
     --status-offline-color: #747f8d;
+    --status-streaming-color:#593695;
 }
 
 /* Online */
-rect[mask="url(#svg-mask-status-online)"],
-rect[fill="#3ba55c"] {
+rect[mask="url(#svg-mask-status-online)"] {
     fill: var(--status-online-color)
 }
 
@@ -50,4 +51,11 @@ rect[fill="#747f8d"] {
 
 foreignObject[mask="url(#svg-mask-status-offline)"]>div.status-2DiCMd {
     background-color: var(--status-offline-color) !important;
+}
+
+/* Streaming */
+
+rect[mask="url(#svg-mask-status-streaming)"],
+rect[fill="#593695"] {
+    fill: var(--status-streaming-color);
 }
