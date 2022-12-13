@@ -12,12 +12,12 @@
                 </mask>
                 <g id="mask"></g>
                 <g id="Items" mask="url(#mask-2)">
-                    <path d="M24,0 L193,0 C206.254834,-2.4348735e-15 217,10.745166 217,24 L217,144 C217,149.522847 212.522847,154 207,154 L10,154 C4.4771525,154 6.76353751e-16,149.522847 0,144 L0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="bg" fill="#20233B"></path>
-                    <rect id="card2" fill="#343D67" x="17" y="136" width="183" height="41" rx="20"></rect>
+                    <path d="M24,0 L193,0 C206.254834,-2.4348735e-15 217,10.745166 217,24 L217,144 C217,149.522847 212.522847,154 207,154 L10,154 C4.4771525,154 6.76353751e-16,149.522847 0,144 L0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="bg" fill="#000000"></path>
+                    <rect id="card2" fill="#2B2B2B" x="17" y="136" width="183" height="41" rx="20"></rect>
                     <g id="card1" transform="translate(17.000000, 35.000000)">
-                        <rect id="Rectangle" fill="#343D67" x="0" y="0" width="183" height="92" rx="20"></rect>
-                        <rect id="Rectangle" fill="#4D5980" x="55" y="62" width="106" height="13"></rect>
-                        <rect id="Rectangle-Copy" fill="#4D5980" x="55" y="18" width="106" height="13"></rect>
+                        <rect id="Rectangle" fill="#2B2B2B" x="0" y="0" width="183" height="92" rx="20"></rect>
+                        <rect id="Rectangle" fill="#4B4B4B" x="55" y="62" width="106" height="13"></rect>
+                        <rect id="Rectangle-Copy" fill="#4B4B4B" x="55" y="18" width="106" height="13"></rect>
                         <circle id="Oval" fill="#007AFC" cx="25.5" cy="24.5" r="10.5"></circle>
                         <circle id="Oval-Copy-6" fill="#007AFC" cx="25.5" cy="68.5" r="10.5"></circle>
                     </g>

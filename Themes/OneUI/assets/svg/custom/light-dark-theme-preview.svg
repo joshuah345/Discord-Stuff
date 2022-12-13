@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="217px" height="154px" viewBox="0 0 217 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>light-dark-theme-preview</title>
+    <defs>
+        <path d="M24,0 L193,0 C206.254834,-2.4348735e-15 217,10.745166 217,24 L217,144 C217,149.522847 212.522847,154 207,154 L10,154 C4.4771525,154 6.76353751e-16,149.522847 0,144 L0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="path-1"></path>
+        <polygon id="path-3" points="217 0 217 154 0 154"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-155.000000, -295.000000)">
+            <g id="light-dark-theme-preview" transform="translate(155.000000, 295.000000)">
+                <path d="M24,0 L193,0 C206.254834,0 217,10.745166 217,24 L217,144 C217,149.522847 212.522847,154 207,154 L10,154 C4.4771525,154 0,149.522847 0,144 L0,24 C0,10.745166 10.745166,0 24,0 Z" id="bg" fill="#000000"></path>
+                <g id="dark-theme-preview">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="mask"></g>
+                    <g id="Items" mask="url(#mask-2)">
+                        <g transform="translate(17.000000, 35.000000)" id="card1">
+                            <path d="M20,101 L163,101 C174.045695,101 183,107.954305 183,119 L0,119 C0,107.954305 8.954305,101 20,101 Z" id="card2" fill="#2B2B2B"></path>
+                            <path d="M20,0 L163,0 C174.045695,0 183,8.954305 183,20 L183,72 C183,83.045695 174.045695,92 163,92 L20,92 C8.954305,92 0,83.045695 0,72 L0,20 C0,8.954305 8.954305,0 20,0 Z" id="Rectangle" fill="#2B2B2B"></path>
+                            <polygon id="Rectangle" fill="#4B4B4B" points="55 62 161 62 161 75 55 75"></polygon>
+                            <polygon id="Rectangle-Copy" fill="#4B4B4B" points="55 18 161 18 161 31 55 31"></polygon>
+                            <circle id="Oval" fill="#007AFC" cx="25.5" cy="24.5" r="10.5"></circle>
+                            <circle id="Oval-Copy-6" fill="#007AFC" cx="25.5" cy="68.5" r="10.5"></circle>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <g id="light-theme-preview" mask="url(#mask-4)">
+                    <g id="Items">
+                        <path d="M24,0 L193,0 C206.254834,-2.4348735e-15 217,10.745166 217,24 L217,144 C217,149.522847 212.522847,154 207,154 L10,154 C4.4771525,154 6.76353751e-16,149.522847 0,144 L0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="bg" fill="#DDE6EA"></path>
+                        <rect id="card2" fill="#ECF2F7" x="17" y="136" width="183" height="41" rx="20"></rect>
+                        <g id="card1" transform="translate(17.000000, 35.000000)">
+                            <rect id="Rectangle" fill="#ECF2F7" x="0" y="0" width="183" height="92" rx="20"></rect>
+                            <rect id="Rectangle" fill="#D8D8D8" x="55" y="62" width="106" height="13"></rect>
+                            <rect id="Rectangle-Copy" fill="#D8D8D8" x="55" y="18" width="106" height="13"></rect>
+                            <circle id="Oval" fill="#007AFC" cx="25.5" cy="24.5" r="10.5"></circle>
+                            <circle id="Oval-Copy-6" fill="#007AFC" cx="25.5" cy="68.5" r="10.5"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
