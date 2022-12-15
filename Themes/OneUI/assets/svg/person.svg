@@ -1,3 +1,29 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.999 12.9073C15.796 12.9073 18.875 15.4722 18.875 18.2373V19.0113C18.875 19.5572 18.381 20.0003 17.772 20.0003H6.227C5.618 20.0003 5.125 19.5572 5.125 19.0113V18.2373C5.125 15.4722 8.203 12.9073 11.999 12.9073ZM11.999 4C14.025 4 15.668 5.6419 15.668 7.6689C15.668 9.6949 14.025 11.337 11.999 11.337C9.974 11.337 8.331 9.6949 8.331 7.6689C8.331 5.6419 9.974 4 11.999 4Z" fill="#252525"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="13.75"
+   height="16.000299"
+   viewBox="0 0 13.75 16.000299"
+   fill="none"
+   version="1.1"
+   id="svg1528"
+   sodipodi:docname="person.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1532" />
+  <sodipodi:namedview
+     id="namedview1530"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 6.874,8.9073 c 3.797,0 6.876,2.5649 6.876,5.33 v 0.774 c 0,0.5459 -0.494,0.989 -1.103,0.989 H 1.102 C 0.493,16.0003 0,15.5572 0,15.0113 v -0.774 c 0,-2.7651 3.078,-5.33 6.874,-5.33 z M 6.874,0 C 8.9,0 10.543,1.6419 10.543,3.6689 10.543,5.6949 8.9,7.337 6.874,7.337 4.849,7.337 3.206,5.6949 3.206,3.6689 3.206,1.6419 4.849,0 6.874,0 Z"
+     fill="#252525"
+     id="path1526" />
 </svg>

@@ -1,3 +1,33 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.5179 14.3055H19.0769M13.5179 16.687H17.3377M13.5179 19.0763H16.3769M11.0151 17.3759L8.35401 18.9499C7.84685 19.3202 7.16354 18.8211 7.35744 18.2216L7.90279 14.7481C7.98882 14.4797 7.89392 14.1861 7.66745 14.0206L5.1915 11.5225C4.68347 11.1514 4.94479 10.3448 5.57205 10.3448L9.00162 9.69395C9.28165 9.69395 9.53074 9.51213 9.61763 9.24375L11.2423 5.98799C11.4371 5.3886 12.2811 5.3886 12.475 5.98799L14.0997 9.24375C14.1857 9.51213 14.4349 9.69395 14.7157 9.69395L18.1444 10.3448C18.7725 10.3448 19.0331 11.1514 18.5258 11.5225L17.9659 12.0877" stroke="black" stroke-opacity="0.996078" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="15.274718"
+   height="14.662852"
+   viewBox="0 0 15.274718 14.662852"
+   fill="none"
+   version="1.1"
+   id="svg188"
+   sodipodi:docname="bookmarks.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs192" />
+  <sodipodi:namedview
+     id="namedview190"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="M 9.1532181,9.3295525 H 14.712218 M 9.1532181,11.711053 h 3.8197999 m -3.8197999,2.3893 h 2.8589999 m -5.3617999,-1.7004 -2.66109,1.574 c -0.50716,0.3703 -1.19047,-0.1288 -0.99657,-0.728301 l 0.54535,-3.4734995 c 0.08603,-0.2684 -0.00887,-0.562 -0.23534,-0.7275 l -2.47595003,-2.4981 c -0.50803,-0.3711 -0.24671,-1.1777 0.38055003,-1.1777 l 3.42957,-0.65085 c 0.28003,0 0.52912,-0.18182 0.61601,-0.4502 l 1.62467,-3.25576 c 0.1948,-0.59939 1.0388,-0.59939 1.2327,0 l 1.6247,3.25576 c 0.086,0.26838 0.3351999,0.4502 0.6159999,0.4502 l 3.4287,0.65085 c 0.6281,0 0.8887,0.8066 0.3814,1.1777 l -0.5599,0.5652"
+     stroke="#000000"
+     stroke-opacity="0.996078"
+     stroke-width="1.125"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path186" />
 </svg>

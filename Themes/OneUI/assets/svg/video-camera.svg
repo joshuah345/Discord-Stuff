@@ -1,4 +1,33 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 18V9.69V6H4V18H16ZM18 6V10.48L22 6.5V17.5L18 13.52V18C18 18.53 17.79 19.04 17.41 19.41C17.04 19.79 16.53 20 16 20H4C3.47 20 2.96 19.79 2.59 19.41C2.21 19.04 2 18.53 2 18V6C2 5.47 2.21 4.96 2.59 4.59C2.96 4.21 3.47 4 4 4H16C16.53 4 17.04 4.21 17.41 4.59C17.79 4.96 18 5.47 18 6Z" fill="black"/>
-<path d="M18 6V10.48L22 6.5V17.5L18 13.52V18C18 18.53 17.79 19.04 17.41 19.41C17.04 19.79 16.53 20 16 20H4C3.47 20 2.96 19.79 2.59 19.41C2.21 19.04 2 18.53 2 18V6C2 5.47 2.21 4.96 2.59 4.59C2.96 4.21 3.47 4 4 4H16C16.53 4 17.04 4.21 17.41 4.59C17.79 4.96 18 5.47 18 6Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20"
+   height="16"
+   viewBox="0 0 20 16"
+   fill="none"
+   version="1.1"
+   id="svg2644"
+   sodipodi:docname="video-camera.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2648" />
+  <sodipodi:namedview
+     id="namedview2646"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="M 14,14 V 5.69 2 H 2 V 14 Z M 16,2 V 6.48 L 20,2.5 v 11 L 16,9.52 V 14 c 0,0.53 -0.21,1.04 -0.59,1.41 C 15.04,15.79 14.53,16 14,16 H 2 C 1.47,16 0.96,15.79 0.59,15.41 0.21,15.04 0,14.53 0,14 V 2 C 0,1.47 0.21,0.96 0.59,0.59 0.96,0.21 1.47,0 2,0 h 12 c 0.53,0 1.04,0.21 1.41,0.59 C 15.79,0.96 16,1.47 16,2 Z"
+     fill="#000000"
+     id="path2640" />
+  <path
+     d="M 16,2 V 6.48 L 20,2.5 v 11 L 16,9.52 V 14 c 0,0.53 -0.21,1.04 -0.59,1.41 C 15.04,15.79 14.53,16 14,16 H 2 C 1.47,16 0.96,15.79 0.59,15.41 0.21,15.04 0,14.53 0,14 V 2 C 0,1.47 0.21,0.96 0.59,0.59 0.96,0.21 1.47,0 2,0 h 12 c 0.53,0 1.04,0.21 1.41,0.59 C 15.79,0.96 16,1.47 16,2 Z"
+     fill="#000000"
+     id="path2642" />
 </svg>

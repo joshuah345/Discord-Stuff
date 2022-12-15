@@ -1,3 +1,33 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M28.5714 13.3255H22.2286C21.6635 13.3255 20.8695 13 20.4649 12.6028L18.5531 10.7228C18.1486 10.3255 17.3545 10 16.7881 10H11.4286C9.536 10 8 11.5434 8 13.4483V26.5517C8 28.4566 9.536 30 11.4286 30H28.5714C30.4654 30 32 28.4566 32 26.5517V16.7738C32 14.869 30.4654 13.3255 28.5714 13.3255Z" stroke="black" stroke-opacity="0.745098" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="26"
+   height="22"
+   viewBox="0 0 26 22"
+   fill="none"
+   version="1.1"
+   id="svg579"
+   sodipodi:docname="folder-outline.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs583" />
+  <sodipodi:namedview
+     id="namedview581"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="M 21.5714,4.3255 H 15.2286 C 14.6635,4.3255 13.8695,4 13.4649,3.6028 l -1.9118,-1.88 C 11.1486,1.3255 10.3545,1 9.7881,1 H 4.4286 C 2.536,1 1,2.5434 1,4.4483 V 17.5517 C 1,19.4566 2.536,21 4.4286,21 H 21.5714 C 23.4654,21 25,19.4566 25,17.5517 V 7.7738 C 25,5.869 23.4654,4.3255 21.5714,4.3255 Z"
+     stroke="#000000"
+     stroke-opacity="0.745098"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path577" />
 </svg>

@@ -1,3 +1,41 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.3185 18.2267L16.9778 13.2223C17.9194 12.6791 17.9194 11.3209 16.9778 10.7777L9.3185 5.77337C8.3778 5.23007 7.201 5.90917 7.201 6.99567V17.0035C7.201 18.0908 8.3778 18.7699 9.3185 18.2267Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vectornator (http://vectornator.io/) -->
+
+<svg
+   height="12.835704"
+   stroke-miterlimit="10"
+   style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
+   version="1.1"
+   viewBox="0 0 10.483 12.835704"
+   width="10.483"
+   xml:space="preserve"
+   id="svg1649"
+   sodipodi:docname="play.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   id="namedview1651"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" />
+<defs
+   id="defs1644" />
+<g
+   id="Untitled"
+   vectornator:layerName="Untitled"
+   transform="translate(-7.201,-5.5821492)">
+<path
+   d="m 9.3185,18.2267 7.6593,-5.0044 c 0.9416,-0.5432 0.9416,-1.9014 0,-2.4446 L 9.3185,5.77337 C 8.3778,5.23007 7.201,5.90917 7.201,6.99567 V 17.0035 c 0,1.0873 1.1768,1.7664 2.1175,1.2232 z"
+   fill="#000000"
+   fill-rule="nonzero"
+   opacity="1"
+   stroke="none"
+   id="path1646" />
+</g>
 </svg>

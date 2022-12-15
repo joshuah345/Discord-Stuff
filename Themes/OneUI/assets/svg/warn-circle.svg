@@ -1,3 +1,29 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.9993 11.5047C7.6313 11.5047 7.3333 11.2067 7.3333 10.838C7.3333 10.47 7.6313 10.1713 7.9993 10.1713C8.368 10.1713 8.6667 10.47 8.6667 10.838C8.6667 11.2067 8.368 11.5047 7.9993 11.5047ZM7.5 5.03335C7.5 4.75675 7.724 4.53335 8 4.53335C8.276 4.53335 8.5 4.75675 8.5 5.03335V8.42605C8.5 8.70205 8.276 8.92605 8 8.92605C7.724 8.92605 7.5 8.70205 7.5 8.42605V5.03335ZM8 2.41675C4.9213 2.41675 2.4167 4.92135 2.4167 8.00005C2.4167 11.0787 4.9213 13.5833 8 13.5833C11.0787 13.5833 13.5833 11.0787 13.5833 8.00005C13.5833 4.92135 11.0787 2.41675 8 2.41675Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="11.1666"
+   height="11.16655"
+   viewBox="0 0 11.1666 11.16655"
+   fill="none"
+   version="1.1"
+   id="svg2709"
+   sodipodi:docname="warn-circle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2713" />
+  <sodipodi:namedview
+     id="namedview2711"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 5.5826,9.08795 c -0.368,0 -0.666,-0.298 -0.666,-0.6667 0,-0.368 0.298,-0.6667 0.666,-0.6667 0.3687,0 0.6674,0.2987 0.6674,0.6667 0,0.3687 -0.2987,0.6667 -0.6674,0.6667 z M 5.0833,2.6166 c 0,-0.2766 0.224,-0.5 0.5,-0.5 0.276,0 0.5,0.2234 0.5,0.5 v 3.3927 c 0,0.276 -0.224,0.5 -0.5,0.5 -0.276,0 -0.5,-0.224 -0.5,-0.5 z M 5.5833,0 C 2.5046,0 0,2.5046 0,5.5833 c 0,3.07865 2.5046,5.58325 5.5833,5.58325 3.0787,0 5.5833,-2.5046 5.5833,-5.58325 C 11.1666,2.5046 8.662,0 5.5833,0 Z"
+     fill="#000000"
+     id="path2707" />
 </svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="19.23489"
+   height="13.77888"
+   viewBox="0 0 19.23489 13.77888"
+   fill="none"
+   version="1.1"
+   id="svg495"
+   sodipodi:docname="eye.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs499" />
+  <sodipodi:namedview
+     id="namedview497"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 9.6172804,13.01388 c 3.1886996,0 6.0486996,-1.4556 7.9944996,-3.7583 1.1412,-1.3511 1.1412,-3.3807 0,-4.73128 -1.9458,-2.3032 -4.8058,-3.75930001 -7.9944996,-3.75930001 -3.1877,0 -6.0487,1.45610001 -7.9945,3.75930001 -1.14070003,1.35058 -1.14070003,3.38018 0,4.73128 1.9458,2.3027 4.8068,3.7583 7.9945,3.7583 z"
+     stroke="#000000"
+     stroke-width="1.53"
+     id="path491" />
+  <path
+     d="m 9.6171804,3.62584 c -1.8029,0 -3.26321,1.46084 -3.26321,3.26354 0,1.8025 1.46031,3.2636 3.26321,3.2636 1.8029996,0 3.2637996,-1.4611 3.2637996,-3.2636 0,-1.8027 -1.4608,-3.26354 -3.2637996,-3.26354 z"
+     stroke="#000000"
+     stroke-width="1.53"
+     id="path493" />
+</svg>

@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 62 62" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<g id="Untitled">
-<path d="M31.2962 41.2023C30.4616 42.0388 29.3506 42.5 28.1684 42.5C26.9862 42.5 25.8752 42.0388 25.0405 41.2023L14.6256 30.7682C13.5441 29.683 13.5469 27.9278 14.6311 26.8463C15.7153 25.7649 17.4715 25.7676 18.5529 26.8528L28.1684 36.4846L43.4412 21.1755C44.5227 20.0904 46.2779 20.0876 47.3631 21.169C48.4473 22.2505 48.4501 24.0067 47.3686 25.0909L31.2962 41.2023ZM31 0C13.9056 0 0 13.9056 0 31C0 48.0935 13.9056 62 31 62C48.0944 62 62 48.0935 62 31C62 13.9056 48.0944 0 31 0" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
+
+<svg
+   height="62"
+   stroke-miterlimit="10"
+   style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
+   version="1.1"
+   viewBox="0 0 62 62"
+   width="62"
+   xml:space="preserve"
+   id="svg1701"
+   sodipodi:docname="radio-checked-2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview1703"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" />
+<defs
+   id="defs1696" />
+<g
+   id="Untitled">
+<path
+   d="M 31.2962,41.2023 C 30.4616,42.0388 29.3506,42.5 28.1684,42.5 c -1.1822,0 -2.2932,-0.4612 -3.1279,-1.2977 L 14.6256,30.7682 c -1.0815,-1.0852 -1.0787,-2.8404 0.0055,-3.9219 1.0842,-1.0814 2.8404,-1.0787 3.9218,0.0065 l 9.6155,9.6318 15.2728,-15.3091 c 1.0815,-1.0851 2.8367,-1.0879 3.9219,-0.0065 1.0842,1.0815 1.087,2.8377 0.0055,3.9219 z M 31,0 C 13.9056,0 0,13.9056 0,31 0,48.0935 13.9056,62 31,62 48.0944,62 62,48.0935 62,31 62,13.9056 48.0944,0 31,0"
+   fill="#000000"
+   fill-rule="nonzero"
+   opacity="1"
+   stroke="none"
+   id="path1698" />
 </g>
 </svg>

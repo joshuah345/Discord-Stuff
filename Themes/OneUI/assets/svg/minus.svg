@@ -1,3 +1,29 @@
-<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.375 50.25H71.625C72.867 50.25 73.875 49.242 73.875 48C73.875 46.758 72.867 45.75 71.625 45.75H24.375C23.133 45.75 22.125 46.758 22.125 48C22.125 49.242 23.133 50.25 24.375 50.25Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="51.75"
+   height="4.5"
+   viewBox="0 0 51.75 4.5"
+   fill="none"
+   version="1.1"
+   id="svg1331"
+   sodipodi:docname="minus.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1335" />
+  <sodipodi:namedview
+     id="namedview1333"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="M 2.25,4.5 H 49.5 c 1.242,0 2.25,-1.008 2.25,-2.25 C 51.75,1.008 50.742,0 49.5,0 H 2.25 C 1.008,0 0,1.008 0,2.25 0,3.492 1.008,4.5 2.25,4.5 Z"
+     fill="#000000"
+     id="path1329" />
 </svg>

@@ -1,3 +1,29 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.2666 10.7544L9.4896 3.08443C9.1946 2.79343 8.7196 2.79643 8.4286 3.09143C8.1376 3.38643 8.1406 3.86043 8.4356 4.15143L16.2136 11.8224C16.2786 11.8864 16.2876 11.9614 16.2876 12.0004C16.2876 12.0394 16.2786 12.1144 16.2136 12.1784L8.4356 19.8474C8.1406 20.1384 8.1376 20.6124 8.4286 20.9074C8.5756 21.0574 8.7686 21.1314 8.9626 21.1314C9.1526 21.1314 9.3426 21.0594 9.4896 20.9154L17.2666 13.2464C17.6036 12.9154 17.7876 12.4724 17.7876 12.0004C17.7876 11.5274 17.6036 11.0854 17.2666 10.7544Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="9.5752659"
+   height="18.263235"
+   viewBox="0 0 9.5752659 18.263235"
+   fill="none"
+   version="1.1"
+   id="svg298"
+   sodipodi:docname="chevron-right.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs302" />
+  <sodipodi:namedview
+     id="namedview300"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 9.054266,7.886236 -7.777,-7.66997 c -0.295,-0.291 -0.77,-0.288 -1.061,0.007 -0.291,0.295 -0.288,0.769 0.007,1.06 l 7.778,7.67097 c 0.065,0.064 0.074,0.139 0.074,0.178 0,0.039 -0.009,0.114 -0.074,0.178 l -7.778,7.669 c -0.295,0.291 -0.298,0.765 -0.007,1.06 0.147,0.15 0.34,0.224 0.534,0.224 0.19,0 0.38,-0.072 0.527,-0.216 l 7.777,-7.669 c 0.337,-0.331 0.521,-0.774 0.521,-1.246 0,-0.473 -0.184,-0.915 -0.521,-1.246 z"
+     fill="#000000"
+     id="path296" />
 </svg>

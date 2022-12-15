@@ -1,3 +1,29 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.2799 6.42726C20.9869 6.13426 20.5109 6.13526 20.2189 6.42826L10.4599 16.2183C10.3949 16.2813 10.3209 16.2913 10.2819 16.2913C10.2439 16.2913 10.1689 16.2813 10.1049 16.2183L3.7819 9.87526C3.4889 9.58126 3.0139 9.58126 2.7209 9.87326C2.4269 10.1663 2.4259 10.6413 2.7189 10.9343L9.0429 17.2773C9.3739 17.6093 9.8139 17.7913 10.2819 17.7913C10.7509 17.7913 11.1909 17.6093 11.5209 17.2773L21.2819 7.48826C21.5739 7.19426 21.5729 6.71926 21.2799 6.42726Z" fill="#252525"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="19.000504"
+   height="11.583291"
+   viewBox="0 0 19.000504 11.583291"
+   fill="none"
+   version="1.1"
+   id="svg262"
+   sodipodi:docname="checkmark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs266" />
+  <sodipodi:namedview
+     id="namedview264"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     d="m 18.780126,0.21925064 c -0.293,-0.293 -0.769,-0.292 -1.061,0.001 L 7.9601264,10.010291 c -0.065,0.063 -0.139,0.073 -0.178,0.073 -0.038,0 -0.113,-0.01 -0.177,-0.073 l -6.323,-6.3430404 c -0.29299996,-0.294 -0.76799996,-0.294 -1.06099996,-0.002 -0.294,0.29304 -0.295,0.76804 -0.002,1.06104 L 6.5431264,11.069291 c 0.331,0.332 0.771,0.514 1.239,0.514 0.469,0 0.909,-0.182 1.239,-0.514 L 18.782126,1.2802506 c 0.292,-0.29399996 0.291,-0.76899996 -0.002,-1.06099996 z"
+     fill="#252525"
+     id="path260" />
 </svg>

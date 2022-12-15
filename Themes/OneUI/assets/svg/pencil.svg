@@ -1,3 +1,41 @@
-<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.646 14.8123C6.6606 14.776 6.701 14.7929 6.7672 14.8631C7.8567 15.9536 8.9804 17.0787 10.1381 18.2384C10.1463 18.2466 10.1587 18.259 10.1752 18.2755C10.226 18.3283 10.1102 18.3579 10.0448 18.375L6.6073 19C6.1612 19.0968 5.9042 18.8438 5.9823 18.375L6.6073 14.9375C6.622 14.8858 6.6241 14.8668 6.646 14.8123ZM14.576 6.42188C15.1229 5.79688 16.1385 5.79688 16.7635 6.42188L18.5604 8.21878C19.1854 8.84378 19.1854 9.78128 18.5604 10.4063L11.9198 17.0469C11.7635 17.2032 11.5292 17.2032 11.3729 17.0469L7.9354 13.6094C7.7792 13.4532 7.7792 13.2188 7.9354 13.0625L14.576 6.42188Z" fill="#252525"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vectornator (http://vectornator.io/) -->
+
+<svg
+   height="24.419441"
+   stroke-miterlimit="10"
+   style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
+   version="1.1"
+   viewBox="0 0 24.407074 24.419441"
+   width="24.407074"
+   xml:space="preserve"
+   id="svg1493"
+   sodipodi:docname="pencil.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   id="namedview1495"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" />
+<defs
+   id="defs1488" />
+<g
+   id="Untitled"
+   vectornator:layerName="Untitled"
+   transform="translate(-0.29645144,-0.29029612)">
+<path
+   d="m 1.56269,16.8458 c 0.02729,-0.0679 0.10278,-0.0363 0.22649,0.0949 2.03599,2.0378 4.13589,4.1404 6.29933,6.3075 0.01533,0.0154 0.0385,0.0385 0.06933,0.0694 0.09493,0.0986 -0.12147,0.154 -0.24368,0.1859 l -6.42379,1.168 C 0.656729,24.8524 0.176464,24.3796 0.322412,23.5035 L 1.49037,17.0797 c 0.02747,-0.0966 0.0314,-0.1321 0.07232,-0.2339 z M 16.3818,1.16627 c 1.022,-1.16796517 2.9199,-1.16796517 4.0878,0 l 3.358,3.35793 c 1.1679,1.16796 1.1679,2.9199 0,4.0879 L 11.418,21.0216 c -0.292,0.2921 -0.7299,0.2921 -1.022,0 L 3.97224,14.5979 c -0.29189,-0.2919 -0.29189,-0.73 0,-1.0221 z"
+   fill="#252525"
+   fill-rule="nonzero"
+   opacity="1"
+   stroke="none"
+   id="path1490" />
+</g>
 </svg>

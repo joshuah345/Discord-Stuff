@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 196.43 197.395" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<g id="Untitled" vectornator:layerName="Untitled">
-<g opacity="1">
-<path d="M143.077 48.4915L126.343 65.2253L147.888 86.9793L45.1836 86.9793L45.1836 110.616L148.097 110.616L126.343 132.37L143.077 148.894L193.278 98.9021L143.077 48.4915Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
-<path d="M113.583 167.093C113.583 169.184 111.701 171.067 109.609 171.067L30.7507 171.067C28.6589 171.067 26.7764 169.184 26.7764 167.093L26.7764 30.2934C26.7764 28.2017 28.6589 26.3191 30.7507 26.3191L109.609 26.3191C111.701 26.3191 113.583 28.2017 113.583 30.2934L113.583 35.3135L137.429 35.3135L137.429 30.2934C137.429 15.0238 124.879 2.68256 109.609 2.68256L30.7507 2.68256C15.481 2.68256 2.93067 15.0238 2.93067 30.2934L2.93067 167.093C2.93067 182.362 15.481 194.703 30.7507 194.703L109.609 194.703C124.879 194.703 137.429 182.362 137.429 167.093L137.429 162.282L113.583 162.282C113.583 162.072 113.583 167.093 113.583 167.093Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"/>
+
+<svg
+   height="192.02045"
+   stroke-miterlimit="10"
+   style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
+   version="1.1"
+   viewBox="0 0 190.34734 192.02044"
+   width="190.34734"
+   xml:space="preserve"
+   id="svg1149"
+   sodipodi:docname="logout.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   id="namedview1151"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" />
+<defs
+   id="defs1140" />
+<g
+   id="Untitled"
+   vectornator:layerName="Untitled"
+   transform="translate(-2.93067,-2.68256)">
+<g
+   opacity="1"
+   id="g1146">
+<path
+   d="m 143.077,48.4915 -16.734,16.7338 21.545,21.754 H 45.1836 V 110.616 H 148.097 l -21.754,21.754 16.734,16.524 50.201,-49.9919 z"
+   fill="#000000"
+   fill-rule="nonzero"
+   opacity="1"
+   stroke="none"
+   id="path1142" />
+<path
+   d="m 113.583,167.093 c 0,2.091 -1.882,3.974 -3.974,3.974 H 30.7507 c -2.0918,0 -3.9743,-1.883 -3.9743,-3.974 V 30.2934 c 0,-2.0917 1.8825,-3.9743 3.9743,-3.9743 h 78.8583 c 2.092,0 3.974,1.8826 3.974,3.9743 v 5.0201 h 23.846 v -5.0201 c 0,-15.2696 -12.55,-27.61084 -27.82,-27.61084 H 30.7507 C 15.481,2.68256 2.93067,15.0238 2.93067,30.2934 V 167.093 c 0,15.269 12.55033,27.61 27.82003,27.61 h 78.8583 c 15.27,0 27.82,-12.341 27.82,-27.61 v -4.811 h -23.846 c 0,-0.21 0,4.811 0,4.811 z"
+   fill="#000000"
+   fill-rule="nonzero"
+   opacity="1"
+   stroke="none"
+   id="path1144" />
 </g>
 </g>
 </svg>
