@@ -52,9 +52,9 @@
 
 :root.theme-dark {
 
-    --unity-accent-hue: unset;
-    --unity-accent-saturation: unset;
-    --unity-accent-lightness: unset;
+    --unity-accent-hue: 210;
+    --unity-accent-saturation: 99%;
+    --unity-accent-lightness: 50%;
 
     --unity-background-image:unset;
 
@@ -93,9 +93,9 @@
 
 :root.theme-light {
 
-    --unity-accent-hue: unset;
-    --unity-accent-saturation: unset;
-    --unity-accent-lightness: unset;
+    --unity-accent-hue: 210;
+    --unity-accent-saturation: 99%;
+    --unity-accent-lightness: 50%;
 
     --unity-background-image: unset;
 
