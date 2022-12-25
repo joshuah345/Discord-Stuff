@@ -588,7 +588,7 @@
  }
  
  
- .input-2g-os5:hover:not(.focused-1AtTHC, :focus, .searchBoxInput-P0mWHW, .select-1Ia3hD) {
+ .input-2g-os5:not(.searchBoxInput-P0mWHW, .select-1Ia3hD):hover:not(.focused-1AtTHC, :focus) {
      border-bottom: var(--border-width) solid var(--interactive-hover);
  }
  
@@ -1276,6 +1276,32 @@
      border-radius: var(--unity-border-radius);
  }
  
+/* emoji  tab */
+
+.emojiInput-B8MGXq {
+    --input-background:var(--unity-background-secondary);
+}
+
+.content-17YpH6 > .emojiRow-1aPaM- {
+    background-color: var(--unity-background-secondary);
+}
+
+.content-17YpH6 > .emojiTable-17v9Y6 + .emojiRow-1aPaM- {
+   border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
+}
+
+.content-17YpH6 > .emojiRow-1aPaM-:last-of-type {
+    border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius) ;
+ }
+
+ .content-17YpH6 > :where(.emojiRow-1aPaM-, .emojiTable-17v9Y6) {
+    padding-left: 10px;
+ }
+
+ .emojiRow-1aPaM- .emojiRemove-D9w3jo {
+    top: auto;
+ }
+
  /*  Checkboxes, Sliders, Grabbers, Switches, Radio Buttons (and other controls) */
  
  .defaultKeybindGroup-36Wpyv>.defaultKeybind-1rEiTa:nth-last-of-type(2) {
@@ -2185,7 +2211,7 @@
  }
  
  /*Blur using pseudoelement else submenus break */
- .menu-1QACrS::before {
+ .menu-1QACrS:not(#account)::before {
      backdrop-filter: blur(var(--unity-floating-blur-radius));
      content: "";
      border-radius: var(--unity-border-radius);
@@ -2223,12 +2249,9 @@
  }
  
  .animatedContainer-2laTjx,
- .bannerImage-ubW8K- {
- 
-     border-bottom-left-radius: var(--unity-border-radius);
-     border-bottom-right-radius: var(--unity-border-radius);
+ .bannerImage-ubW8K-, .header-3OsQeK{
+ border-radius:  var(--unity-border-radius);
  }
- 
  
  
  .ctaBar-Nhk8yY {
