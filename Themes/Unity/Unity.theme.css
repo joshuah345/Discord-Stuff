@@ -40,7 +40,7 @@
     --unity-chat-bubble-border-color: var(--background-secondary-alt);
     --unity-chat-bubble-code-background-color: var(--background-secondary-alt);
     --unity-chat-bubble-max-width: 90%;
-    --unity-chat-bubble-border-radius: var(--unity-radius);
+    --unity-chat-bubble-border-radius: var(--unity-border-radius);
 
     --unity-badge-color: var(--unity-orange-2);
 
