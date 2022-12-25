@@ -58,7 +58,7 @@
 
     --unity-background-image:unset;
 
-    --unity-opacity: 1
+    --unity-opacity: 1;
     
     --guilds-background-color: unset; 
     --guilds-background-image: unset;
@@ -127,7 +127,5 @@
     
     --threads-border-color: unset;
     --threads-border-width: unset;
-
-
 
 }
