@@ -150,7 +150,7 @@
  
      --background-secondary-alt: var(--unity-background-secondary-alt);
      --background-modifier-active: rgba(var(--unity-background-primary-rgb), 0.7);
-     --background-modifier-selected: var(--brand-experiment-10a);
+     --background-modifier-selected: var(--brand-experiment-20a);
      --modal-background: var(--unity-background-secondary);
      --modal-footer-background: var(--modal-background);
      --text-positive: var(--unity-green-2);
