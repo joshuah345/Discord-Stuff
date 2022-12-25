@@ -1,48 +1,4 @@
 
-/* ------------ Animate BD Search ------------ */
-
-/* Make search icon overlap input when collapsed and adjust margin to look better in rounded container */
-.bd-search-wrapper>svg {
-    margin-right: 0px;
-    transition: margin-right linear 250ms;
-    position: absolute;
-    right: 15px;
-    pointer-events: none;
-}
-
-/* Animate wrapepr bg. Keep state when there's focus on the input */
-.bd-search-wrapper:is(:hover, :focus-within) {
-    transition: ease-out all 0.5s;
-    opacity: 1;
-    background-color: var(--background-secondary);
-    width: 15vw;
-}
-
-.bd-search-wrapper {
-   width: 30px;
-   transition: all 0.5s;
-   background-color: transparent;
-}
-
-.bd-search-wrapper:hover > input.bd-search,
-.bd-addon-controls input.bd-search:where(:focus, :not(:placeholder-shown)) {
-  opacity: 1;
-  transition: all ease-in 0,5s;
-  transition-delay: 500ms;
-  width: auto;
-}
-
-
-.bd-addon-controls .bd-search
-/* This selects the <input> without using !important */
-    {
-    padding-left: 5px;
-    transition: all 0.1s;
-    transition-timing-function: ease-out;
-    opacity: 0;
-    background-color: transparent;
-    width: 30px;
-}
 
 /* animate discord search bar  */
 
@@ -78,8 +34,6 @@
 /* Tab bar animation */
 
 [role=tab]:not(.item-3XjbnG) {
-    --animation-time: 200ms;
-
     position: relative;
     overflow: hidden;
 }
