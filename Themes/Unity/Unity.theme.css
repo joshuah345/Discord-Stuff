@@ -1,0 +1,133 @@
+/**
+ * @name Unity
+ * @author Superuser
+ * @description All for one, One for all. A theme inspired by Samsung's OneUI.
+ * @version 0.9.5
+ * @authorId 419610859392860162
+ * @website https://github.com/joshuah345
+ * @source https://github.com/joshuah345/Discord-Stuff/tree/master/Themes/Unity
+ */
+
+ @import url(https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Unity.css);
+
+/* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide. Somee are omitted from this theme file as they are considered optional. */
+
+/* GLOBAL VARIABLES */
+
+ :root,
+.theme-dark,
+.theme-light {
+
+    --unity-custom-font: unset;
+    
+    --unity-gaps: 1;
+    --unity-background-color: rgba(var(--unity-inactive-darker-rgb), 0.2);
+    --unity-background-image: unset;
+    --unity-background-blur: unset;
+    --unity-inset: 10px;
+
+    --unity-border-radius: 18px;
+    --unity-floating-blur-radius: 5px;
+
+    --unity-settings-icons: 1;
+    --unity-settings-icon-size: 25px;
+    --hide-ui-settings-open: 0;
+    --settings-margin: 10vh;
+    --settings-bg-blur-radius: 10px;
+
+    --unity-chat-bubble: 1;
+    --unity-chat-bubble-background-color: var(--background-secondary);
+    --unity-chat-bubble-border-color: var(--background-secondary-alt);
+    --unity-chat-bubble-code-background-color: var(--background-secondary-alt);
+    --unity-chat-bubble-max-width: 90%;
+    --unity-chat-bubble-border-radius: var(--unity-radius);
+
+    --unity-badge-color: var(--unity-orange-2);
+
+    --threads-margin-right: unset;
+   
+}
+
+/* DARK THEME VARIABLES  */
+
+:root.theme-dark {
+
+    --unity-accent-hue: unset;
+    --unity-accent-saturation: unset;
+    --unity-accent-lightness: unset;
+
+    --unity-background-image:unset;
+
+    --unity-opacity: 1
+    
+    --guilds-background-color: unset; 
+    --guilds-background-image: unset;
+    --guilds-background-blur: unset;
+    --guilds-border-color:unset;
+    --guilds-border-width: unset;
+    
+    --sidebar-background-color:unset;
+    --sidebar-background-image: unset;
+    --sidebar-background-blur:unset;
+    --sidebar-border-color: unset;
+    --sidebar-border-width: unset;
+
+    --panels-background-color: unset;
+    --panels-background-image: unset;
+    --panels-background-blur: unset;
+    --panels-border-color: unset;
+    --panels-border-width: unset;
+
+    --chat-background-color: unset;
+    --chat-background-image: unset;
+    --chat-background-blur: unset;
+    --chat-border-color: unset;
+    --chat-border-width: unset;
+    
+    --threads-border-color: unset;
+    --threads-border-width: unset;
+   
+}
+
+/* LIGHT THEME VARIABLES */
+
+:root.theme-light {
+
+    --unity-accent-hue: unset;
+    --unity-accent-saturation: unset;
+    --unity-accent-lightness: unset;
+
+    --unity-background-image: unset;
+
+    --unity-opacity: 1;
+
+    --guilds-background-color: unset; 
+    --guilds-background-image: unset;
+    --guilds-background-blur: unset;
+    --guilds-border-color:unset;
+    --guilds-border-width: unset;
+    
+    --sidebar-background-color:unset;
+    --sidebar-background-image: unset;
+    --sidebar-background-blur:unset;
+    --sidebar-border-color: unset;
+    --sidebar-border-width: unset;
+
+    --panels-background-color: unset;
+    --panels-background-image: unset;
+    --panels-background-blur: unset;
+    --panels-border-color: unset;
+    --panels-border-width: unset;
+
+    --chat-background-color: unset;
+    --chat-background-image: unset;
+    --chat-background-blur: unset;
+    --chat-border-color: unset;
+    --chat-border-width: unset;
+    
+    --threads-border-color: unset;
+    --threads-border-width: unset;
+
+
+
+}

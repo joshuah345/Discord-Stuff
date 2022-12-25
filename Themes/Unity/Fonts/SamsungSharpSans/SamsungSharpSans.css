@@ -1,0 +1,22 @@
+/* Samsung Sharp Sans */
+
+@font-face {
+    font-family:"Samsung Sharp Sans";
+    src: url(https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Samsung Sharp Sans";
+    src: url(https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Samsung Sharp Sans";
+    src: url(https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

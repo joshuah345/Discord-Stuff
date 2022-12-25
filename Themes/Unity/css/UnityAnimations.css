@@ -1,0 +1,141 @@
+
+/* ------------ Animate BD Search ------------ */
+
+/* Make search icon overlap input when collapsed and adjust margin to look better in rounded container */
+.bd-search-wrapper>svg {
+    margin-right: 0px;
+    transition: margin-right linear 250ms;
+    position: absolute;
+    right: 15px;
+    pointer-events: none;
+}
+
+/* Animate wrapepr bg. Keep state when there's focus on the input */
+.bd-search-wrapper:is(:hover, :focus-within) {
+    transition: ease-out all 0.5s;
+    opacity: 1;
+    background-color: var(--background-secondary);
+    width: 15vw;
+}
+
+.bd-search-wrapper {
+   width: 30px;
+   transition: all 0.5s;
+   background-color: transparent;
+}
+
+.bd-search-wrapper:hover > input.bd-search,
+.bd-addon-controls input.bd-search:where(:focus, :not(:placeholder-shown)) {
+  opacity: 1;
+  transition: all ease-in 0,5s;
+  transition-delay: 500ms;
+  width: auto;
+}
+
+
+.bd-addon-controls .bd-search
+/* This selects the <input> without using !important */
+    {
+    padding-left: 5px;
+    transition: all 0.1s;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    background-color: transparent;
+    width: 30px;
+}
+
+/* animate discord search bar  */
+
+.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+    width: 27px;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+    width: 240px;
+    background-color: var(--background-tertiary);
+}
+
+.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {
+    transform: scale(1);
+}
+
+.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {
+    color: var(--text-normal);
+}
+
+.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {
+    color: var(--text-muted);
+}
+
+
+/* Tab bar animation */
+
+[role=tab]:not(.item-3XjbnG) {
+    --animation-time: 200ms;
+
+    position: relative;
+    overflow: hidden;
+}
+
+[role=tab]:not(.item-3XjbnG):after {
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:  2px;
+    position: absolute;
+    background-color: var(--brand-experiment);
+    transition:
+        transform ease 400ms,
+        opacity ease 20ms 200ms;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.addFriend-emTWY1[role=tab]::after {
+    background-color: var(--status-positive);
+}
+
+[role=tab]:not(.item-3XjbnG)~[role=tab]:not(.item-3XjbnG):after {
+    transform: translateX(-100%);
+}
+
+[role=tablist]:not(:hover) [role=tab]:not([aria-selected="true"], .item-3XjbnG)::after {
+    transform: translateY(100%);
+}
+
+[role=tablist]:hover [role=tab]:not(.item-3XjbnG)::after,
+.nav-1zWVQw:hover .navList-YSb9UB:hover [role=tab]hover::after {
+    transition-delay: 0ms, 0ms;
+}
+
+[role=tab]:not(.item-3XjbnG)[aria-selected="true"]::after,
+[role=tab]:not(.item-3XjbnG)::after {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+:where(.item-1OdjEX, .item-3mHhwr):hover {
+    transition: all ease 150ms;
+}
+
+.item-3mHhwr.addFriend-emTWY1:not(:hover) {
+    border-radius: var(--unity-radius);
+}
+
+.item-3mHhwr, .item-3mHhwr:hover {
+    border-radius: 0;
+}
+
+
+.item-1OdjEX, .item-3mHhwr {
+    transition: all linear 150ms;
+}

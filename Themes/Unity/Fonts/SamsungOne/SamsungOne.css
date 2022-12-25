@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-700.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-700.ttf") format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-600.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-600.ttf") format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-500.ttf") format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-500.ttf") format('truetype');
+    font-weight: medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-400.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-400.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-300.ttf") format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-300.ttf") format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneLatin-200.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Samsung One";
+    src: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOneItalicLatinComp-200.ttf") format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
