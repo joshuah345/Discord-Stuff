@@ -85,8 +85,7 @@
     --chat-border-width: unset;
     
     --threads-border-color: unset;
-    --threads-border-width: unset;
-   
+    --threads-border-width: unset;   
 }
 
 /* LIGHT THEME VARIABLES */
@@ -127,5 +126,4 @@
     
     --threads-border-color: unset;
     --threads-border-width: unset;
-
 }
