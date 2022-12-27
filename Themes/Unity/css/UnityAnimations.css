@@ -1,5 +1,4 @@
 
-
 /* animate discord search bar  */
 
 .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
@@ -28,68 +27,4 @@
 
 .search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {
     color: var(--text-muted);
-}
-
-
-/* Tab bar animation */
-
-[role=tab]:not(.item-3XjbnG) {
-    position: relative;
-    overflow: hidden;
-}
-
-[role=tab]:not(.item-3XjbnG):after {
-    content: '';
-    display: block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height:  2px;
-    position: absolute;
-    background-color: var(--brand-experiment);
-    transition:
-        transform ease 400ms,
-        opacity ease 20ms 200ms;
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.addFriend-emTWY1[role=tab]::after {
-    background-color: var(--status-positive);
-}
-
-[role=tab]:not(.item-3XjbnG)~[role=tab]:not(.item-3XjbnG):after {
-    transform: translateX(-100%);
-}
-
-[role=tablist]:not(:hover) [role=tab]:not([aria-selected="true"], .item-3XjbnG)::after {
-    transform: translateY(100%);
-}
-
-[role=tablist]:hover [role=tab]:not(.item-3XjbnG)::after,
-.nav-1zWVQw:hover .navList-YSb9UB:hover [role=tab]hover::after {
-    transition-delay: 0ms, 0ms;
-}
-
-[role=tab]:not(.item-3XjbnG)[aria-selected="true"]::after,
-[role=tab]:not(.item-3XjbnG)::after {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-:where(.item-1OdjEX, .item-3mHhwr):hover {
-    transition: all ease 150ms;
-}
-
-.item-3mHhwr.addFriend-emTWY1:not(:hover) {
-    border-radius: var(--unity-radius);
-}
-
-.item-3mHhwr, .item-3mHhwr:hover {
-    border-radius: 0;
-}
-
-
-.item-1OdjEX, .item-3mHhwr {
-    transition: all linear 150ms;
 }

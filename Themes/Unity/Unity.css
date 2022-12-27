@@ -449,7 +449,7 @@
  
  /* round modals and popouts, not images */
  .container-KJ38dt,
- .focusLock-2tveLW[role="dialog"]:not([aria-label=image i], [aria-label^="Act"i]):where([aria-labelledby], [aria-label])>.root-g14mjS:not(.root-1DvBsn),
+ .focusLock-2tveLW[role="dialog"]:not([aria-label=image i], [aria-label^="Act"i]):where([aria-labelledby], [aria-label])>.root-g14mjS:not(.root-1DvBsn, .small-23Atuv),
  .focusLock-2tveLW[role="dialog"] .root-g14mjS>[class|="quickswitcher"],
  .focusLock-2tveLW[aria-modal=true]>:not(.fullscreenOnMobile-ixj0e3),
  .layer-2aCOJ3>div>div:not(.option-2eIyOn),
@@ -468,7 +468,8 @@
  }
  
  .root-CyPAbQ,
- .root-1DvBsn {
+ .root-1DvBsn,
+ .small-23Atuv{
      border-radius: var(--unity-border-radius);
  }
  
@@ -544,7 +545,7 @@
      overflow: hidden;
  }
  
- .bannerSVGWrapper-qc0szY {
+ .bannerSVGWrapper-qc0szY > .banner-2boKnS:not(.panelBanner-13BsBR) {
      border: var(--unity-border-radius) var(--unity-border-radius) 0 0;
  }
  
