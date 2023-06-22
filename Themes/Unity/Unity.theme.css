@@ -1,11 +1,12 @@
 /**
  * @name Unity
- * @author Superuser
+ * @author super.user
  * @description All for one, One for all. A theme inspired by Samsung's OneUI.
- * @version 0.9.7
+ * @version 1.0.0
  * @authorId 419610859392860162
  * @website https://github.com/joshuah345
  * @source https://github.com/joshuah345/Discord-Stuff/tree/master/Themes/Unity
+ * @invite BDGSZDYSQ
  */
 
  @import url(https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Unity.css);
@@ -14,11 +15,10 @@
 
 /* GLOBAL VARIABLES */
 
- :root,
-.theme-dark,
-.theme-light {
+ :root[class*="theme"] {
 
     --unity-custom-font: unset;
+    --unity-wordmark: unset;
     
     --unity-gaps: 1;
     --unity-background-color: rgba(var(--unity-inactive-darker-rgb), 0.2);
@@ -28,12 +28,6 @@
 
     --unity-border-radius: 18px;
     --unity-floating-blur-radius: 5px;
-
-    --unity-settings-icons: 1;
-    --unity-settings-icon-size: 25px;
-    --hide-ui-settings-open: 0;
-    --settings-margin: 10vh;
-    --settings-bg-blur-radius: 10px;
 
     --unity-chat-bubble: 1;
     --unity-chat-bubble-background-color: var(--background-secondary);
@@ -56,6 +50,14 @@
     --unity-accent-saturation: 99%;
     --unity-accent-lightness: 50%;
 
+    --unity-background-primary: var(--unity-black);
+    --unity-background-primary-rgb: 0, 0, 0;
+    --unity-background-secondary: #2b2b2b;
+    --unity-background-secondary-alt: #212020;
+    --unity-background-secondary-rgb: 43, 43, 43;
+    --unity-background-tertiary: #454545;
+    --unity-background-tertiary-rgb: 69, 69, 69;
+
     --unity-background-image:unset;
 
     --unity-opacity: 1;
@@ -72,6 +74,12 @@
     --sidebar-border-color: unset;
     --sidebar-border-width: unset;
 
+    --base-background-color: unset; 
+    --base-background-image: unset;
+    --base-background-blur: unset;
+    --base-border-color:unset;
+    --base-border-width: unset;
+
     --panels-background-color: unset;
     --panels-background-image: unset;
     --panels-background-blur: unset;
@@ -86,6 +94,9 @@
     
     --threads-border-color: unset;
     --threads-border-width: unset;   
+
+    --header-background-color:unset;
+    --header-background-blur: unset;
 }
 
 /* LIGHT THEME VARIABLES */
@@ -95,6 +106,14 @@
     --unity-accent-hue: 210;
     --unity-accent-saturation: 99%;
     --unity-accent-lightness: 50%;
+    
+    --unity-background-primary: #f0f0f0;
+    --unity-background-primary-rgb: 240, 240, 240;
+    --unity-background-secondary: var(--unity-white);
+    --unity-background-secondary-alt: #e8e8e8;
+    --unity-background-secondary-rgb: 252, 252, 252;
+    --unity-background-tertiary: #E0E0E0;
+    --unity-background-tertiary-rgb: 224, 224, 224;
 
     --unity-background-image: unset;
 
@@ -118,6 +137,12 @@
     --panels-border-color: unset;
     --panels-border-width: unset;
 
+    --base-background-color: unset; 
+    --base-background-image: unset;
+    --base-background-blur: unset;
+    --base-border-color:unset;
+    --base-border-width: unset;
+
     --chat-background-color: unset;
     --chat-background-image: unset;
     --chat-background-blur: unset;
@@ -126,4 +151,7 @@
     
     --threads-border-color: unset;
     --threads-border-width: unset;
+
+    --header-background-color: unset;
+    --header-background-blur:unset;
 }

@@ -455,13 +455,13 @@ Server / thread setting stuff (unused atm)
 
  /* Everything Else */
 
-#guild-header-popout-leave>.iconContainer-1-SsTR>svg {
+#guild-header-popout-leave>.iconContainer-Ksy8Oj>svg {
     -webkit-mask: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/assets/svg/logout.svg") center/contain no-repeat;
     mask: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/assets/svg/logout.svg");
     background-color: currentColor;
 }
 
-#guild-header-popout-leave>.iconContainer-1-SsTR>svg>* {
+#guild-header-popout-leave>.iconContainer-Ksy8Oj>svg>* {
     display: none;
 }
 
@@ -500,27 +500,27 @@ path[d^="M12.3345 2.71469L21.0315 10.542C21.3721 10.8486 21.1553 11.4137 20.697"
 
 /* menu checkboxes */ 
 
-[role="menuitemcheckbox"] .iconContainer-1-SsTR>svg>* {
+[role="menuitemcheckbox"] .iconContainer-Ksy8Oj>svg>* {
     display: none;
 }
 
-[role="menuitemcheckbox"][aria-checked="true"]:hover .iconContainer-1-SsTR>svg {
+[role="menuitemcheckbox"][aria-checked="true"]:hover .iconContainer-Ksy8Oj>svg {
     background-color: var(--white-500);
 }
 
-[role="menuitemcheckbox"][aria-checked="true"] .iconContainer-1-SsTR>svg {
+[role="menuitemcheckbox"][aria-checked="true"] .iconContainer-Ksy8Oj>svg {
     -webkit-mask: url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/assets/svg/radio-checked-2.svg") center/contain no-repeat;
     background-color: var(--brand-experiment-300);
 }
 
-[role="menuitemcheckbox"][aria-checked="false"] .iconContainer-1-SsTR {
+[role="menuitemcheckbox"][aria-checked="false"] .iconContainer-Ksy8Oj {
     border: 2px solid var(--interactive-normal);
-    border-radius: var(--circular-border);
+    border-radius: var(--radius-round);
     width: 14px;
     height: 14px;
 }
 
-[role="menuitemcheckbox"][aria-checked="false"].focused-3qFvc8 .iconContainer-1-SsTR {
+[role="menuitemcheckbox"][aria-checked="false"].focused-3qFvc8 .iconContainer-Ksy8Oj {
     border-color: var(--white-500);
 }
 
@@ -570,10 +570,6 @@ path[d^="M12.3345 2.71469L21.0315 10.542C21.3721 10.8486 21.1553 11.4137 20.697"
 
 .backButton-bSKWLe>svg>* {
     display: none;
-}
-
-path[d^=""] {
-    d: path("")
 }
 
 /* Send icon in text area */ 
@@ -752,10 +748,6 @@ path:is([d="M7 10L12 15 17 10"], [d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L1
     transform-origin: center;
     transform: translate(15%,85%) scale(0.8);
 }
-/* small postitional fix */
-.breadcrumbArrow-1LY2zF {
-    margin-top: 20px;
-}
 
 /* hide original arrow */
 :is(.optionArrow-1kVloh) > * {display: none;}
@@ -916,21 +908,6 @@ path[d="M16.293 9.293L17.707 10.707L12 16.414L6.29297 10.707L7.70697 9.293L11 12
     transform: translate(35%,10%);
 }
 
-
-/* Bot tag -> icon */
-.px-MnE_OR .botText-1fD6Qk, .botTagRegular-kpctgU:not(.botTagOP-3pUTXu)> .botText-1fD6Qk {
-    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10.613 12.865'%3E%3Cpath fill='%23000' d='M7.474 8.173a.523.523 0 1 1 0 1.043H3.139a.522.522 0 1 1 0-1.043Zm.171-2.82c.413 0 .748.335.748.745a.747.747 0 0 1-1.495 0c0-.41.335-.744.747-.744zm-4.677 0c.412 0 .747.335.747.745a.747.747 0 0 1-1.495 0c0-.41.336-.744.748-.744zm2.905-2.206v-.884c.381-.22.63-.6.63-1.071C6.502.534 5.965 0 5.305 0S4.111.534 4.111 1.192c0 .472.256.86.648 1.071v.884H1.794C.807 3.147 0 3.95 0 4.935v4.439c0 .984.807 1.788 1.794 1.788h.622c.011 0 .022.003.033.004h.568l.004 1.172-.004.25c0 .225.267.389.639.183l2.437-1.61h2.726c.987 0 1.794-.803 1.794-1.787v-4.44c0-.983-.807-1.787-1.794-1.787z'/%3E%3C/svg%3E") center/contain no-repeat;
-   font-size: 0px;
-   width:12px;
-   height:12px;
-   background-color: currentColor;
-}
-
-.botTagRegular-kpctgU {
-    height: 18px;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
 
 /* Star icon */
 
