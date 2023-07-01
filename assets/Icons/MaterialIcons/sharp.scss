@@ -1,0 +1,43 @@
+/* MATERIAL ICONS V4 for Discord (Sharp version). CREATED BY super.user / shouganai / joshuah345 */
+
+@import 'sass/styles/sharp';
+
+
+/* (NITRO) GIFT ICON */
+
+svg:has(path[d^="M16.886 7.999H20C21.104 7.999 22 8.896 22 9.999V11.999H2V9.999C2 8.896 2.897 7.999 4 7.999H7.114C6.663 7.764 6.236 7.477 5.879 7.121C4.709 5.951 4.709 4.048 5.879 "])  {
+    background-color: currentColor;
+    -webkit-mask: $card-giftcard center/contain;
+    mask: $card-giftcard center contain;
+ }
+ 
+ /* GIF ICON */
+ 
+ svg:has(path[d^="m2 2c-1.1046 0-2 0.89543-2 2v16c0 1.1046 0.89543 2 2 2h20c1.1046 0 2-0.8954 2-2v-16c0-1.1046-0.8954-2-2-2h-20zm2.4846 13.931c0.55833 0.375 1.2 0.5625 1.925 0.5625 0.96667 0 1.6958-0.3333 2.1875-1l0.2375 0.825h1.475v-4.9h-3.7625v1.625h1.9875v1.075c-0.15833 0.225-0.38333 0.4042-0.675 0.5375-0.28333 0.125-0.59583 0.1875-0.9375 0.1875-0.76667"]) {
+     background-color: currentColor;
+     -webkit-mask: $gif center/contain; 
+     mask: $gif center/contain;
+     transform: scale(1.5);
+ }
+ 
+ /* SEND ICON */ 
+ 
+ .sendIcon-1HcEzu {
+     background-color: currentColor;
+     -webkit-mask: $send center/contain ;
+     mask: $send center/contain ;
+ } 
+ 
+ 
+ .anchor-1X4H4q[href="https://support.discord.com"] .icon-2xnN2Y {
+     background-color: currentColor;
+     -webkit-mask: $help center/contain;
+     mask: $help center/contain;
+ }
+
+ /* INBOX ICON */
+ svg:has(path[d="M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z"]) {
+    background-color: currentColor;
+     -webkit-mask: $inbox center/contain;
+     mask: $inbox center/contain;
+ }

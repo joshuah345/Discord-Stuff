@@ -1,3 +1,6 @@
 [submodule "assets/material-design-icons"]
 	path = assets/material-design-icons
 	url = https://github.com/marella/material-design-icons
+[submodule "assets/Icons/MaterialIcons/material-icons"]
+	path = assets/Icons/MaterialIcons/material-icons
+	url = https://github.com/marella/material-icons/
