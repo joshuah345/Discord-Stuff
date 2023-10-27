@@ -1,30 +1,30 @@
 
 /* animate discord search bar  */
 
-.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
+.search_ac353c:not(.open_d3ab4e) .searchBar_e0c60b {
     width: 27px;
     transition: 0.5s;
     background-color: transparent;
 }
 
-.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {
+.search_ac353c:not(.open_d3ab4e):hover .searchBar_e0c60b {
     width: 240px;
     background-color: var(--background-tertiary);
 }
 
-.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {
+.search_ac353c:not(.open_d3ab4e) .iconContainer__8fa9c {
     transform: scale(1.3);
     transition: 0.5s;
 }
 
-.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {
+.search_ac353c:not(.open_d3ab4e):hover .iconContainer__8fa9c {
     transform: scale(1);
 }
 
-.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {
+.search_ac353c:not(.open_d3ab4e) .icon_f50f05 {
     color: var(--text-normal);
 }
 
-.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {
+.search_ac353c:not(.open_d3ab4e):hover .icon_f50f05 {
     color: var(--text-muted);
 }
