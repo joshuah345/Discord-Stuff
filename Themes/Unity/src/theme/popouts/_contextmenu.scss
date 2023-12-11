@@ -1,0 +1,140 @@
+.menu_dc52c6:not(#account)>.scroller__750f5 [role="group"]:first-of-type .item__183e8:first-of-type,
+.menu_dc52c6:not(#account)>.scroller__750f5 [role="group"]:first-of-type .submenu_acf564 .item__183e8,
+.menu_dc52c6:not(#account)>.scroller__750f5>.item__183e8:first-of-type {
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.submenuPaddingContainer__12a9d {
+    padding: 0 4px;
+}
+
+.item__183e8.labelContainer_bc2861 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu_dc52c6:not(#account)>.scroller__750f5 :not([role^="group"]) [role^="menuitem"]:only-of-type {
+    margin: 0;
+    border-radius: var(--unity-border-radius);
+
+}
+
+.item__183e8 .caret_ce50ce {
+    transform: translate(5px, 1px);
+
+}
+
+.item__183e8 .grabber_d2868c {
+    transform: translateY(1px);
+}
+
+.menu_dc52c6:not(#account)>.scroller__750f5 [role="group"]:nth-last-child(2)>[role^="menuitem"]:last-of-type,
+.menu_dc52c6:not(#account)>.scroller__750f5>[role^="menuitem"]:nth-last-of-type(2) {
+    /* border-radius: 0px 0px var(--unity-border-radius) var(--unity-border-radius); */
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.item__183e8:not([id^="account-divider"]) {
+    border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.labelContainer-2vJzYL,
+.statusItem-2a1giL {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clickable_f8437d {
+    padding: 0;
+}
+
+.base__76a71 {
+    border-radius: 0px;
+}
+
+
+.menu_dc52c6>.scroller__750f5 {
+    padding: 0;
+}
+
+
+.menu_dc52c6:not(#account),
+.menu_dc52c6:not(#account)>.scroller__750f5 {
+    border-radius: var(--unity-border-radius);
+
+}
+
+.menu_dc52c6>.scroller__750f5::-webkit-scrollbar {
+    width: 0;
+}
+
+.menu_dc52c6#account>.scroller__750f5 [role="group"]:first-of-type>.submenuContainer-3EVTeH:last-child>.item__183e8:not([id^="account-divider"]) {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.popout_a6e77f,
+.popout_a6e77f.popoutPositionTop_b2d29e {
+    border-radius: var(--unity-border-radius);
+    top: 8px;
+    box-shadow: 0px 0px 10px 1px var(--unity-background-tertiary);
+    background-color: rgba(var(--unity-background-secondary-rgb), 0.8);
+    -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));
+    backdrop-filter: blur(var(--unity-floating-blur-radius));
+    margin-top: 5px;
+}
+
+.menu_dc52c6:not(#account),
+.popoutContainer__7b9a3 {
+    background-color: rgba(var(--unity-background-tertiary-rgb), 0.75);
+}
+
+.popoutContainer__7b9a3 {
+    -webkit-backdrop-filter: blur(var(var(--unity-floating-blur-radius)));
+    backdrop-filter: blur(var(--unity-floating-blur-radius));
+}
+
+[id^=popout_]:not(#account):has(.menu_dc52c6)>.scroller__750f5 {
+    border-radius: var(--unity-border-radius);
+}
+
+/*Blur using pseudoelement else submenus break */
+.menu_dc52c6:not(#account).submenu_acf564::before,
+.menu_dc52c6:not(#account, .submenu_acf564)::before {
+    -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));
+    backdrop-filter: blur(var(--unity-floating-blur-radius));
+    content: "";
+    border-radius: var(--unity-border-radius);
+    transform-origin: center center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    max-width: 320px;
+    z-index: 0;
+}
+
+
+.menu_dc52c6:not(#account, .submenu_acf564)::before {
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+/* submenus with borders end up being the wrong size... looking at super reactions here */
+
+.menu_dc52c6:not(#account).submenu_acf564::before {
+    height: calc(100% - 4px);
+    display: block;
+    position: absolute;
+    top: 2px;
+    transform: scaleX(0.94);
+}

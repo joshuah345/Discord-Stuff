@@ -1,0 +1,72 @@
+/* USER PROFILE MODAL */
+
+[role="dialog"][aria-modal="true"] {
+    .root_ba16f0:has(.userProfileModalOuter__3fe6b) {
+        --modal-background: transparent;
+        /* all modals have this background, even the profile ones that have an overlay */
+    }
+
+    .userProfileModalOuter__3fe6b {
+        border-radius: var(--unity-border-radius);
+
+        >.userProfileModalInner__7c87d {
+
+            &::before {
+                border-radius: calc(var(--unity-border-radius) - 4px);
+            }
+
+            .topSection_dfb73b {
+                .bannerSVGWrapper__3e7b0 {
+                    border-radius: calc(var(--unity-border-radius) - 4px) calc(var(--unity-border-radius) - 4px) 0 0;
+                }
+            }
+
+            >.userProfileModalOverlayBackground__52d65 {
+                border-radius: calc(var(--unity-border-radius) - 8px);
+
+                .tabBar__35f81 {
+
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    gap: 10px 5px;
+
+                    .tabBarItem_b56b35 {
+                        border-radius: var(--radius-round);
+                        border: 1px solid transparent;
+                        text-align: center;
+                        height: auto;
+                        margin: 0px 15px 20px;
+                        padding: 5px 10px;
+
+                        &:hover,
+                        &.selected__5711d {
+                            border: 1px solid var(--interactive-hover);
+                            transition: border 100ms ease-in;
+                        }
+
+                        &.disabled__85bca:hover {
+                            border-color: var(--interactive-muted);
+                        }
+
+                        &.selected__5711d {
+                            border: 1px solid var(--interactive-active);
+
+                            &.brand_ce3ecf {
+                                border: 1px solid var(--brand-experiment);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.profileBadges__7a7cb,
+.badgeList_ef4131 {
+    border-radius: var(--unity-border-radius);
+}

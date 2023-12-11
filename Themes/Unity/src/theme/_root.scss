@@ -1,0 +1,259 @@
+:root.theme-dark {
+
+    --unity-accent-hue: 210;
+    --unity-accent-saturation: 99%;
+    --unity-accent-lightness: 50%;
+
+    --unity-background-primary: var(--unity-black);
+    --unity-background-primary-rgb: 0, 0, 0;
+    --unity-background-secondary: #2b2b2b;
+    --unity-background-secondary-alt: #212020;
+    --unity-background-secondary-rgb: 43, 43, 43;
+    --unity-background-tertiary: #454545;
+    --unity-background-tertiary-rgb: 69, 69, 69;
+
+    --base-background-color: transparent;
+
+    --unity-opacity: 1;
+
+    --unity-background-image: unset;
+
+    /* STOCK VARIABLES */
+    --button-secondary-background-hover: var(--brand-experiment-550);
+
+}
+
+:root.theme-light {
+
+    --unity-accent-hue: 210;
+    --unity-accent-saturation: 99%;
+    --unity-accent-lightness: 50%;
+
+    --unity-background-primary: #f0f0f0;
+    --unity-background-primary-rgb: 240, 240, 240;
+    --unity-background-secondary: var(--unity-white);
+    --unity-background-secondary-alt: #e8e8e8;
+    --unity-background-secondary-rgb: 252, 252, 252;
+    --unity-background-tertiary: #E0E0E0;
+    --unity-background-tertiary-rgb: 224, 224, 224;
+
+    --base-background-color: transparent;
+
+    --unity-background-image: unset;
+
+    --unity-opacity: 1;
+
+    /* STOCK VARIABLES */
+    --button-secondary-background-hover: var(--brand-experiment-230);
+}
+
+:root,
+.theme-dark,
+.theme-light {
+   --header-background-blur:0px;
+
+    --unity-custom-font: unset;
+    --unity-gaps: 1;
+    --unity-background-color: rgba(var(--unity-inactive-darker-rgb), 0.2);
+
+    --enable-gaps: calc(var(--unity-gaps, 1) / (var(--unity-gaps, 1) + 0.00000000000000000000001));
+
+    --unity-badge-color: var(--unity-orange-2);
+
+    --unity-chat-bubble: 1;
+
+    --unity-chat-bubble-background-color: var(--background-secondary);
+    --unity-chat-bubble-border-color: var(--background-secondary-alt);
+    --unity-chat-bubble-code-background-color: var(--background-secondary-alt);
+
+    --unity-chat-bubble-max-width: 90%;
+    --unity-chat-bubble-border-radius: var(--unity-border-radius);
+
+    --unity-chat-bubble-box-shadow-h-offset: 0;
+    --unity-chat-bubble-box-shadow-v-offset: 4px;
+    --unity-chat-bubble-box-shadow-blur: 4px;
+
+    --unity-chat-bubble-box-shadow-color-h: 0;
+    --unity-chat-bubble-box-shadow-color-s: 0%;
+    --unity-chat-bubble-box-shadow-color-l: 0%;
+    --unity-chat-bubble-box-shadow-color-a: 0.16;
+
+    --unity-border-radius: 18px;
+    --unity-floating-blur-radius: 5px;
+    --border-width: 2px;
+
+    --unity-inactive-darker-rgb: 93, 93, 93;
+    --unity-inactive-rgb: 112, 112, 112;
+
+    --unity-blue: #0180fe;
+    --unity-blue-2: #0074e0;
+    --unity-blue-3: #3d91ff;
+    --unity-red: #ef2a47;
+    --unity-red-2: #e53a34;
+    --unity-red-3: #d72353;
+    --unity-magenta: #ee2b72;
+    --unity-orange: #FF9F1C;
+    --unity-orange-rgb: 255, 159, 28;
+    --unity-orange-2: #FC6B10;
+    --unity-green-1: #18dc81;
+    --unity-green-2: #17B76D;
+    --unity-green-3: #0D967C;
+    --unity-green-4: #9BBE22;
+    --unity-purple: #6345E5;
+    --unity-purple-2: #8064F4;
+    --unity-purple-3: #7882FC;
+    --unity-white: #fafafa;
+    --unity-black: #000;
+
+    --unity-inset: 10px;
+
+
+    /* DISCORD STOCK VARIABLE OVERRIDES */
+
+    --font-primary: var(--unity-custom-font, "Samsung One"), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: var(--unity-custom-font, "Samsung One"), "gg sans", "Noto Sans", , "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline: var(--unity-custom-font, "Samsung Sharp Sans"), "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --radius-sm: var(--unity-border-radius);
+
+    --background-message-highlight: var(--brand-experiment-30a);
+
+    --status-danger: var(--unity-badge-color);
+
+    --background-mentioned-hover: rgba(var(--unity-orange-rgb), 0.1);
+    --info-warning-foreground: var(--unity-orange);
+    --background-mentioned: rgba(var(--unity-orange-rgb), 0.2);
+
+    --search-popout-option-fade: rgba(var(--unity-background-secondary-rgb), 0.1);
+
+    --interactive-muted: rgb(var(--unity-inactive-rgb));
+    --text-warning: var(--unity-orange);
+
+    --background-primary: var(--unity-background-primary) !important;
+    --background-secondary: var(--unity-background-secondary);
+    --background-floating: rgb(var(--unity-background-secondary-rgb));
+    --background-tertiary: var(--unity-background-tertiary);
+
+    --background-secondary-alt: var(--unity-background-secondary-alt);
+    --background-modifier-active: rgba(var(--unity-background-primary-rgb), 0.7);
+    --background-modifier-selected: var(--brand-experiment-20a);
+    --modal-background: var(--unity-background-secondary);
+    --modal-footer-background: var(--modal-background);
+    --text-positive: var(--unity-green-2);
+    --color-danger: var(--unity-red);
+    --button-danger-background: var(--unity-red-3);
+    --button-secondary-background: var(--unity-background-secondary-alt);
+
+    --input-background: rgba(var(--unity-inactive-darker-rgb), 0.1);
+    --channeltextarea-background: var(--background-secondary);
+
+    --channel-icon: var(--brand-500);
+
+    --deprecated-text-input-bg: transparent !important;
+
+    --button-positive-background: var(--unity-green-3);
+
+    --status-positive: var(--unity-green-2);
+
+
+    --brand-experiment: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness)) !important;
+    --brand-experiment-100: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 98%) !important;
+    --brand-experiment-130: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 94.8%) !important;
+    --brand-experiment-160: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 91.5%) !important;
+    --brand-experiment-200: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 88.3%) !important;
+    --brand-experiment-230: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 85%) !important;
+    --brand-experiment-260: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 81.8%) !important;
+    --brand-experiment-300: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 78.5%) !important;
+    --brand-experiment-330: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 75.3%) !important;
+    --brand-experiment-360: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 72%) !important;
+    --brand-experiment-400: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 68.8%) !important;
+    --brand-experiment-430: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 65.5%) !important;
+    --brand-experiment-460: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 62.3%) !important;
+    --brand-experiment-445: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 45%) !important;
+    --brand-experiment-440: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), 40%) !important;
+    --brand-experiment-500: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness)) !important;
+    --brand-experiment-530: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*70.5%), 54.3%) !important;
+    --brand-experiment-560: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*56.4%), 49.7%) !important;
+    --brand-experiment-600: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 45%) !important;
+    --brand-experiment-630: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 40.3%) !important;
+    --brand-experiment-660: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 35.7%) !important;
+    --brand-experiment-700: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 31%) !important;
+    --brand-experiment-730: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 26.3%) !important;
+    --brand-experiment-760: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 21.7%) !important;
+    --brand-experiment-800: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 17%) !important;
+    --brand-experiment-830: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 12.3%) !important;
+    --brand-experiment-860: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 7.7%) !important;
+    --brand-experiment-900: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*51.5%), 3%) !important;
+    --brand-experiment-05a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.05) !important;
+    --brand-experiment-10a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.1) !important;
+    --brand-experiment-15a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.15) !important;
+    --brand-experiment-20a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.2) !important;
+    --brand-experiment-25a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.25) !important;
+    --brand-experiment-30a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.3) !important;
+    --brand-experiment-35a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.35) !important;
+    --brand-experiment-40a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.4) !important;
+    --brand-experiment-45a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.45) !important;
+    --brand-experiment-50a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.5) !important;
+    --brand-experiment-55a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.55) !important;
+    --brand-experiment-60a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.6) !important;
+    --brand-experiment-65a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.65) !important;
+    --brand-experiment-70a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.7) !important;
+    --brand-experiment-75a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.75) !important;
+    --brand-experiment-80a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.8) !important;
+    --brand-experiment-85a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.85) !important;
+    --brand-experiment-90a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.9) !important;
+    --brand-experiment-95a: hsla(var(--unity-accent-hue), calc(var(--saturation-factor, 1)*var(--unity-accent-saturation)), var(--unity-accent-lightness), 0.95) !important;
+
+    --brand-100: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%) !important;
+    --brand-130: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%) !important;
+    --brand-160: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%) !important;
+    --brand-200: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%) !important;
+    --brand-230: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%) !important;
+    --brand-260: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%) !important;
+    --brand-300: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%) !important;
+    --brand-330: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%) !important;
+    --brand-345: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%) !important;
+    --brand-360: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%) !important;
+    --brand-400: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%) !important;
+    --brand-430: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%) !important;
+    --brand-460: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%) !important;
+    --brand-500: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%) !important;
+    --brand-530: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%) !important;
+    --brand-560: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%) !important;
+    --brand-600: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%) !important;
+    --brand-630: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%) !important;
+    --brand-660: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%) !important;
+    --brand-700: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%) !important;
+    --brand-730: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%) !important;
+    --brand-760: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%) !important;
+    --brand-800: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%) !important;
+    --brand-830: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%) !important;
+    --brand-860: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%) !important;
+    --brand-900: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%) !important;
+    --brand-new-100: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%) !important;
+    --brand-new-130: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%) !important;
+    --brand-new-160: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%) !important;
+    --brand-new-200: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%) !important;
+    --brand-new-230: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%) !important;
+    --brand-new-260: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%) !important;
+    --brand-new-300: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%) !important;
+    --brand-new-330: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%) !important;
+    --brand-new-345: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%) !important;
+    --brand-new-360: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%) !important;
+    --brand-new-400: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%) !important;
+    --brand-new-430: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%) !important;
+    --brand-new-460: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%) !important;
+    --brand-new-500: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%) !important;
+    --brand-new-530: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%) !important;
+    --brand-new-560: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%) !important;
+    --brand-new-600: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%) !important;
+    --brand-new-630: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%) !important;
+    --brand-new-660: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%) !important;
+    --brand-new-700: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%) !important;
+    --brand-new-730: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%) !important;
+    --brand-new-760: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%) !important;
+    --brand-new-800: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%) !important;
+    --brand-new-830: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%) !important;
+    --brand-new-860: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%) !important;
+    --brand-new-900: hsl(var(--unity-accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%) !important;
+}
