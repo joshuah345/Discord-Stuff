@@ -1,0 +1,12 @@
+
+.container_def45c 
+/* floating container for open thread */
+    {
+    border: var(--threads-border-width, 0) solid var(--threads-border-color, transparent);
+    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+    margin: calc(var(--unity-inset) * var(--enable-gaps));
+    opacity: var(--unity-opacity, 1);
+    overflow: hidden;
+    /* hide overflow so borders will actually be rounded */
+    margin-right: calc(var(--threads-margin-right, var(--unity-inset))* var(--enable-gaps));
+}

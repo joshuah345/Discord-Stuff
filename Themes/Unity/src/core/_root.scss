@@ -44,7 +44,7 @@
     --unity-background-tertiary: #454545;
     --unity-background-tertiary-rgb: 69, 69, 69;
 
-    --unity-background-image:unset;
+    --unity-background-image:none;
 
     --unity-opacity: 1;
     
@@ -73,7 +73,7 @@
     --panels-border-width: unset;
 
     --chat-background-color: unset;
-    --chat-background-image: unset;
+    --chat-background-image: none;
     --chat-background-blur: unset;
     --chat-border-color: unset;
     --chat-border-width: unset;
@@ -101,7 +101,7 @@
     --unity-background-tertiary: #E0E0E0;
     --unity-background-tertiary-rgb: 224, 224, 224;
 
-    --unity-background-image: unset;
+    --unity-background-image: none;
 
     --unity-opacity: 1;
 
@@ -130,7 +130,7 @@
     --base-border-width: unset;
 
     --chat-background-color: unset;
-    --chat-background-image: unset;
+    --chat-background-image: invalid;
     --chat-background-blur: unset;
     --chat-border-color: unset;
     --chat-border-width: unset;

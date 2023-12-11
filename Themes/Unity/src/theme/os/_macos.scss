@@ -1,0 +1,4 @@
+// adjust margin for guilds on macOS because of titlebar/csd 
+:is(.platform-osx, [armcord-platform="darwin"]) .wrapper_a7e7a8 {
+    margin-top: var(--guilds-top-bottom-inset, calc(32px + calc(var(--enable-gaps) * var(--unity-inset))))!important;
+}
