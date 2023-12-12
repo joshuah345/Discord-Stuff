@@ -1,0 +1,53 @@
+.slider__22e99 {
+
+    .bar_e58961 {
+        transform: scaleY(0.80);
+    }
+    >.track_a48141 {
+
+       .mark_a41fa7 {
+            .markDash_dc3ae9 {
+                background-color: var(--primary-dark-500);
+                transform: scaleX(0.6);
+            }
+        }
+
+        >.grabber_d2868c {
+            height: 18px;
+            width: 18px;
+            border-radius: var(--radius-round);
+            border: none;
+            background-color: var(--brand-experiment);
+            transition: box-shadow 0.2s;
+            box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, 0.35);
+            position: relative;
+            transform: translateY(3.5px) translateX(-4px);
+
+            &::before {
+                content: "";
+                box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.289);
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                width: inherit;
+                height: inherit;
+                position: absolute;
+                border-radius: inherit;
+
+            }
+
+            &:hover::before {
+                opacity: 1;
+
+            }
+        }
+
+    }
+}
+
+
+    
+    .bar-1Bhnl9 {
+        /* background: rgb(var(--unity-inactive-rgb)); */
+        background-color: var(--primary-dark-500);
+    }
+

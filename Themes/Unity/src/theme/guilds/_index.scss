@@ -4,7 +4,7 @@ nav.wrapper_a7e7a8 {
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
     border: calc(var(--guilds-border-width, 0) * var(--enable-gaps)) solid var(--guilds-border-color, transparent);
     margin-top: calc(var(--enable-gaps) * var(--guilds-top-bottom-inset, var(--unity-inset)));
-    margin-bottom: calc(var(--guilds-top-bottom-inset, var(--unity-inset)) * var(--enable-gaps));
+    margin-bottom: calc(var(--guilds-top-bottom-inset, calc(var(--unity-inset) * 2)) * var(--enable-gaps));
     margin-right: calc(var(--unity-inset) * var(--enable-gaps));
     margin-left: calc(var(--guilds-margin-left, calc(var(--unity-inset)*1.5))* var(--enable-gaps));
     opacity: var(--unity-opacity, 1);
@@ -16,8 +16,6 @@ nav.wrapper_a7e7a8 {
     /* blends background color and image if set */
     -webkit-backdrop-filter: blur(var(--chat-background-blur, 0px));
     backdrop-filter: blur(var(--guilds-background-blur, 0px));
-
-
 
     .scroller__3d071 {
         background-color: transparent;

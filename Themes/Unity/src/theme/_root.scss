@@ -1,6 +1,6 @@
 :root {
 
-    &:root.custom-theme-background {
+    &.custom-theme-background {
        
     }
 
@@ -8,11 +8,14 @@
 
         &.custom-theme-background {
             --channel-icon: var(--primary-400);
+            --unity-chat-bubble-background-color: rgba(var(--unity-background-secondary-rgb) ,0.3);
         }
 
         --unity-accent-hue: 210;
         --unity-accent-saturation: 99%;
         --unity-accent-lightness: 50%;
+
+        --unity-accent-hsl: var(--unity-accent-hue) var(--unity-accent-saturation) var(--unity-accent-lightness);
 
         --unity-background-primary: var(--unity-black);
         --unity-background-primary-rgb: 0, 0, 0;

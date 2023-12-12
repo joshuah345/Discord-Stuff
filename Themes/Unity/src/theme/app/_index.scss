@@ -1,25 +1,27 @@
 /* Main layer */
+@use './base';
 
 .app_de4237 {
 
-.layer__2efaa .baseLayer__8fda3 {
-    margin: calc(var(--unity-inset) * var(--enable-gaps));
-}
+    .layer__2efaa .baseLayer__8fda3 {
+        margin: calc(var(--unity-inset) * var(--enable-gaps));
+    }
 
-// BACKGROUND
-.bg__12180::before {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    background-image: var(--unity-background-image, unset);
-    background-color: var(--unity-background-color, var(--background-tertiary));
-    background-blend-mode: multiply;
-    background-position: center;
-    /* blends background color and image if set */
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
-    backdrop-filter: blur(var(--unity-background-blur, 0));
-}
+    // BACKGROUND
+    .bg__12180::before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background-image: var(--unity-background-image, unset);
+        background-color: var(--unity-background-color, var(--background-tertiary));
+        background-blend-mode: multiply;
+        background-position: center;
+        /* blends background color and image if set */
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
+        backdrop-filter: blur(var(--unity-background-blur, 0));
+    }
+
 }

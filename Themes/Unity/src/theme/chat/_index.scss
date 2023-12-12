@@ -9,6 +9,12 @@
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
         backdrop-filter: blur(10px) !important;
+
+        .children__32014 {
+            &::after {
+                display: none;
+            }
+        }
     }
 
     .container_def45c .container__11d72.themed_b152d4 {
@@ -38,6 +44,12 @@
         backdrop-filter: blur(var(--chat-background-blur, 0px));
         overflow: hidden;
 
+        .content__1a4fe {
+            &::before {
+                display: none;
+            }
+        }
+
         :root.custom-theme-background & {
             background-blend-mode: normal;
         }
@@ -50,7 +62,7 @@
         .container__0eeef,
         .channelTextArea__2e60f,
         .header_b5ab54 {
-            background-color: transparent !important;
+            background-color: transparent;
             /* Set backgrounds to transparent so we can see wrapper's background */
         }
     }
@@ -58,6 +70,7 @@
 
 .chatContent__5dca8 {
     background-color: var(--chat-background-color, var(--background-primary));
+
 
     :root.custom-theme-background & {
         background-color: unset;

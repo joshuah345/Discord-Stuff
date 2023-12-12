@@ -2,6 +2,10 @@
 
 .form__13a2c {
 
+    &::before {
+        display: none;
+    }
+
     padding: 0 12px;
 
     &:has(.typing__6fd1d) {
@@ -17,6 +21,16 @@
     .channelTextArea__2e60f {
         margin-bottom: 12px;
         transition: margin-bottom ease-out 0.2s;
+
+        .custom-theme-background & {
+            background-color: transparent;
+        }
+
+        .scrollableContainer__33e06 {
+            &.hasConnectedBar__277ab{
+                background: hsla(var(--unity-accent-hsl) / 0.2);
+            }
+        }
 
         .actionBar__3cdab {
             .wrapper_c727b6 {
