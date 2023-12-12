@@ -1,0 +1,138 @@
+// Some highly advanced f*ckery for the first tab in settings
+
+#my-account-tab {
+
+    .userInfo__8f826,
+    .settingsBanner__8c4ee,
+    .accountProfileCard__22589>.bannerSVGWrapper__3e7b0,
+    .accountProfileCard__22589>.bannerSVGWrapper__3e7b0>foreignObject {
+        height: 260px;
+    }
+
+    .children_b15c64 {
+    
+        :has(.bannerSVGWrapper__3e7b0) {
+            justify-content: center;
+        }
+
+        .accountProfileCard__22589 {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            border-radius: calc(var(--unity-border-radius) + 16px);
+
+
+            .bannerSVGWrapper__3e7b0 {
+                z-index: 0;
+                width: auto;
+                /* 100% width (default) breaks margin, so do auto */
+                height: 265px;
+                border-radius: var(--unity-border-radius);
+                padding: 16px 16px 0 16px;
+
+                &:hover {
+                    filter: brightness(100%);
+                    transition: filter ease-out 1s;
+                    transition-delay: 450ms;
+                }
+
+                &:not(:hover) {
+                    filter: brightness(40%);
+                    transition: filter ease-out 1s;
+                    transition-delay: 450ms;
+                }
+
+                &:hover+.userInfo__8f826 {
+                    opacity: 5%;
+                    transition: opacity ease-out 1s;
+                    transition-delay: 450ms;
+                }
+
+                &:not(:has(.panelBanner__90b8a)) {
+                    border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
+                }
+
+                >foreignObject {
+                    mask: unset;
+                    transform-origin: center center;
+                    y: calc(100 - 260 / 1.44);
+
+
+                    >div {
+                        border-radius: var(--unity-border-radius);
+                    }
+                }
+
+            }
+
+
+            .userInfo__8f826 {
+                filter: drop-shadow(0px 0px 0px var(--unity-background-secondary-alt));
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                height: auto;
+                max-width: 70px;
+                /* make divs shrink to min size for hover to work */
+                /* make it as tall as banner */
+                position: absolute;
+                /* absolute positioning so div can be above bg */
+                top: 30px;
+                /* same margin as banner to center vertically */
+
+                /* reverse opacity on leave */
+                transition: opacity 1s;
+
+
+
+                .avatar__6c108 {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    /* manual z-index so banner doesn't cover stuff */
+                    text-align: center;
+                    border: 1px solid;
+
+                    foreignobject {
+                        mask: unset;
+                        border-radius: var(--radius-round);
+                    }
+                }
+
+                .badgeList__243e0 {
+                    justify-content: center;
+                    padding-right: 0;
+                }
+
+                .profileCardUsernameRow__4cbd8 {
+                    margin-top: 10px;
+                    color: var(--interactive-active);
+                    flex-direction: column;
+                    flex: 1 1 0;
+                    align-items: center;
+
+                    .userTag__4ca14 {
+                        background-color: var(--unity-background-primary);
+                        border-radius: var(--radius-round);
+                        padding: 5px 8px;
+                    }
+
+                    [class|=overflowMenuButton] {
+                        filter: drop-shadow(var(--guild-header-text-shadow));
+                        margin: 0;
+                        width: min-content;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}

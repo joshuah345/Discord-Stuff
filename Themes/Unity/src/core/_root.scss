@@ -1,4 +1,6 @@
-/* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide. Some are omitted from this theme file as they are considered optional. */
+/* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide.
+ Some are omitted from this theme file as they are considered optional. */
+
 /* GLOBAL VARIABLES */
 
  :root[class*="theme"] {
@@ -130,7 +132,7 @@
     --base-border-width: unset;
 
     --chat-background-color: unset;
-    --chat-background-image: invalid;
+    --chat-background-image: unset;
     --chat-background-blur: unset;
     --chat-border-color: unset;
     --chat-border-width: unset;
@@ -141,3 +143,4 @@
     --header-background-color: unset;
     --header-background-blur:unset;
 }
+

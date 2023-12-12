@@ -1,3 +1,5 @@
+/* GUILD LIST */
+
 nav.wrapper_a7e7a8 {
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
     border: calc(var(--guilds-border-width, 0) * var(--enable-gaps)) solid var(--guilds-border-color, transparent);
@@ -15,11 +17,13 @@ nav.wrapper_a7e7a8 {
     -webkit-backdrop-filter: blur(var(--chat-background-blur, 0px));
     backdrop-filter: blur(var(--guilds-background-blur, 0px));
 
+
+
     .scroller__3d071 {
         background-color: transparent;
 
         .custom-theme-background & {
-            background:var(--bg-overlay-app-frame, transparent);
+            background: var(--bg-overlay-app-frame, transparent);
             background-blend-mode: normal;
         }
     }

@@ -2,3 +2,10 @@
 :is(.platform-osx, [armcord-platform="darwin"]) .wrapper_a7e7a8 {
     margin-top: var(--guilds-top-bottom-inset, calc(32px + calc(var(--enable-gaps) * var(--unity-inset))))!important;
 }
+
+
+// don't color (workaround) titlebar area on mac while nitro theme is enabled, but only when gaps is on.
+
+:root.custom-theme-background .typeMacOS__496b0 {
+opacity: calc(var(--unity-gaps) / -1);
+}

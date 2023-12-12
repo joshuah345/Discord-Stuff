@@ -1,0 +1,97 @@
+// CHANNEL TEXT AREA
+
+.form__13a2c {
+
+    padding: 0 12px;
+
+    &:has(.typing__6fd1d) {
+        .channelTextArea__2e60f {
+            margin-bottom: 24px;
+        }
+    }
+
+    .typing__6fd1d {
+        animation: fadein 0.5s ease-in normal forwards;
+    }
+
+    .channelTextArea__2e60f {
+        margin-bottom: 12px;
+        transition: margin-bottom ease-out 0.2s;
+
+        .actionBar__3cdab {
+            .wrapper_c727b6 {
+                border-radius: var(--unity-border-radius);
+
+                button {
+                    &:first-of-type {
+                        border-top-left-radius: var(--unity-border-radius);
+                        border-bottom-left-radius: var(--unity-border-radius);
+                    }
+
+                    &:last-of-type {
+                        border-top-right-radius: var(--unity-border-radius);
+                        border-bottom-right-radius: var(--unity-border-radius);
+                    }
+                }
+            }
+        }
+
+        .attachedBars_da3c74 {
+            padding-bottom: 5px;
+            background: transparent;
+            border-radius: var(--unity-border-radius);
+
+            .replyBar_b64d74 {
+                border-radius: var(--unity-border-radius);
+            }
+
+        }
+
+        .buttons_ce5b56 {
+            margin-right: 6px;
+
+            // Send button stuff
+            .innerButton_debeee {
+                margin: 0;
+            }
+
+            .separator__8424b {
+                margin-left: 8px;
+
+                >.buttonContainer__9b459>button:last-of-type {
+                    width: 35px;
+                    height: 35px;
+                    align-items: center;
+                    align-self: center;
+                    border-radius: calc(var(--unity-border-radius) - 8px);
+                    margin-left: 10px;
+
+                    .contents_fb6220 {
+                        margin: 0 auto;
+                    }
+
+                    &:not(:disabled) {
+                        background-color: var(--brand-experiment);
+                    }
+                }
+            }
+        }
+
+        .autocomplete_df266d {
+            .rail_ad1aea {
+                background-color: transparent;
+
+                .wrapper__4f229 {
+                    background-color: rgba(var(--unity-background-tertiary-rgb), 0.45);
+                }
+
+            }
+        }
+    }
+
+}
+
+.scrollableContainer__33e06:not(.channelTextAreaInner-2_mflx) {
+    border-radius: calc(var(--unity-border-radius) - 8px);
+    overflow-y: overlay !important;
+}
