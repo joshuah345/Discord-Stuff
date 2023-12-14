@@ -1,0 +1,25 @@
+@use './zerespluginlibrary';
+
+.bd-toast {
+    border-radius: var(--radius-round);
+    background-color: var(--background-tertiary);
+
+    &.toast-info {
+        background-color: var(--brand-experiment);
+    }
+
+    &.toast-success {
+        background-color: var(--unity-green-2);
+    }
+
+   &.toast-danger, &.toast-error {
+    background-color: var(--unity-red);
+}
+
+&.toast-warning,
+&.toast-warn {
+    background-color: var(--unity-orange);
+
+}
+
+}

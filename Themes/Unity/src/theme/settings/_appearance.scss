@@ -1,0 +1,37 @@
+#appearance-tab {
+    .children_b15c64 {
+        .marginTop8__83d4b:nth-child(2) {
+
+            .presets_c3a603 {
+                border-radius: var(--unity-border-radius);
+                background-color: var(--unity-background-secondary);
+                padding: 10px 10px;
+            }
+
+            .container_c52416 {
+                margin-top: 0;
+                .labelRow__523f2 {
+                    border-radius: var(--unity-border-radius);
+                    background-color: var(--unity-background-secondary);
+                    padding: 10px 10px;
+                }
+            }
+
+            >div:not([class]) {
+                [role=radiogroup] {
+
+                    border-radius: var(--unity-border-radius);
+                    background-color: var(--unity-background-secondary);
+                    padding: 10px 10px;
+                }
+            }
+        }
+
+        div.text-md-normal__4afad:last-of-type {
+            background-color: var(--brand-experiment-25a);
+            border-radius: var(--unity-border-radius);
+            border: none;
+            padding: 16px 22px;
+        }
+    }
+}

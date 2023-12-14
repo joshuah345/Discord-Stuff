@@ -2,14 +2,18 @@
 
 .sidebar_ded4b5,
 .sidebar_ded4b5.hasNotice__1d477 {
-    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
-    margin: calc(var(--unity-inset) * var(--enable-gaps));
+    border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) 0 0;
+    margin: calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) / 2 * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps));
     opacity: var(--unity-opacity, 1);
     overflow: hidden;
     background-color: transparent;
     /* hide overflow so borders will actually be rounded */
 
-    :root:not(.custom-theme-background) &>nav,
+    :root.theme-dark:not(.custom-theme-background) & .scroller__4b984  {
+        background: var(--sidebar-background-color, var(--background-secondary));
+    }
+
+    &>nav,
     &.scrollerBase-_bVAAt {
         background-color: var(--sidebar-background-color, var(--background-secondary));
         background-image: var(--sidebar-background-image);
@@ -18,22 +22,23 @@
         background-blend-mode: multiply;
         border: calc(var(--sidebar-border-width, 0) * var(--enable-gaps)) solid var(--sidebar-border-color, transparent);
         backdrop-filter: blur(var(--sidebar-background-blur, 0px));
-        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps));
         margin-bottom: calc(15px * var(--enable-gaps));
 
 
         :root.custom-theme-background &{
             background-blend-mode: normal;
+            background: var(--bg-overlay-3, var((--sidebar-background-color), var(--background-secondary)));
         }
 
-        .custom-theme-background.theme-dark & {
-            background: var(--bg-overlay-3, var((--sidebar-background-color), var(--background-secondary)));
+        :root.custom-theme-background.theme-dark & {
+            
         }
     }
        /* PANELS */
-       :root:not(.custom-theme-background) & .panels__58331 {
+        .panels__58331 {
         opacity: var(--unity-opacity, 1);
-        border-radius: calc(var(--unity-border-radius)* var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) *  var(--enable-gaps));
         background-color: var(--panels-background-color, var(--background-secondary));
         background-image: var(--panels-background-image);
         -webkit-backdrop-filter: blur(var(--panels-background-blur));
@@ -46,18 +51,27 @@
         overflow: hidden;
 
         .avatarWrapper_ba5175 {
-            border-radius: calc(var(--unity-border-radius)) calc(var(--unity-border-radius) ) 0 0;
+            border-radius: calc(var(--unity-border-radius) - 16px ) 0 0 calc(var(--unity-border-radius) - 16px);
+        }
+
+        :root.custom-theme-background &{
+            background-blend-mode: normal;
+            background: var(--background-secondary);
         }
 
         .container_ca50b9 {
             margin-bottom: 0;
-
             
         }
 
-        :root.custom-theme-background & {
-            background-blend-mode: normal;
+        .container_d667ff {
+            background:transparent;
+            :root.custom-theme-background & {
+                background-blend-mode: normal;
+                background: var(--bg-overlay-3,var(--background-secondary-alt));
+            }
         }
+
 
     }
 }

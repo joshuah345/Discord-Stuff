@@ -4,7 +4,7 @@
 }
 
 
-// don't color (workaround) titlebar area on mac while nitro theme is enabled, but only when gaps is on.
+// don't color (workaround) drag area on mac while nitro theme is enabled, but only when gaps is on.
 
 :root.custom-theme-background .typeMacOS__496b0 {
 opacity: calc(var(--unity-gaps) / -1);

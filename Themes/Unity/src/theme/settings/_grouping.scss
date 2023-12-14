@@ -1,0 +1,15 @@
+.children_b15c64 {
+    
+
+.container_c52416 {
+    padding:10px;
+    background-color: var(--unity-background-secondary);
+
+    
+    &:has(+ .container_c52416) {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-bottom:0;
+    }
+}
+}

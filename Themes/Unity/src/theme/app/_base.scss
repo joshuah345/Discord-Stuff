@@ -1,5 +1,19 @@
 /* container for sidebar and chat) */
 .base__3e6af {
+
+.notice__5fd4c  {
+
+    margin: calc(var(--unity-inset) * var(--enable-gaps));
+    margin-bottom: 0px;
+    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
+    
+        &:last-child {
+            border-radius: 0 0 calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
+        }
+    }
+    .content__4bf10 {
+
+    
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
     margin: calc(var(--unity-inset) * var(--enable-gaps));
     border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
@@ -29,4 +43,5 @@
         left: 0;
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
     }
+}
 }

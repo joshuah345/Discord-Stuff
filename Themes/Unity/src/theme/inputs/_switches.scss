@@ -1,0 +1,130 @@
+/* Switch Body dimensions and position. also adjust the <input> for bd switches  */
+.container__871ba:not(.mini-6F2SSa),
+.bd-switch-body,
+.bd-switch input {
+    height: 20px;
+    width: 35px;
+    right: 10px;
+}
+
+/* Enabled Switch Body */
+.container__871ba.checked__6bdb0,
+.bd-switch input:checked+.bd-switch-body {
+    background-color: var(--brand-experiment) !important;
+}
+
+/* Disabled Switch Body */
+.container__871ba:not(.checked__6bdb0, .mini-6F2SSa),
+.bd-switch input:not(:checked)+.bd-switch-body {
+    background-color: transparent !important;
+    border: 1.8px solid rgb(var(--unity-inactive-rgb));
+}
+
+/* Switch slider dimensions */
+.slider__41d94,
+.bd-switch input+.bd-switch-body>.bd-switch-slider {
+    width: 30px;
+    height: 30px;
+}
+
+/* Enabled switch handle position (this is applied to the element containing the handle svg) */
+.checked__6bdb0>.slider__41d94,
+.bd-switch input:checked+.bd-switch-body>.bd-switch-slider {}
+
+/* Disabled switch handle position (this is applied to the element containing the handle svg */
+.container__871ba:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94,
+.bd-switch input:not(:checked)+.bd-switch-body>.bd-switch-slider {}
+
+/* Remove check/cross on switch */
+.slider__41d94>rect+svg,
+.bd-switch-body>.bd-switch-slider .bd-switch-symbol {}
+
+/* Subtle border on switch handle when enabled */
+.checked__6bdb0>.slider__41d94>rect,
+.bd-switch.bd-switch-checked>input+.bd-switch-body>.bd-switch-slider>.bd-switch-handle {}
+
+/* Subtle border on switch handle when disabled */
+:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94>rect,
+.bd-switch:not(.bd-switch-checked)>input+.bd-switch-body>.bd-switch-slider>.bd-switch-handle {
+    stroke: rgb(var(--unity-inactive-rgb));
+    /* use stroke instead of border as this element is a basic shape */
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    paint-order: stroke;
+}
+
+/* Mini Switches???  Currently no way to change bg based the on/off status. */
+
+.container-2nx-BQ.mini-6F2SSa>.slider-32CRPX {
+    width: 25px;
+    height: 25px;
+    transform: translateX(-5px);
+    /* Translate as left: is automated */
+    top: -5.5px;
+
+}
+
+.container-2nx-BQ.mini-6F2SSa input {
+    margin: 0 auto;
+}
+
+.container__4bde3 {
+    display: none;
+    width: 50%;
+    height: 50%;
+}
+
+
+.control_f6cce7 {
+
+    .container__871ba {
+
+        &.checked__6bdb0 {
+            background-color: var(--brand-experiment) !important;
+
+            svg.slider__41d94 {
+                left: 12px !important;
+                margin: 0;
+                top: 50%;
+                transform: translateY(-50%) !important;
+
+                >rect {
+                    stroke: var(--brand-experiment);
+                    /* use stroke instead of border as this element is a basic shape */
+                }
+            }
+        }
+
+        &:not(.checked__6bdb0) {
+            background-color: transparent !important;
+
+            svg.slider__41d94 {
+                top: 50%;
+                margin: 0;
+                transform: translateY(-50%) translateX(-5px) !important;
+            }
+        }
+
+        svg.slider__41d94 {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+
+            >rect {
+                stroke: rgb(var(--unity-inactive-rgb));
+                stroke-width: 2px;
+                stroke-linejoin: round;
+                paint-order: stroke;
+                width: 20px;
+                height: 20px;
+                x: 4;
+                y: 0;
+
+                +svg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

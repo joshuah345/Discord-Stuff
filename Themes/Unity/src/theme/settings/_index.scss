@@ -1,2 +1,31 @@
 @use './my-account';
 @use './radios';
+@use './devices';
+@use './appearance';
+@use './grouping';
+
+.standardSidebarView__1129a {
+    
+
+    .button_afdfd9 {
+        border-radius: var(--unity-border-radius);
+    }
+
+    .card__4dc22 {
+        border-radius: var(--unity-border-radius);
+    }
+
+
+    .codeRedemptionRedirect_bc7f36.card-16VQ8C,
+    .formNotice-2nS8ey.cardPrimary-3qRT__,
+    .attendeeCTA__9f614
+
+    /* Hypesquad */
+        {
+        background-color: var(--brand-experiment-25a);
+        border-radius: var(--unity-border-radius);
+        border: none;
+        padding: 16px 22px;
+    }
+
+}

@@ -1,3 +1,44 @@
 /* MODALS */
 
-@use './userprofile'
+@use './userprofile';
+@use './quickswitcher';
+
+.root_a28985,
+.container__9d271,
+.focusLock-2tveLW[role="dialog"]:not([aria-label=image i], [aria-label^="Act"i]):where([aria-labelledby], [aria-label])>.root_a28985:not(.root_ef2095, .small-23Atuv),
+.focusLock-2tveLW[aria-modal=true]>:not(.fullscreenOnMobile__96797),
+.layer-2aCOJ3>div>div:not(.option-2eIyOn),
+.modal_d2e7a7>.wrapper-2bCxfR>div:not([class|="imageWrapper"]),
+.modalRoot__51794,
+.messagesPopoutWrap_b3b384,
+.container__8261a {
+    border-radius: var(--unity-border-radius);
+}
+
+[role=dialog] {
+        .footer__89240 {
+            border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
+    }
+
+    .flex_f5fbb7 {
+        &:has(.button_afdfd9) {
+            justify-content: space-around;
+
+            button {
+                border-radius: var(--unity-border-radius);
+                &:not([type=submit]) {
+                    background-color: var(--brand-experiment-35a);
+                    transition: background-color ease 0.2s;
+
+                    &:hover {
+                        background-color: var(--brand-experiment);
+                    }
+
+                    .contents_fb6220 {
+                        background-image: none;
+                    }
+                }
+            }
+        }
+    }
+}

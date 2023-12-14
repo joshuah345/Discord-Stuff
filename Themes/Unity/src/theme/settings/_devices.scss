@@ -1,0 +1,17 @@
+.sessions__3ce76 .children_b15c64
+
+/* device sessions */
+    {
+    background-color: var(--background-secondary);
+    border-radius: var(--unity-border-radius);
+    padding: 0 16px;
+    .session_f56359 {
+       
+        &:first-child {
+
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
