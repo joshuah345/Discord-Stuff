@@ -1,47 +1,63 @@
+@use '../keyframes';
+
 /* container for sidebar and chat) */
 .base__3e6af {
 
-.notice__5fd4c  {
+    transition: 
+        padding 1s keyframes.$cubic-bezier-launch;
 
-    margin: calc(var(--unity-inset) * var(--enable-gaps));
-    margin-bottom: 0px;
-    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
-    
+    padding: calc(var(--unity-inset) * var(--enable-gaps));
+
+
+    .notice__5fd4c {
+        transition: 
+        margin 1s keyframes.$cubic-bezier-launch,
+        border-radius 1s keyframes.$cubic-bezier-launch;
+
+        margin: calc(var(--unity-inset) * var(--enable-gaps));
+        margin-bottom: 0px;
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+
         &:last-child {
             border-radius: 0 0 calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
         }
     }
+
     .content__4bf10 {
+        transition: 
+        padding 1s keyframes.$cubic-bezier-launch,
+        border-radius 0.5s keyframes.$cubic-bezier-launch;
 
-    
-    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
-    margin: calc(var(--unity-inset) * var(--enable-gaps));
-    border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
-    opacity: var(--unity-opacity, 1);
-    background-color: var(--base-background-color, var(--background-primary));
-    background-image: var(--base-background-image);
-    background-blend-mode: multiply;
-    /* blends background color and image if set */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* disable tiling of image */
-
-    [customTitlebar] & {
-        border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
-    }
-
-
-    &:before {
+        padding: calc(var(--unity-inset) * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));
+        background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
+        border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
+        opacity: var(--unity-opacity, 1);
+        background-image: var(--base-background-image);
+        background-blend-mode: multiply;
+        /* blends background color and image if set */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         -webkit-backdrop-filter: blur(var(--base-background-blur, 0px));
         backdrop-filter: blur(var(--base-background-blur, 0px));
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+        /* disable tiling of image */
+
+        [customTitlebar] & {
+            border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
+        }
+
+        &:before {
+
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+            z-index: 0;
+        }
+
     }
-}
 }

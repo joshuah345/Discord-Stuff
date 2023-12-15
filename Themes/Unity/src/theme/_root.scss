@@ -8,7 +8,6 @@
 
         &.custom-theme-background {
             --channel-icon: var(--primary-400);
-            --unity-chat-bubble-background-color: rgba(var(--unity-background-secondary-rgb) ,0.3);
         }
 
         --unity-accent-hue: 210;
@@ -62,8 +61,9 @@
 
     }
 
-    &.theme-dark,
-    &.theme-light {
+    &.theme-dark, &.theme-light {
+
+        --unity-chat-bubble: 0;
         --header-background-blur: 0px;
 
         --unity-custom-font: unset;
@@ -71,10 +71,10 @@
         --unity-background-color: rgba(var(--unity-inactive-darker-rgb), 0.2);
 
         --enable-gaps: calc(var(--unity-gaps, 1) / (var(--unity-gaps, 1) + 0.00000000000000000000001));
+        --enable-chat-bubble: calc(var(--unity-chat-bubble, 1) / (var(--unity-chat-bubble, 1) + 0.00000000000000000000001));
 
         --unity-badge-color: var(--unity-orange-2);
 
-        --unity-chat-bubble: 1;
 
         --unity-chat-bubble-background-color: var(--background-secondary);
         --unity-chat-bubble-border-color: var(--background-secondary-alt);

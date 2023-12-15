@@ -2,14 +2,32 @@
 @use './userpanel';
 @use './textarea';
 @use '../../addons/chatbubbles';
+@use '../keyframes';
+
 
 .base__3e6af {
 
+    /* HEADER */
+
     .title_b7d661,
     .container__11d72.themed_b152d4 {
-        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps));
+        transition: border-radius 2s keyframes.$cubic-bezier1;
+
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
         backdrop-filter: blur(var(--header-background-blur));
+
+         &+* {
+            transition: 
+            padding 1s keyframes.$cubic-bezier1,
+            border-radius 2s keyframes.$cubic-bezier1,
+            margin-top 2s keyframes.$cubic-bezier1;
+    
+    
+            margin-top: calc(var(--unity-inset) * var(--enable-gaps));
+            background-color: var(--bg-overlay-chat, var(--chat-background-color, var(--background-primary)));
+            border-radius: calc(var(--unity-border-radius)  * var(--enable-gaps));
+         }
         .children__32014 {
             &::after {
                 display: none;
@@ -28,11 +46,16 @@
     :is(.chat__52833, .chat__52833.threadSidebarOpen_fa231d),
     .container__5c7e7,
     .container__10dc7 {
-        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps));
-        margin: calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) / 2 * var(--enable-gaps));
+
+        transition: 
+        margin-left 3s keyframes.$cubic-bezier1,
+        border-radius 2s keyframes.$cubic-bezier1,
+        opacity 1s keyframes.$cubic-bezier1;
+       
+        margin-left: calc(var(--unity-inset) / 2 * var(--enable-gaps));
         border: calc(var(--chat-border-width, 0) * var(--enable-gaps)) solid var(--chat-border-color, transparent);
         opacity: var(--unity-opacity, 1);
-        background-color: var(--bg-overlay-chat, var(--chat-background-color, var(--background-primary)));
+        background-color: var(--bg-overlay-chat);
         background-image: var(--chat-background-image);
         background-blend-mode: multiply;
         // blends background color and image if set 
@@ -51,7 +74,9 @@
         }
 
         .content__1a4fe {
-        margin-top: calc(var(--unity-inset) * var(--enable-gaps));
+        
+
+
         .container__93316 {
        
         }
@@ -100,7 +125,17 @@
 
 .chatContent__5dca8 {
     background-color: var(--chat-background-color, var(--background-primary));
-    border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) 0 0 ;
+    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
+
+    .newMessagesBar__8b6d7 {
+        border-radius: calc(calc(var(--unity-border-radius) - var(--unity-inset)));
+        top: 12px;
+    }
+
+    .jumpToPresentBar__0ff7f {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
 
     :root.custom-theme-background & {
         background-color: unset;

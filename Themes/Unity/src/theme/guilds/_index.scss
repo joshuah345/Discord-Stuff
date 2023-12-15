@@ -1,12 +1,17 @@
 /* GUILD LIST */
 
+@use '../keyframes';
+
 nav.wrapper_a7e7a8 {
+
+    transition: 
+        margin 3s keyframes.$cubic-bezier1,
+        border-radius 2s keyframes.$cubic-bezier-launch,
+        opacity 1s keyframes.$cubic-bezier-launch;
+
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
     border: calc(var(--guilds-border-width, 0) * var(--enable-gaps)) solid var(--guilds-border-color, transparent);
-    margin-top: calc(var(--enable-gaps) * var(--guilds-top-bottom-inset, var(--unity-inset)));
-    margin-bottom: calc(var(--guilds-top-bottom-inset, calc(var(--unity-inset) * 2)) * var(--enable-gaps));
-    margin-right: calc(var(--unity-inset) * var(--enable-gaps));
-    margin-left: calc(var(--guilds-margin-left, calc(var(--unity-inset)*1.5))* var(--enable-gaps));
+    margin: calc(var(--enable-gaps) * var(--guilds-top-bottom-inset, var(--unity-inset))) 0 calc(var(--guilds-top-bottom-inset, calc(var(--unity-inset) * 2)) * var(--enable-gaps)) calc(var(--guilds-margin-left, calc(var(--unity-inset)*1.5))* var(--enable-gaps));
     opacity: var(--unity-opacity, 1);
     background-color: var(--guilds-background-color, var(--background-tertiary));
     background-image: var(--guilds-background-image);

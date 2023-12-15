@@ -1,12 +1,9 @@
 /* Main layer */
 @use './base';
 @use './buttons';
+@use '../keyframes';
 
-.app_de4237 {
-
-    .layer__2efaa .baseLayer__8fda3 {
-        margin: calc(var(--unity-inset) * var(--enable-gaps));
-    }
+.app_b1f720 {
 
     // BACKGROUND
     .bg__12180::before {
@@ -23,6 +20,8 @@
         background-repeat: no-repeat;
         -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
         backdrop-filter: blur(var(--unity-background-blur, 0));
+
+        
     }
 
 }

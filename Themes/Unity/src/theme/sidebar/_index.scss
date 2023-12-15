@@ -1,9 +1,11 @@
 /* SIDEBAR */
 
+@use '../keyframes';
+
 .sidebar_ded4b5,
 .sidebar_ded4b5.hasNotice__1d477 {
-    border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps)) 0 0;
-    margin: calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) / 2 * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps)) calc(var(--unity-inset) * var(--enable-gaps));
+    border-radius: calc( var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
+    margin-right: calc(var(--unity-inset) / 2 * var(--enable-gaps)) ;
     opacity: var(--unity-opacity, 1);
     overflow: hidden;
     background-color: transparent;
@@ -15,6 +17,12 @@
 
     &>nav,
     &.scrollerBase-_bVAAt {
+
+        transition: 
+        margin-bottom 2s keyframes.$cubic-bezier1,
+        border-radius 2s keyframes.$cubic-bezier-launch,
+        border-width 1s keyframes.$cubic-bezier-launch;
+
         background-color: var(--sidebar-background-color, var(--background-secondary));
         background-image: var(--sidebar-background-image);
         background-size: cover;
@@ -22,7 +30,7 @@
         background-blend-mode: multiply;
         border: calc(var(--sidebar-border-width, 0) * var(--enable-gaps)) solid var(--sidebar-border-color, transparent);
         backdrop-filter: blur(var(--sidebar-background-blur, 0px));
-        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius)  * var(--enable-gaps));
         margin-bottom: calc(15px * var(--enable-gaps));
 
 
@@ -38,7 +46,7 @@
        /* PANELS */
         .panels__58331 {
         opacity: var(--unity-opacity, 1);
-        border-radius: calc(var(--unity-border-radius) - var(--unity-inset) *  var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--panels-background-color, var(--background-secondary));
         background-image: var(--panels-background-image);
         -webkit-backdrop-filter: blur(var(--panels-background-blur));
@@ -71,7 +79,6 @@
                 background: var(--bg-overlay-3,var(--background-secondary-alt));
             }
         }
-
 
     }
 }
