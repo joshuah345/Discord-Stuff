@@ -128,7 +128,7 @@
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
 
     .newMessagesBar__8b6d7 {
-        border-radius: calc(calc(var(--unity-border-radius) - var(--unity-inset)));
+        border-radius: calc(var(--unity-border-radius) - 12px );
         top: 12px;
     }
 
