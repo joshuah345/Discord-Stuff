@@ -1,6 +1,27 @@
 // USER PANEL in DMs 
-.userPanelInner_eddf4c.userProfileInner__8065b {
-    .userPanelOverlayBackground__34fc8 {
-        border-radius: var(--unity-border-radius);
+.content__1a4fe {
+
+    .container__93316 {
+      
+        +aside {
+         padding-left: calc(var(--unity-inset) * var(--enable-gaps));
+        }
+
+    }
+    .userPanelOuter__880e5 {
+      
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ; 
+
+    .userPanelInner_eddf4c.userProfileInner__8065b {
+      
+       border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ; 
+        overflow: hidden;
+         
+
+        .userPanelOverlayBackground__34fc8 {
+            border-radius: calc(var(--unity-border-radius));
+        }
     }
 }
+}
+

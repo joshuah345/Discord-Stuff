@@ -47,17 +47,7 @@
             border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
         }
 
-        &:before {
-
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
-            z-index: 0;
-        }
+  
 
     }
 }
