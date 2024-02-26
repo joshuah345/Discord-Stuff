@@ -4,24 +4,25 @@
 
 .sidebar_ded4b5,
 .sidebar_ded4b5.hasNotice__1d477 {
-    border-radius: calc( var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
-    margin-right: calc(var(--unity-inset) / 2 * var(--enable-gaps)) ;
+    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
+    margin-right: calc(var(--unity-inset) / 2 * var(--enable-gaps));
     opacity: var(--unity-opacity, 1);
     overflow: hidden;
     background-color: transparent;
     /* hide overflow so borders will actually be rounded */
 
-    :root.theme-dark:not(.custom-theme-background) & .scroller__4b984  {
+
+    :root.theme-dark:not(.custom-theme-background) & .scroller__4b984 {
         background: var(--sidebar-background-color, var(--background-secondary));
     }
 
     &>nav,
     &.scrollerBase-_bVAAt {
 
-        transition: 
-        margin-bottom 2s keyframes.$cubic-bezier1,
-        border-radius 2s keyframes.$cubic-bezier-launch,
-        border-width 1s keyframes.$cubic-bezier-launch;
+        transition:
+            margin-bottom 2s keyframes.$cubic-bezier1,
+            border-radius 2s keyframes.$cubic-bezier-launch,
+            border-width 1s keyframes.$cubic-bezier-launch;
 
         background-color: var(--sidebar-background-color, var(--background-secondary));
         background-image: var(--sidebar-background-image);
@@ -30,21 +31,20 @@
         background-blend-mode: multiply;
         border: calc(var(--sidebar-border-width, 0) * var(--enable-gaps)) solid var(--sidebar-border-color, transparent);
         backdrop-filter: blur(var(--sidebar-background-blur, 0px));
-        border-radius: calc(var(--unity-border-radius)  * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
         margin-bottom: calc(var(--unity-inset) * var(--enable-gaps));
 
 
-        :root.custom-theme-background &{
+        :root.custom-theme-background & {
             background-blend-mode: normal;
             background: var(--bg-overlay-3, var((--sidebar-background-color), var(--background-secondary)));
         }
 
-        :root.custom-theme-background.theme-dark & {
-            
-        }
+        :root.custom-theme-background.theme-dark & {}
     }
-       /* PANELS */
-        .panels__58331 {
+
+    /* PANELS */
+    .panels__58331 {
         opacity: var(--unity-opacity, 1);
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--panels-background-color, var(--background-secondary));
@@ -59,24 +59,25 @@
         overflow: hidden;
 
         .avatarWrapper_ba5175 {
-            border-radius: calc(var(--unity-border-radius) - 16px ) 0 0 calc(var(--unity-border-radius) - 16px);
+            border-radius: calc(var(--unity-border-radius) - 8px) 0 0 calc(var(--unity-border-radius) - 8px);
         }
 
-        :root.custom-theme-background &{
+        :root.custom-theme-background & {
             background-blend-mode: normal;
             background: var(--background-secondary);
         }
 
         .container_ca50b9 {
             margin-bottom: 0;
-            
+
         }
 
         .container_d667ff {
-            background:transparent;
+            background: transparent;
+
             :root.custom-theme-background & {
                 background-blend-mode: normal;
-                background: var(--bg-overlay-3,var(--background-secondary-alt));
+                background: var(--bg-overlay-3, var(--background-secondary-alt));
             }
         }
 
@@ -86,5 +87,3 @@
 :root:not(.custom-theme-background) .container_ca50b9 {
     background: none;
 }
-
-

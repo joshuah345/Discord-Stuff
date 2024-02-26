@@ -10,23 +10,31 @@
     /* HEADER */
 
     .title_b7d661,
-    .container__11d72.themed_b152d4 {
+    .container__11d72.themed_b152d4:not(:has(+ .chat_f9a759)) {
         transition: border-radius 2s keyframes.$cubic-bezier1;
 
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
         backdrop-filter: blur(var(--header-background-blur));
 
-         &+* {
+         &+*, & ~ .container__0eeef {
             transition: 
-            padding 1s keyframes.$cubic-bezier1,
             border-radius 2s keyframes.$cubic-bezier1,
             margin-top 2s keyframes.$cubic-bezier1;
     
     
             margin-top: calc(var(--unity-inset) * var(--enable-gaps));
-            background-color: var(--bg-overlay-chat, var(--chat-background-color, var(--background-primary)));
             border-radius: calc(var(--unity-border-radius)  * var(--enable-gaps));
+            background-color: var(--bg-overlay-chat,var(--chat-background-color, var(--background-primary)));
+            background-image: var(--chat-background-image);
+            background-blend-mode: multiply;
+            // blends background color and image if set 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+         &::before {
+            display:none;
          }
         .children__32014 {
             &::after {
@@ -35,9 +43,6 @@
         }
     }
 
-    .container_def45c {
-        background-color: transparent;
-    }
 
     .noChannel__7bbff,
     // Favorites tab 
@@ -75,11 +80,6 @@
 
         .content__1a4fe {
         
-
-
-        .container__93316 {
-       
-        }
 
             &::before {
                 display: none;
@@ -123,9 +123,10 @@
 
 }
 
-.chatContent__5dca8 {
+main {
     background-color: var(--chat-background-color, var(--background-primary));
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
+
 
     .newMessagesBar__8b6d7 {
         border-radius: calc(var(--unity-border-radius) - 12px );

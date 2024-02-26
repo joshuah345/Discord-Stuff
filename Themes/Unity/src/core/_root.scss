@@ -3,6 +3,8 @@
 
 /* GLOBAL VARIABLES */
 
+@use './temp';
+
  :root[class*="theme"] {
 
     --unity-custom-font: unset;
