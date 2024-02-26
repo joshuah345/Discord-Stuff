@@ -1,5 +1,7 @@
 .menu_dc52c6 {
     &:not(#account) {
+
+        border-radius: var(--unity-border-radius);
         >.scroller__750f5 {
 
             :not([role^="group"]) [role^="menuitem"]:only-of-type  {

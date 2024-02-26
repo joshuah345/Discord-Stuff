@@ -1,15 +1,76 @@
 .children_b15c64 {
-    
 
-.container_c52416 {
-    padding:10px;
-    background-color: var(--unity-background-secondary);
-
-    
-    &:has(+ .container_c52416) {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        margin-bottom:0;
+ :is([class^=margin]) {
+        .container_c52416:only-of-type {
+            padding: 20px 20px;
+          }
     }
-}
+    
+
+    .container_c52416 {
+        border-radius: var(--unity-border-radius) var(--unity-border-radius);
+        padding: 20px 20px;
+        background-color: var(--unity-background-secondary);
+        margin-top: 0;
+
+        &:first-of-type, &.marginTop8__83d4b.marginBottom20__64605 {
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+
+        
+
+        &:has(+ .container_c52416) {
+            margin-bottom: 0;
+
+            &:not(:first-of-type) {
+                border-radius: 0;
+                padding: 10px 20px;
+            }
+        }
+
+       &:is(.marginBottom20__64605,.marginBottom40__9109c) {
+
+            .divider_a2339a {
+                display: none;
+            }
+        }
+
+        &:only-of-type {
+            .divider_a2339a {
+                display: none;
+            }
+
+        }
+
+        &.marginTop20_d88ee7:has(+.container_c52416) {
+            border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom: 0;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        &:last-child:has(+.container_c52416) {
+            border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+
+            .divider_a2339a {
+                display: none;
+            }
+
+        }
+
+        &:not(:has(+.container_c52416)) {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border-radius: var(--unity-border-radius);
+            .divider_a2339a {
+                display: none;
+            }
+        }
+    }
 }

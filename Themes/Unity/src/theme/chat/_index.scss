@@ -123,7 +123,7 @@
 
 }
 
-main {
+main:not(.container_a87c5e) {
     background-color: var(--chat-background-color, var(--background-primary));
     border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
 
