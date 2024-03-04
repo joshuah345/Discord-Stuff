@@ -1,0 +1,17 @@
+.profileCustomizationSection__88eff {
+    .bioTextArea_a108c9 {
+        scrollbar-gutter: stable;
+
+        border: 2px transparent solid;
+        border-radius: var(--unity-border-radius);
+
+        &:focus-within {
+            border-color: var(--brand-experiment);
+        }
+
+        &:hover:not(:focus-within) {
+            border-color: var(--interactive-hover);
+        }
+    }
+
+}

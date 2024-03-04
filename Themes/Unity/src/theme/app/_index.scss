@@ -3,6 +3,10 @@
 @use './buttons';
 @use '../keyframes';
 
+:root ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 .app_b1f720 {
 
     // BACKGROUND

@@ -3,6 +3,7 @@
 @use './textarea';
 @use '../../addons/chatbubbles';
 @use '../keyframes';
+@use './forums';
 
 
 .base__3e6af {
@@ -17,32 +18,37 @@
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
         backdrop-filter: blur(var(--header-background-blur));
 
-         &+*, & ~ .container__0eeef {
-            transition: 
-            border-radius 2s keyframes.$cubic-bezier1,
-            margin-top 2s keyframes.$cubic-bezier1;
-    
-    
+
+        &+*,
+        &~.container__0eeef {
+            transition:
+                border-radius 2s keyframes.$cubic-bezier1,
+                margin-top 2s keyframes.$cubic-bezier1;
+
+
             margin-top: calc(var(--unity-inset) * var(--enable-gaps));
-            border-radius: calc(var(--unity-border-radius)  * var(--enable-gaps));
-            background-color: var(--bg-overlay-chat,var(--chat-background-color, var(--background-primary)));
+            border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+            background-color: var(--bg-overlay-chat, var(--chat-background-color, var(--background-primary)));
             background-image: var(--chat-background-image);
             background-blend-mode: multiply;
             // blends background color and image if set 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-         }
-         &::before {
-            display:none;
-         }
+
+
+        }
+
+        &::before {
+            display: none;
+        }
+
         .children__32014 {
             &::after {
                 display: none;
             }
         }
     }
-
 
     .noChannel__7bbff,
     // Favorites tab 
@@ -52,11 +58,11 @@
     .container__5c7e7,
     .container__10dc7 {
 
-        transition: 
-        margin-left 3s keyframes.$cubic-bezier1,
-        border-radius 2s keyframes.$cubic-bezier1,
-        opacity 1s keyframes.$cubic-bezier1;
-       
+        transition:
+            margin-left 3s keyframes.$cubic-bezier1,
+            border-radius 2s keyframes.$cubic-bezier1,
+            opacity 1s keyframes.$cubic-bezier1;
+
         margin-left: calc(var(--unity-inset) / 2 * var(--enable-gaps));
         border: calc(var(--chat-border-width, 0) * var(--enable-gaps)) solid var(--chat-border-color, transparent);
         opacity: var(--unity-opacity, 1);
@@ -79,18 +85,23 @@
         }
 
         .content__1a4fe {
-        
+
+            >div {
+                border-radius: var(--unity-border-radius);
+            }
+
 
             &::before {
                 display: none;
             }
+
             .buttons__3766a {
                 .buttonsInner_bca8fa {
                     border-radius: var(--unity-border-radius);
 
                     .button_d553e5 {
 
-                        border-radius: var(--unity-border-radius);
+                       
 
                         &:first-child {
                             border-radius: var(--unity-border-radius) 0 0 var(--unity-border-radius);
@@ -112,7 +123,6 @@
 
     }
 
-
     .container__0eeef,
     .channelTextArea__2e60f,
     .header_b5ab54,
@@ -125,11 +135,11 @@
 
 main:not(.container_a87c5e) {
     background-color: var(--chat-background-color, var(--background-primary));
-    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) ;
+    border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
 
 
     .newMessagesBar__8b6d7 {
-        border-radius: calc(var(--unity-border-radius) - 12px );
+        border-radius: calc(var(--unity-border-radius) - 12px);
         top: 12px;
     }
 

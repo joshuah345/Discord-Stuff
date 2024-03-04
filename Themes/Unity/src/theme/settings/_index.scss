@@ -2,21 +2,25 @@
 @use './radios';
 @use './devices';
 @use './appearance';
-@use './grouping';
 @use './serversettings';
 @use './tabs';
+@use './profiles';
 
 .standardSidebarView__1129a {
+    
     
 
     .button_afdfd9 {
         border-radius: var(--unity-border-radius);
+
+        &.removeButton__8ecd1.lookLink__93965 {
+            background-color: var(--status-danger);
+        }
     }
 
     .card__4dc22 {
         border-radius: var(--unity-border-radius);
     }
-
 
     .codeRedemptionRedirect_bc7f36.card-16VQ8C,
     .formNotice-2nS8ey.cardPrimary-3qRT__,

@@ -4,10 +4,8 @@
 .base__3e6af {
 
     transition: 
-        padding 1s keyframes.$cubic-bezier-launch;
-
+    padding 1s keyframes.$cubic-bezier-launch;
     padding: calc(var(--unity-inset) * var(--enable-gaps));
-
 
     .notice__5fd4c {
         transition: 
@@ -46,8 +44,6 @@
         [customTitlebar] & {
             border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
         }
-
-  
 
     }
 }

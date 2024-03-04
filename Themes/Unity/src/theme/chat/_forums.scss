@@ -1,0 +1,27 @@
+
+
+.list__5ced9 {
+
+    .card__691f2 {
+        .mainCard__8a660 {
+            border-radius: var(--unity-border-radius);
+
+            + .matchingPostsRow__510be {
+                border-radius: var(--unity-border-radius);
+                margin-top: 4px;
+            }
+        }
+        .container__1b27a {
+
+            border-radius: calc(var(--unity-border-radius) + 12px);
+        }
+    }
+}
+
+
+.chat__52833:has(~ .notFloating__80043) {
+    .content__23cab[role=list] {
+        min-width: unset;
+        width: 95%;
+    }
+}

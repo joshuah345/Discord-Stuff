@@ -41,6 +41,32 @@
         }
 
         :root.custom-theme-background.theme-dark & {}
+
+        button.searchBarComponent__22760 {
+            border-radius: calc(var(--unity-border-radius) - 10px);
+        }
+
+        ul {
+            li {
+                border-radius: calc(var(--unity-border-radius) - 8px);
+
+                .unread__48cf4 {
+                    border-radius: var(--radius-round);
+                    margin: 0 0 0 10px;
+                    height: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: height cubic-bezier( 0.39, 0.46, 0, 0.98 ) 350ms;
+                }
+
+                &:hover {
+                    .unread__48cf4 {
+                        height: 80%;
+                    }
+                }
+
+            }
+        }
     }
 
     /* PANELS */

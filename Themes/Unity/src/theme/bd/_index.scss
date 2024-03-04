@@ -57,11 +57,16 @@
     padding: 4px 30px;
 }
 
-.bd-button {
+button.bd-button {
     background-color: var(--brand-experiment);
-&:not(.bd-addon-button, .bd-view-button) {
-    border-radius: var(--unity-border-radius);
-}
+
+    &.bd-view-button.selected {
+        background-color: var(--brand-experiment);
+    }
+
+    &:not(.bd-addon-button, .bd-view-button) {
+        border-radius: var(--unity-border-radius);
+    }
 }
 
 .bd-settings-group {
