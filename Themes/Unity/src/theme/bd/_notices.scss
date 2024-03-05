@@ -1,0 +1,16 @@
+.base__3e6af {
+    &:has(.bd-notice){
+
+        .bd-notice {
+            border-radius: calc(var(--unity-border-radius)* var(--enable-gaps));
+        padding-left: 28px;
+        margin-top: calc(2px * var(--enable-gaps));
+        }
+
+        #bd-notices {
+            margin-bottom: 10px;
+            margin-left: calc(var(--unity-inset) / 2 * var(--enable-gaps));
+            margin-right: calc(var(--unity-inset) / 2 * var(--enable-gaps));
+        }
+    } 
+}

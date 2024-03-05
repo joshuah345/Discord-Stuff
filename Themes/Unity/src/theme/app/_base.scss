@@ -3,14 +3,19 @@
 /* container for sidebar and chat) */
 .base__3e6af {
 
-    transition: 
-    padding 1s keyframes.$cubic-bezier-launch;
-    padding: calc(var(--unity-inset) * var(--enable-gaps));
+    :root[class*="full-motion"] & {
+        transition:
+            padding 1s keyframes.$cubic-bezier-launch;
+        padding: calc(var(--unity-inset) * var(--enable-gaps));
+    }
 
     .notice__5fd4c {
-        transition: 
-        margin 1s keyframes.$cubic-bezier-launch,
-        border-radius 1s keyframes.$cubic-bezier-launch;
+
+        :root[class*="full-motion"] & {
+            transition:
+                margin 1s keyframes.$cubic-bezier-launch,
+                border-radius 1s keyframes.$cubic-bezier-launch;
+        }
 
         margin: calc(var(--unity-inset) * var(--enable-gaps));
         margin-bottom: 0px;
@@ -22,9 +27,11 @@
     }
 
     .content__4bf10 {
-        transition: 
-        padding 1s keyframes.$cubic-bezier-launch,
-        border-radius 0.5s keyframes.$cubic-bezier-launch;
+        :root[class*="full-motion"] & {
+
+            transition: padding 1s keyframes.$cubic-bezier-launch,
+                border-radius 0.5s keyframes.$cubic-bezier-launch;
+        }
 
         padding: calc(var(--unity-inset) * var(--enable-gaps));
         border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));

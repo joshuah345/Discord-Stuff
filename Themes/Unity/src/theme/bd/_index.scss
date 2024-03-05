@@ -1,4 +1,13 @@
+@use './notices';
+@use './controls';
+
+
 .contentColumn_dc7d36 {
+
+    .bd-search-wrapper {
+        border-radius: var(--unity-border-radius);
+        padding: 5px 10px;
+    }
 
     .bd-addon-list {
         .bd-addon-card {
@@ -6,11 +15,11 @@
         }
     }
 
-    .bd-addon-header:has(~ .bd-switch-checked) {
-        background-color: var(--unity-green-2);
+    .bd-addon-header:has(.bd-switch-checked) {
+        background-color: var(--brand-experiment-10a);
     }
 
-    .contentColumn_dc7d36>.bd-settings-title {
+    >.bd-settings-title:first-of-type {
         font-size: 30px;
     }
 
@@ -65,7 +74,6 @@
         padding: 4px 30px;
     }
 
-
     .bd-settings-group {
         >.bd-settings-container {
             background-color: var(--background-secondary);
@@ -106,8 +114,12 @@
 
 }
 
-button.bd-button {
-    background-color: var(--brand-experiment);
+button.bd-button:not(.bd-button-color-transparent) {
+    .bd-addon-views & {
+        .bd-button.selected {
+        background-color: var(--brand-experiment);
+        }
+    }
 
     &.bd-view-button.selected {
         background-color: var(--brand-experiment);
@@ -115,16 +127,5 @@ button.bd-button {
 
     &:not(.bd-addon-button, .bd-view-button) {
         border-radius: var(--unity-border-radius);
-    }
-}
-
-#app-mount #bd-notices {
-    margin-left: calc(var(--unity-inset) * var(--enable-gaps));
-    margin-right: calc(var(--unity-inset) * var(--enable-gaps));
-
-    .bd-notice {
-        border-radius: calc(var(--unity-border-radius)* var(--enable-gaps));
-        padding-left: 28px;
-        margin-top: calc(2px * var(--enable-gaps));
     }
 }

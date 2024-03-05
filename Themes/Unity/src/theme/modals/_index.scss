@@ -21,6 +21,7 @@
             justify-content: space-around;
     
             button {
+                width: auto;
                 border-radius: var(--unity-border-radius);
                 &:not([type=submit]) {
                     background-color: var(--brand-experiment-35a);

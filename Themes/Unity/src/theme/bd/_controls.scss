@@ -1,0 +1,65 @@
+div.bd-switch {
+    input {
+        right: 10px;
+        &:checked+.bd-switch-body {
+            background-color: var(--brand-experiment);
+
+            svg.bd-switch-slider {
+                transform:translateY(-50%) translateX(0);
+
+                rect.bd-switch-handle {
+                    stroke: var(--brand-experiment);
+                }
+            }
+        }
+
+        &:not(:checked)+.bd-switch-body {
+            background-color: transparent;
+            border: 1.8px solid rgb(var(--unity-inactive-rgb));
+
+            svg.bd-switch-slider {
+                transform: translateY(-50%) translateX(-5px);
+
+                rect.bd-switch-handle {
+                    stroke: rgb(var(--unity-inactive-rgb));
+                    /* use stroke instead of border as this element is a basic shape */
+
+                }
+            }
+        }
+    }
+
+    & input:active+.bd-switch-body {
+        rect.bd-switch-handle {
+            width:20px;
+            height: 20px;
+        }
+    }
+
+    .bd-switch-body {
+        svg.bd-switch-slider {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            margin: 0;
+            top: 50%;
+
+            rect.bd-switch-handle {
+                stroke-width: 2px;
+                stroke-linejoin: round;
+                paint-order: stroke;
+                x: 4;
+                y: 0;
+
+                & {
+
+                }
+            }
+
+            svg.bd-switch-symbol {
+                display: none;
+            }
+        }
+    }
+
+}

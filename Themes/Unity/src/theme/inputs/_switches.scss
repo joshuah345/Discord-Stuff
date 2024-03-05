@@ -8,21 +8,17 @@
 }
 
 /* Enabled Switch Body */
-.container__871ba.checked__6bdb0,
-.bd-switch input:checked+.bd-switch-body {
+.container__871ba.checked__6bdb0 {
     background-color: var(--brand-experiment) !important;
 }
 
 /* Disabled Switch Body */
-.container__871ba:not(.checked__6bdb0, .mini-6F2SSa),
-.bd-switch input:not(:checked)+.bd-switch-body {
-    background-color: transparent !important;
+.container__871ba:not(.checked__6bdb0, .mini-6F2SSa){
     border: 1.8px solid rgb(var(--unity-inactive-rgb));
 }
 
 /* Switch slider dimensions */
-.slider__41d94,
-.bd-switch input+.bd-switch-body>.bd-switch-slider {
+.slider__41d94 {
     width: 30px;
     height: 30px;
 }
@@ -44,8 +40,7 @@
 .bd-switch.bd-switch-checked>input+.bd-switch-body>.bd-switch-slider>.bd-switch-handle {}
 
 /* Subtle border on switch handle when disabled */
-:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94>rect,
-.bd-switch:not(.bd-switch-checked)>input+.bd-switch-body>.bd-switch-slider>.bd-switch-handle {
+:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94>rect {
     stroke: rgb(var(--unity-inactive-rgb));
     /* use stroke instead of border as this element is a basic shape */
     stroke-width: 2px;
@@ -53,7 +48,7 @@
     paint-order: stroke;
 }
 
-/* Mini Switches???  Currently no way to change bg based the on/off status. */
+/* Mini Switches??? */
 
 .container-2nx-BQ.mini-6F2SSa>.slider-32CRPX {
     width: 25px;
