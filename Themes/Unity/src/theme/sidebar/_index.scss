@@ -50,20 +50,39 @@
             li {
                 border-radius: calc(var(--unity-border-radius) - 8px);
 
+                &.container_f87d43 {
+
+                    li.containerDefault__3187b {
+
+                        .modeUnreadImportant_efb53e {
+
+                            .unread__48cf4 {
+                                margin: 0 0 0 12px;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                // line + line grow hover
                 .unread__48cf4 {
                     border-radius: var(--radius-round);
                     margin: 0 0 0 10px;
                     height: 10px;
                     top: 50%;
+                    width: 3px;
                     transform: translateY(-50%);
-                    transition: height cubic-bezier( 0.39, 0.46, 0, 0.98 ) 350ms;
+                    transition: height cubic-bezier(0.39, 0.46, 0, 0.98) 350ms
                 }
 
                 &:hover {
                     .unread__48cf4 {
-                        height: 80%;
+                        height: 20px;
                     }
                 }
+
 
             }
         }
