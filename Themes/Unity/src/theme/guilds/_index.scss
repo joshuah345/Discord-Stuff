@@ -3,7 +3,6 @@
 @use '../keyframes';
 
 nav.wrapper_a7e7a8 {
-
     transition: 
         margin 3s keyframes.$cubic-bezier1,
         border-radius 2s keyframes.$cubic-bezier-launch,
@@ -29,7 +28,6 @@ nav.wrapper_a7e7a8 {
     .scroller__3d071 {
         background-color: transparent;
         padding-top: 10px;
-
         .custom-theme-background & {
             background: var(--bg-overlay-app-frame, transparent);
             background-blend-mode: normal;

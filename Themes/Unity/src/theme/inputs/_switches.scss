@@ -4,7 +4,7 @@
 .bd-switch input {
     height: 20px;
     width: 35px;
-    right: 10px;
+    
 }
 
 /* Enabled Switch Body */
@@ -14,7 +14,7 @@
 
 /* Disabled Switch Body */
 .container__871ba:not(.checked__6bdb0, .mini-6F2SSa){
-    border: 1.8px solid rgb(var(--unity-inactive-rgb));
+    border: 1.5px solid rgb(var(--unity-inactive-rgb));
 }
 
 /* Switch slider dimensions */

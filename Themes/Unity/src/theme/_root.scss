@@ -1,12 +1,12 @@
-:root {
+* {
 
     &.custom-theme-background {
        
     }
 
-    &.theme-dark {
+    &[class*="theme-dark"] {
 
-        &.custom-theme-background {
+        &[class*="custom-theme-background"] {
             --channel-icon: var(--primary-400);
         }
 
@@ -16,7 +16,7 @@
 
         --unity-accent-hsl: var(--unity-accent-hue) var(--unity-accent-saturation) var(--unity-accent-lightness);
 
-        --unity-background-primary: var(--unity-black);
+        --unity-background-primary: #000000;
         --unity-background-primary-rgb: 0, 0, 0;
         --unity-background-secondary: #2b2b2b;
         --unity-background-secondary-alt: #212020;
@@ -24,7 +24,7 @@
         --unity-background-tertiary: #454545;
         --unity-background-tertiary-rgb: 69, 69, 69;
 
-        --base-background-color: transparent;
+        --unity-background-floating: var(--unity-background-secondary)AA;
 
         --unity-opacity: 1;
 
@@ -33,9 +33,9 @@
     }
 
 
-    &.theme-light {
+    &[class*="theme-light"] {
 
-        &.custom-theme-background {
+        &[class*="custom-theme-background"] {
             --channel-icon: var(--primary-430);
         }
 
@@ -61,20 +61,21 @@
 
     }
 
-    &.theme-dark, &.theme-light {
+    &[class*="theme-dark"], 
+    &[class*="theme-light"]{
 
         --unity-chat-bubble: 0;
         --header-background-blur: 0px;
 
         --unity-custom-font: unset;
         --unity-gaps: 1;
-        --unity-background-color: rgba(var(--unity-inactive-darker-rgb), 0.2);
+
+        --unity-background-color: rgba(var(--unity-background-primary-rgb), 0.6);
 
         --enable-gaps: calc(var(--unity-gaps, 1) / (var(--unity-gaps, 1) + 0.00000000000000000000001));
         --enable-chat-bubble: calc(var(--unity-chat-bubble, 1) / (var(--unity-chat-bubble, 1) + 0.00000000000000000000001));
 
         --unity-badge-color: var(--unity-orange-2);
-
 
         --unity-chat-bubble-background-color: var(--background-secondary);
         --unity-chat-bubble-border-color: var(--background-secondary-alt);
@@ -117,7 +118,7 @@
         --unity-purple-2: #8064F4;
         --unity-purple-3: #7882FC;
         --unity-white: #fafafa;
-        --unity-black: #000;
+        --unity-black: #000000;
 
         --unity-inset: 10px;
 

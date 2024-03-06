@@ -1,13 +1,34 @@
 .checkbox_c7f690 {
- border-radius: var(--radius-round);
- overflow: hidden;
+    border-radius: var(--radius-round);
+    overflow: hidden;
 
- &.checked__24ad6 {
+    &.checked__24ad6 {
         background: var(--brand-experiment);
-       > svg > path {
-        fill: var(--interactive-active);
 
+        >svg>path {
+            fill: var(--interactive-active);
         }
     }
- 
+
+}
+
+[role="menuitemcheckbox"] {
+    svg {
+        &:has(.check__8d1bd) {
+            path.checkbox__45366 {
+            clip-path: circle(50% at 50% 50%);
+            transform: scale(1.2);
+            transform-origin: center center;
+            }
+        }
+
+        >path {
+            &[d^="M18.625 3H5.375"] {
+                d: path("M12 22.65C17.8818 22.65 22.65 17.8818 22.65 12C22.65 6.11817 17.8818 1.35 12 1.35C6.11817 1.35 1.35 6.11817 1.35 12C1.35 17.8818 6.11817 22.65 12 22.65Z");
+                fill: none;
+                stroke: currentColor;
+                stroke-width: 1.3;
+            }
+        }
+    }
 }

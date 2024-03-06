@@ -15,7 +15,7 @@ div.bd-switch {
 
         &:not(:checked)+.bd-switch-body {
             background-color: transparent;
-            border: 1.8px solid rgb(var(--unity-inactive-rgb));
+            border: 1.5px solid rgb(var(--unity-inactive-rgb));
 
             svg.bd-switch-slider {
                 transform: translateY(-50%) translateX(-5px);

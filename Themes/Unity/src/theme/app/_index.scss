@@ -12,40 +12,38 @@ body {
         background: none;
     }
 
-#app-mount {
-    background: none;
+    #app-mount {
+        background: none;
 
-    .app_b1f720 {
+        .app_b1f720 {
 
-        .app_de4237 {
-            background: none;
-
-            // BACKGROUND
-             .bg__12180  {
+            .app_de4237 {
                 background: none;
 
-                &::after {
-                    content: "";
-                    width: 100vw;
-                    height: 100vh;
-                    display: block;
-                    background-image: var(--unity-background-image, unset);
-                    background-color: var(--unity-background-color, var(--background-tertiary));
-                    background-blend-mode: multiply;
-                    background-position: center;
-                    /* blends background color and image if set */
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
-                    backdrop-filter: blur(var(--unity-background-blur, 0));
+                // BACKGROUND
+                .bg__12180 {
+                    
+                    background: unset;
+                        content: "";
+                        width: 100vw;
+                        height: 100vh;
+                        display: block;
+                        background-image: var(--unity-background-image, unset);
+                        background-color: var(--unity-background-color, var(--background-tertiary));
+                        background-blend-mode: multiply;
+                        background-position: center;
+                        /* blends background color and image if set */
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
+                        backdrop-filter: blur(var(--unity-background-blur, 0));
 
-
+                    }
                 }
             }
         }
     }
-}
-}
+
 
 .badge__63b33 {
     border-radius: var(--radius-round);
