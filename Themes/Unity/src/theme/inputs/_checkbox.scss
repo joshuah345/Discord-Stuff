@@ -1,0 +1,13 @@
+.checkbox_c7f690 {
+ border-radius: var(--radius-round);
+ overflow: hidden;
+
+ &.checked__24ad6 {
+        background: var(--brand-experiment);
+       > svg > path {
+        fill: var(--interactive-active);
+
+        }
+    }
+ 
+}

@@ -1,0 +1,9 @@
+.searchBarComponent__46512{
+    border-radius: var(--unity-border-radius);
+}
+
+[role="tabpanel"] {
+    .searchBar_ff8800 {
+        border-radius: calc(var(--unity-border-radius) - 8px);
+    }
+}

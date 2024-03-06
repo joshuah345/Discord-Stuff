@@ -1,5 +1,6 @@
 .menu_dc52c6 {
 
+
     [role="menuitemradio"]:not(:hover) {
         svg.icon_f09dde {
             >path:has(+ .radioSelection__5ed39) {
@@ -9,6 +10,7 @@
     }
 
     &:not(#account) {
+
 
         border-radius: var(--unity-border-radius);
 
@@ -20,6 +22,8 @@
             }
 
             >.item__183e8 {
+
+
                 &:first-of-type {
                     padding-top: 10px;
                     margin-top: 0;
@@ -126,7 +130,7 @@
     border-radius: var(--unity-border-radius);
     top: 8px;
     box-shadow: 0px 0px 10px 1px var(--unity-background-tertiary);
-    background-color: rgba(var(--unity-background-secondary-rgb), 0.8);
+    background: rgba(var(--unity-background-secondary-rgb), 0.8);
     -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));
     backdrop-filter: blur(var(--unity-floating-blur-radius));
     margin-top: 5px;
@@ -134,7 +138,7 @@
 
 .menu_dc52c6:not(#account),
 .popoutContainer__7b9a3 {
-    background-color: rgba(var(--unity-background-tertiary-rgb), 0.75);
+    background: rgba(var(--unity-background-tertiary-rgb), 0.75);
 }
 
 .popoutContainer__7b9a3 {
@@ -154,7 +158,7 @@
     content: "";
     border-radius: var(--unity-border-radius);
     transform-origin: center center;
-    width: calc(100% + 8px);
+    width: 100%;
     bottom: 0;
     left: 0;
     pointer-events: none;
@@ -172,7 +176,7 @@
 /* submenus with borders end up being the wrong size... looking at super reactions here */
 
 .menu_dc52c6:not(#account).submenu_acf564::before {
-    height: calc(100% - 4px);
+    height: 100%;
     width: 100%;
     display: block;
     position: absolute;
