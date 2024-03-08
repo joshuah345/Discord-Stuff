@@ -12,7 +12,7 @@
     .contentColumn_dc7d36 {
 
         .sectionTitle_e32631>.defaultMarginh1__902c1,
-        h2:first-of-type {
+        h2:first-of-type:not([class*="bd-"]) {
             text-align: center;
             font-size: 30px;
             margin-bottom: 50px;
