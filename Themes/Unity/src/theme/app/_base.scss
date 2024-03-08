@@ -38,15 +38,22 @@
         background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
         border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
         opacity: var(--unity-opacity, 1);
-        background-image: var(--base-background-image);
-        background-blend-mode: multiply;
-        /* blends background color and image if set */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        -webkit-backdrop-filter: blur(var(--base-background-blur, 0px));
-        backdrop-filter: blur(var(--base-background-blur, 0px));
         /* disable tiling of image */
+
+        &::before{
+            content:"";
+            width: 100%;
+            height: 100%;
+            background-image: var(--base-background-image);
+            background-blend-mode: multiply;
+            /* blends background color and image if set */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(var(--base-background-blur));
+            position: absolute;
+
+        }
 
         [customTitlebar] & {
             border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;

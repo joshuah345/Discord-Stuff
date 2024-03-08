@@ -248,18 +248,24 @@
   background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
   border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
   opacity: var(--unity-opacity, 1);
+  /* disable tiling of image */
+}
+:root[class*=full-motion] .base__3e6af .content__4bf10 {
+  transition: padding 1s cubic-bezier(0.09, 0.675, 0.185, 0.98), border-radius 0.5s cubic-bezier(0.09, 0.675, 0.185, 0.98);
+}
+.base__3e6af .content__4bf10::before {
+  content: "";
+  width: 100%;
+  height: 100%;
   background-image: var(--base-background-image);
   background-blend-mode: multiply;
   /* blends background color and image if set */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(var(--base-background-blur, 0px));
-  backdrop-filter: blur(var(--base-background-blur, 0px));
-  /* disable tiling of image */
-}
-:root[class*=full-motion] .base__3e6af .content__4bf10 {
-  transition: padding 1s cubic-bezier(0.09, 0.675, 0.185, 0.98), border-radius 0.5s cubic-bezier(0.09, 0.675, 0.185, 0.98);
+  -webkit-backdrop-filter: blur(var(--base-background-blur));
+          backdrop-filter: blur(var(--base-background-blur));
+  position: absolute;
 }
 [customTitlebar] .base__3e6af .content__4bf10 {
   border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
@@ -348,10 +354,10 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
   background-color: transparent;
   /* hide overflow so borders will actually be rounded */
 }
-:root.theme-dark:not(.custom-theme-background) [class*=platform] .sidebar_ded4b5 .scroller__4b984,
-:root.theme-dark:not(.custom-theme-background) [class*=platform] .sidebar_ded4b5.hasNotice__1d477 .scroller__4b984 {
+:root.theme-dark:not(.custom-theme-background) .scroller__4b984 {
   background: var(--sidebar-background-color, var(--background-secondary));
 }
+
 [class*=platform] .sidebar_ded4b5 > nav, [class*=platform] .sidebar_ded4b5.scrollerBase-_bVAAt,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477 > nav,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt {
@@ -361,8 +367,8 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border: calc(var(--sidebar-border-width, 0) * var(--enable-gaps)) solid var(--sidebar-border-color, transparent);
-  -webkit-backdrop-filter: blur(var(--sidebar-background-blur, 0px));
-          backdrop-filter: blur(var(--sidebar-background-blur, 0px));
+  -webkit-backdrop-filter: blur(var(--sidebar-background-blur));
+          backdrop-filter: blur(var(--sidebar-background-blur));
   border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
   margin-bottom: calc(var(--unity-inset) * var(--enable-gaps));
 }
@@ -371,12 +377,14 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
 :root[class*=full-motion] [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt {
   transition: margin-bottom 2s cubic-bezier(0.5, 0.25, 0, 1), border-radius 2s cubic-bezier(0.09, 0.675, 0.185, 0.98), border-width 1s cubic-bezier(0.09, 0.675, 0.185, 0.98);
 }
+
 :root.custom-theme-background [class*=platform] .sidebar_ded4b5 > nav, :root.custom-theme-background [class*=platform] .sidebar_ded4b5.scrollerBase-_bVAAt,
 :root.custom-theme-background [class*=platform] .sidebar_ded4b5.hasNotice__1d477 > nav,
 :root.custom-theme-background [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt {
   background-blend-mode: normal;
   background: var(--bg-overlay-3, var(--sidebar-background-color, var(--background-secondary)));
 }
+
 [class*=platform] .sidebar_ded4b5 > nav button.searchBarComponent__22760, [class*=platform] .sidebar_ded4b5.scrollerBase-_bVAAt button.searchBarComponent__22760,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477 > nav button.searchBarComponent__22760,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt button.searchBarComponent__22760 {
@@ -403,6 +411,7 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
   background-blend-mode: normal;
   background: var(--background-secondary);
 }
+
 [class*=platform] .panels__58331 .container_ca50b9 {
   margin-bottom: 0;
   background: none;
@@ -410,7 +419,7 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
 [class*=platform] .panels__58331 .container_d667ff {
   background: transparent;
 }
-:root.custom-theme-background [class*=platform] .panels__58331 .container_d667ff {
+.custom-theme-background [class*=platform] .panels__58331 .container_d667ff {
   background-blend-mode: normal;
   background: var(--bg-overlay-3, var(--background-secondary-alt));
 }
