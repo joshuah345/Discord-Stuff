@@ -1,4 +1,11 @@
 .slider__22e99 {
+    .grabber_d2868c {
+        border-radius: var(--radius-round);
+        border-color: var(--brand-experiment);
+        background-color: var(--brand-experiment);
+    }
+
+&:not(.mini_d6d84c) {
 
     .bar_e58961 {
         transform: scaleY(0.80);
@@ -12,7 +19,7 @@
             }
         }
 
-        >.grabber_d2868c {
+       .grabber_d2868c {
             height: 18px;
             width: 18px;
             border-radius: var(--radius-round);
@@ -35,6 +42,7 @@
 
             }
 
+
             &:hover::before {
                 opacity: 1;
 
@@ -50,4 +58,4 @@
         /* background: rgb(var(--unity-inactive-rgb)); */
         background-color: var(--primary-dark-500);
     }
-
+}

@@ -1,7 +1,6 @@
 /* STICKER / GIF / EMOJI PICKER */
 
-.contentWrapper__321ed,
-.contentWrapper_eab878 {
+.contentWrapper_eab878, .contentWrapper__321ed {
     grid-template-rows: auto 24px;
     padding-bottom: 8px;
 }
@@ -11,18 +10,12 @@
     order: 2;
 }
 
-.slotsContainer-3Li39W {
-    background-color: var(--unity-background-floating);
-    -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));
-    backdrop-filter: blur(var(--unity-floating-blur-radius));
-}
-
-.container-3a5mk- {
+.wrapper__7a35f{
     background-color: transparent;
 }
 
 .navItem_df0bc1+.navItem_df0bc1 {
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 .navItem_df0bc1 {
@@ -43,7 +36,7 @@ section .contentWrapper__321ed,
 .standardStickerShortcut__5254d,
 #emoji-picker-tab-panel>.header__55964,
 .scroller_e89578.list__30719 {
-    background-color: rgba(var(--unity-background-secondary-rgb), 0.45);
+    background-color: var(--unity-background-floating);
     -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));
     backdrop-filter: blur(var(--unity-floating-blur-radius));
 }
@@ -57,7 +50,6 @@ section .contentWrapper__321ed,
     background-color: transparent;
 }
 
-.categoryListWithSearch-2jrzH6,
 .container_e4c233 {
     background-color: var(--unity-background-floating);
     -webkit-backdrop-filter: blur(var(--unity-floating-blur-radius));

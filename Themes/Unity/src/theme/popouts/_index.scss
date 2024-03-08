@@ -1,3 +1,16 @@
 @use './userpopout';
 @use './contextmenu';
 @use './contentpicker';
+
+
+[id^="popout"] {
+    [class^="popout__"], [role="dialog"]{
+        backdrop-filter: blur(var(--unity-floating-blur-radius));
+        border-radius: var(--unity-border-radius);
+    }
+}
+
+.tooltip__01384 {
+    backdrop-filter: blur(var(--unity-floating-blur-radius));
+        border-radius: var(--unity-border-radius);
+}

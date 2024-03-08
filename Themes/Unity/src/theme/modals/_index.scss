@@ -5,9 +5,7 @@
 
 .root_a28985,
 .container__9d271,
-.focusLock-2tveLW[role="dialog"]:not([aria-label=image i], [aria-label^="Act"i]):where([aria-labelledby], [aria-label])>.root_a28985:not(.root_ef2095, .small-23Atuv),
-.focusLock-2tveLW[aria-modal=true]>:not(.fullscreenOnMobile__96797),
-.layer-2aCOJ3>div>div:not(.option-2eIyOn),
+.focusLock__10aa5[aria-modal=true]>:not(.fullscreenOnMobile__96797)
 .modal_d2e7a7>.wrapper-2bCxfR>div:not([class|="imageWrapper"]),
 .modalRoot__51794,
 .messagesPopoutWrap_b3b384,
@@ -16,6 +14,16 @@
 }
 
 [role=dialog] {
+
+    &:has(div .modal__6a96b), &:has(> .modal__6a96b), & >div:has(.modal__6a96b) {
+        background: transparent;
+    }
+
+    .rootWithShadow__073a7:not(:has(.modal__6a96b)) {
+        backdrop-filter: blur(var(--unity-floating-blur-radius));
+        background-color: var(--unity-background-floating);
+    }
+
         .footer__89240 {
             border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
             justify-content: space-around;

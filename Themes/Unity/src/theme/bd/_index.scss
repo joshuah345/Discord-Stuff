@@ -129,3 +129,11 @@ button.bd-button:not(.bd-button-color-transparent) {
         border-radius: var(--unity-border-radius);
     }
 }
+
+[role="dialog"] {
+    &:has(.bd-modal-root) {
+        backdrop-filter: blur(var(--unity-floating-blur-radius));
+        border-radius: var(--unity-border-radius);
+        overflow:hidden;
+    }
+}

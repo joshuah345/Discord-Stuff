@@ -8,38 +8,28 @@
  * @invite BDGSZDYSQ
 */
 
-
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Unity.css");
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOne.css");
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans.css");
-
+@import url('https://super.user.github.io/Unity/Unity.css');
 
 /* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide.
  Some are omitted from this theme file as they are considered optional. */
- 
 /* GLOBAL VARIABLES */
 *[class*=theme-] {
-
   --unity-custom-font: unset;
-
+  --unity-wordmark: unset;
   --unity-gaps: 1;
-
   --unity-background-image: unset;
   --unity-background-blur: unset;
   --unity-inset: 10px;
   --unity-border-radius: 18px;
   --unity-floating-blur-radius: 5px;
-
   --unity-chat-bubble: 1;
   --unity-chat-bubble-background-color: var(--background-secondary);
   --unity-chat-bubble-border-color: var(--background-secondary-alt);
   --unity-chat-bubble-code-background-color: var(--background-secondary-alt);
   --unity-chat-bubble-max-width: 90%;
   --unity-chat-bubble-border-radius: var(--unity-border-radius);
-
   --unity-badge-color: var(--unity-orange-2);
-
-
+  --threads-margin-right: unset;
   --unity-background-floating: rgba(var(--unity-background-secondary-rgb), 0.5);
 }
 
@@ -57,37 +47,31 @@
   --unity-background-tertiary-rgb: 69, 69, 69;
   --unity-background-image:none;
   --unity-opacity: 1;
-
   --guilds-background-color: #00000091;
   --guilds-background-image: unset;
   --guilds-background-blur: unset;
   --guilds-border-color:unset;
   --guilds-border-width: unset;
-
   --sidebar-background-color:unset;
   --sidebar-background-image: unset;
   --sidebar-background-blur:unset;
   --sidebar-border-color: unset;
   --sidebar-border-width: unset;
-
   --base-background-color: unset;
   --base-background-image: unset;
   --base-background-blur: unset;
   --base-border-color:unset;
   --base-border-width: unset;
-
   --panels-background-color: unset;
   --panels-background-image: unset;
   --panels-background-blur: unset;
   --panels-border-color: unset;
   --panels-border-width: unset;
-
   --chat-background-color: unset;
   --chat-background-image: none;
   --chat-background-blur: unset;
   --chat-border-color: unset;
   --chat-border-width: unset;
-
   --threads-border-color: unset;
   --threads-border-width: unset;
   --header-background-color:unset;
@@ -108,37 +92,31 @@
   --unity-background-tertiary-rgb: 224, 224, 224;
   --unity-background-image: none;
   --unity-opacity: 1;
-
   --guilds-background-color: unset;
   --guilds-background-image: unset;
   --guilds-background-blur: unset;
   --guilds-border-color:unset;
   --guilds-border-width: unset;
-
   --sidebar-background-color:unset;
   --sidebar-background-image: unset;
   --sidebar-background-blur:unset;
   --sidebar-border-color: unset;
   --sidebar-border-width: unset;
-
   --panels-background-color: unset;
   --panels-background-image: unset;
   --panels-background-blur: unset;
   --panels-border-color: unset;
   --panels-border-width: unset;
-
   --base-background-color: unset;
   --base-background-image: unset;
   --base-background-blur: unset;
   --base-border-color:unset;
   --base-border-width: unset;
-
   --chat-background-color: unset;
   --chat-background-image: unset;
   --chat-background-blur: unset;
   --chat-border-color: unset;
   --chat-border-width: unset;
-
   --threads-border-color: unset;
   --threads-border-width: unset;
   --header-background-color: unset;

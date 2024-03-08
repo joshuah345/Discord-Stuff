@@ -1,9 +1,5 @@
 * {
 
-    &.custom-theme-background {
-       
-    }
-
     &[class*="theme-dark"] {
 
         &[class*="custom-theme-background"] {
@@ -24,7 +20,7 @@
         --unity-background-tertiary: #454545;
         --unity-background-tertiary-rgb: 69, 69, 69;
 
-        --unity-background-floating: var(--unity-background-secondary)AA;
+        
 
         --unity-opacity: 1;
 
@@ -64,7 +60,7 @@
     &[class*="theme-dark"], 
     &[class*="theme-light"]{
 
-        --unity-chat-bubble: 0;
+        --unity-chat-bubble: 1;
         --header-background-blur: 0px;
 
         --unity-custom-font: unset;
@@ -95,6 +91,7 @@
 
         --unity-border-radius: 18px;
         --unity-floating-blur-radius: 5px;
+        --unity-background-floating: rgba(var(--unity-background-secondary-rgb), 0.5);
         --border-width: 2px;
 
         --unity-inactive-darker-rgb: 93, 93, 93;
@@ -135,6 +132,8 @@
 
         --status-danger: var(--unity-badge-color);
 
+        --home-background: transparent;
+
         --background-mentioned-hover: rgba(var(--unity-orange-rgb), 0.1);
         --info-warning-foreground: var(--unity-orange);
         --background-mentioned: rgba(var(--unity-orange-rgb), 0.2);
@@ -146,14 +145,14 @@
 
         --background-primary: var(--unity-background-primary) !important;
         --background-secondary: var(--unity-background-secondary);
-        --background-floating: rgb(var(--unity-background-secondary-rgb));
+        --background-floating: var(--unity-background-floating);
         --background-tertiary: var(--unity-background-tertiary);
 
         --background-secondary-alt: var(--unity-background-secondary-alt);
         --background-modifier-active: rgba(var(--unity-background-primary-rgb), 0.7);
         --background-modifier-selected: var(--brand-experiment-20a);
-        --modal-background: var(--unity-background-secondary);
-        --modal-footer-background: var(--modal-background);
+        --modal-background: var(--unity-background-floating);
+        --modal-footer-background: transparent;
         --text-positive: var(--unity-green-2);
         --color-danger: var(--unity-red);
         --button-danger-background: var(--unity-red-3);

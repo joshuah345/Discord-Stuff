@@ -23,22 +23,6 @@
     height: 30px;
 }
 
-/* Enabled switch handle position (this is applied to the element containing the handle svg) */
-.checked__6bdb0>.slider__41d94,
-.bd-switch input:checked+.bd-switch-body>.bd-switch-slider {}
-
-/* Disabled switch handle position (this is applied to the element containing the handle svg */
-.container__871ba:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94,
-.bd-switch input:not(:checked)+.bd-switch-body>.bd-switch-slider {}
-
-/* Remove check/cross on switch */
-.slider__41d94>rect+svg,
-.bd-switch-body>.bd-switch-slider .bd-switch-symbol {}
-
-/* Subtle border on switch handle when enabled */
-.checked__6bdb0>.slider__41d94>rect,
-.bd-switch.bd-switch-checked>input+.bd-switch-body>.bd-switch-slider>.bd-switch-handle {}
-
 /* Subtle border on switch handle when disabled */
 :not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94>rect {
     stroke: rgb(var(--unity-inactive-rgb));
@@ -70,7 +54,7 @@
 }
 
 
-.control_f6cce7 {
+
 
     .container__871ba {
 
@@ -122,4 +106,3 @@
         }
     }
 
-}

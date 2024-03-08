@@ -5,6 +5,7 @@
 @use './serversettings';
 @use './tabs';
 @use './profiles';
+@use './connections';
 
 .standardSidebarView__1129a {
     .button_afdfd9 {
@@ -12,7 +13,11 @@
 
         &.removeButton__8ecd1.lookLink__93965 {
             background-color: var(--status-danger);
+            color: var(--interactive-active);
+            .contents_fb6220 {
+           --button--underline-color: transparent;
         }
+    }
     }
 
     .card__4dc22 {

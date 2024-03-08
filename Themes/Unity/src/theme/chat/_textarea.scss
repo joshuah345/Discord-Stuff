@@ -1,20 +1,23 @@
 // CHANNEL TEXT AREA
-
-
 .form__13a2c {
+    padding: 0 8px;
+
+    .wrapper_fbbb73 {
+        border-radius: var(--unity-border-radius);
+        margin-bottom: 4px;
+        background: transparent;
+        box-shadow: var(--elevation-low);
+    }
 
     &::before {
         display: none;
     }
 
-    padding: 0 12px;
 
     &:has(.typing__6fd1d) {
-
+        
         .channelTextArea__2e60f {
-
             margin-bottom: 24px;
-
         }
     }
 
@@ -23,18 +26,42 @@
     }
 
     .channelTextArea__2e60f {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+    
 
         :root.full-motion & {
-        transition: margin-bottom ease-out 0.2s;
+            transition: margin-bottom ease-out 0.2s;
         }
 
         .custom-theme-background & {
             background-color: transparent;
         }
 
-        .scrollableContainer__33e06 {
+        .autocomplete_df266d {
+            border-radius: var(--unity-border-radius);
+            background-color: var(--unity-background-floating);
+            backdrop-filter: blur(var(--unity-floating-blur-radius));
 
+            .rail_ad1aea {
+
+
+                .wrapper__4f229 {
+                    background: transparent;
+                }
+            }
+
+            ul[role="group"] {
+                .categoryHeader_f97a5f {
+                    background: none;
+
+                    .header__9f6dc[role="button"] {
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+
+        .scrollableContainer__33e06 {
             &:not(.channelTextAreaInner-2_mflx) {
                 border-radius: calc(var(--unity-border-radius) - 6px);
                 overflow-y: overlay !important;
@@ -71,7 +98,6 @@
             .replyBar_b64d74 {
                 border-radius: var(--unity-border-radius);
             }
-
         }
 
         .buttons_ce5b56 {
@@ -103,31 +129,15 @@
                 }
             }
         }
-
-        .autocomplete_df266d {
-            .rail_ad1aea {
-                background-color: transparent;
-
-                .wrapper__4f229 {
-                    background-color: rgba(var(--unity-background-tertiary-rgb), 0.45);
-                }
-
-            }
-        }
     }
-
 }
 
-
 /* SLATE TOOLBAR  */
-
 #slate-toolbar {
     border-radius: var(--unity-border-radius);
 
     .buttons_bee06d {
-
         button {
-
             border-radius: var(--unity-border-radius);
 
             &:first-of-type {

@@ -8,11 +8,22 @@
 
 .base__3e6af {
 
+    .noChat_ce920d {
+        border-radius: var(--unity-border-radius);
+        overflow:hidden;
+    }
+
+
+
     /* HEADER */
 
     .title_b7d661,
+    .subtitleContainer_f754d4,
     .container__11d72.themed_b152d4:not(:has(+ .chat_f9a759)) {
-        transition: border-radius 2s keyframes.$cubic-bezier1;
+
+        :root.full-motion & {
+            transition: border-radius 2s keyframes.$cubic-bezier1;
+        }
 
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
@@ -22,9 +33,9 @@
         &+*,
         &~.container__0eeef {
             :root[class*="full-motion"] & {
-            transition:
-                border-radius 2s keyframes.$cubic-bezier1,
-                margin-top 2s keyframes.$cubic-bezier1;
+                transition:
+                    border-radius 2s keyframes.$cubic-bezier1,
+                    margin-top 2s keyframes.$cubic-bezier1;
             }
 
             margin-top: calc(var(--unity-inset) * var(--enable-gaps));
@@ -36,6 +47,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
+
 
         }
 
@@ -78,7 +91,18 @@
         backdrop-filter: blur(var(--chat-background-blur, 0px));
         overflow: hidden;
 
+
+
+
         .tabBody_b3d268 {
+
+            .nowPlayingColumn_f5023f {
+                background: transparent;
+
+                aside {
+                    background: transparent;
+                }
+            }
 
             .itemCard__1f162 {
                 border-radius: calc(var(--unity-border-radius) - 16px);
@@ -106,7 +130,7 @@
 
                     .button_d553e5 {
 
-                       
+
 
                         &:first-child {
                             border-radius: var(--unity-border-radius) 0 0 var(--unity-border-radius);
@@ -132,7 +156,7 @@
     .channelTextArea__2e60f,
     .header_b5ab54,
     .wrapper__5c5cd {
-        background-color: transparent;
+        background: transparent;
         /* Set backgrounds to transparent so we can see wrapper's background */
     }
 
