@@ -3,14 +3,16 @@
 @use './contentpicker';
 
 
-[id^="popout"] {
-    [class^="popout__"], [role="dialog"]{
+[id^="popout"]:not(:has(#account, [class*="user"], [class*="Profile"])){
         backdrop-filter: blur(var(--unity-floating-blur-radius));
+        >div {
         border-radius: var(--unity-border-radius);
+
+        }
     }
-}
+
 
 .tooltip__01384 {
     backdrop-filter: blur(var(--unity-floating-blur-radius));
         border-radius: var(--unity-border-radius);
-}
+}      

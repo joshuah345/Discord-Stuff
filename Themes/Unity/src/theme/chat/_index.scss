@@ -117,6 +117,7 @@
 
             >div {
                 border-radius: var(--unity-border-radius);
+
             }
 
 
@@ -186,3 +187,8 @@ main:not(.container_a87c5e) {
 [customTitlebar] .base__3e6af {
     border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
 }
+
+.searchResultsWrap__9f374 {
+    border-radius: 0 var(--unity-border-radius) var(--unity-border-radius) 0;
+                    }
+                    

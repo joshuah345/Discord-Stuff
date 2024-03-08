@@ -8,16 +8,37 @@
 @use './connections';
 
 .standardSidebarView__1129a {
+
+    .contentColumn_dc7d36 {
+
+        .sectionTitle_e32631>.defaultMarginh1__902c1,
+        h2:first-of-type {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+
+            &>.headerContainer__6ac35 {
+                justify-content: center;
+                font-size: 30px;
+                margin-bottom: 10px;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    }
+
     .button_afdfd9 {
         border-radius: var(--unity-border-radius);
 
         &.removeButton__8ecd1.lookLink__93965 {
             background-color: var(--status-danger);
             color: var(--interactive-active);
+
             .contents_fb6220 {
-           --button--underline-color: transparent;
+                --button--underline-color: transparent;
+            }
         }
-    }
     }
 
     .card__4dc22 {
