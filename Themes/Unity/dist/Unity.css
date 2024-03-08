@@ -861,9 +861,17 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
 .base__3e6af .container__0eeef,
 .base__3e6af .channelTextArea__2e60f,
 .base__3e6af .header_b5ab54,
-.base__3e6af .wrapper__5c5cd {
+.base__3e6af .wrapper__5c5cd,
+.base__3e6af .container__8ee50 {
   background: transparent;
   /* Set backgrounds to transparent so we can see wrapper's background */
+}
+.base__3e6af .container__8ee50 {
+  border-top: none;
+}
+.base__3e6af .container__8ee50 + .divider_ffec75 {
+  width: 98%;
+  border-radius: var(--radius-round);
 }
 
 main:not(.container_a87c5e) {
