@@ -12,8 +12,9 @@
 
     &+.resizeHandle_f1a098 {
         margin: auto calc(var(--unity-inset) / 2);
-        height: 50vh;
+        height: 80vh;
         border-radius: var(--radius-round);
+        z-index: 3;
 
     }
 
