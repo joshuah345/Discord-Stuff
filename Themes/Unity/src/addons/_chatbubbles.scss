@@ -14,11 +14,10 @@
     border: calc(1px * var(--enable-chat-bubble)) solid var(--unity-chat-bubble-border-color, var(--background-primary-border-color));
     box-shadow: var(--unity-chat-bubble-box-shadow-h-offset) calc(var(--unity-chat-bubble-box-shadow-v-offset) * var(--enable-chat-bubble)) calc(var(--unity-chat-bubble-box-shadow-blur) * var(--enable-chat-bubble)) hsla(var(--unity-chat-bubble-box-shadow-color-h), var(--unity-chat-bubble-box-shadow-color-s), var(--unity-chat-bubble-box-shadow-color-l), calc(var(--unity-chat-bubble-box-shadow-color-a) * var(--enable-chat-bubble)));
 
-    &:has(.embedMedia_b473d2) {
+    &:has(.embedMedia_b473d2):not(:has(.imageContent__24964)) {
         width: unset;
     }
     
-  
 }
 
 .container_dbadf5 {
@@ -27,7 +26,7 @@
         padding: calc(5px * var(--enable-chat-bubble)) calc(5px * var(--enable-chat-bubble));
 
         .embedImage_e638a7 {
-            border-radius: calc(var(--unity-border-radius) - 7px * var(--enable-chat-bubble));
+            border-radius: calc(var(--unity-chat-bubble-border-radius) - 7px * var(--enable-chat-bubble));
         }
     }
 
@@ -36,19 +35,16 @@
         padding: calc(10px * var(--enable-chat-bubble));
 
         [class*="grid" i] {
-            border-radius: calc(var(--unity-border-radius) - 10px * var(--enable-chat-bubble));
+            border-radius: calc(var(--unity-chat-bubble-border-radius) - 10px * var(--enable-chat-bubble));
             overflow: hidden;
         }   
     }
 
     .inlineMediaEmbed__4270e {
-        border-radius: calc(var(--unity-border-radius) - 10px * var(--enable-chat-bubble));
+        border-radius: calc(var(--unity-chat-bubble-border-radius) - 10px * var(--enable-chat-bubble));
         padding:  calc(10px * var(--enable-chat-bubble)) calc(10px * var(--enable-chat-bubble));
     }
 
-    //.messageAttachmentMediaMosaic__65bfc {
-    //  border-radius: calc(var(--unity-border-radius) - 10px * var(--enable-chat-bubble));
-    //} 
 }
 
 
@@ -115,7 +111,7 @@
     background: linear-gradient(var(--unity-chat-bubble-code-background-color), var(--unity-chat-bubble-code-background-color));
     background-color: var(--background-secondary);
     background-size: calc(var(--enable-chat-bubble) * 1px);
-    border-radius: calc(var(--unity-border-radius) - 10px);
+    border-radius: calc(var(--unity-chat-bubble-border-radius) - 10px);
 }
 
 .markup_a7e664 blockquote,

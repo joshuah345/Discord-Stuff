@@ -8,12 +8,14 @@
 
 .base__3e6af {
 
+    .searchResultsWrap__9f374 {
+        background: transparent;
+    }
+
     .noChat_ce920d {
         border-radius: var(--unity-border-radius);
         overflow:hidden;
     }
-
-
 
     /* HEADER */
 
@@ -47,8 +49,6 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
-
 
         }
 
@@ -92,8 +92,6 @@
         overflow: hidden;
 
 
-
-
         .tabBody_b3d268 {
 
             .nowPlayingColumn_f5023f {
@@ -117,9 +115,7 @@
 
             >div {
                 border-radius: var(--unity-border-radius);
-
             }
-
 
             &::before {
                 display: none;
@@ -138,9 +134,7 @@
                         &:last-child {
                             border-radius: 0 var(--unity-border-radius) var(--unity-border-radius) 0;
                         }
-
                     }
-
                 }
             }
         }
@@ -148,7 +142,6 @@
         :root.custom-theme-background & {
             background-blend-mode: normal;
         }
-
     }
 
     .container__0eeef,

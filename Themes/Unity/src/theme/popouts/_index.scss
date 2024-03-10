@@ -1,18 +1,34 @@
-@use './userpopout';
-@use './contextmenu';
-@use './contentpicker';
+@use "./userpopout";
+@use "./contextmenu";
+@use "./contentpicker";
 
-
-[id^="popout"]:not(:has(#account, [class*="user"], [class*="Profile"])){
-        backdrop-filter: blur(var(--unity-floating-blur-radius));
-        >div {
-        border-radius: var(--unity-border-radius);
-
-        }
+div[id^="popout"] {
+  &:not(:has(#account, [class*="userPopout"])) {
+    > div {
+      border-radius: var(--unity-border-radius);
+      overflow: hidden;
+      z-index: 101;
     }
+  }
 
+  .streamPreview__1846c {
+    background: transparent;
+  }
+  &::before {
+    height: 100%;
+    width: 100%;
+    content: " ";
+    backdrop-filter: blur(var(--unity-floating-blur-radius));
+    border-radius: var(--unity-border-radius);
+    position: absolute;
+    display: block;
+    z-index: 0;
+    top:0;
+    left:0;
+  }
+}
 
 .tooltip__01384 {
-    backdrop-filter: blur(var(--unity-floating-blur-radius));
-        border-radius: var(--unity-border-radius);
-}      
+  backdrop-filter: blur(var(--unity-floating-blur-radius));
+  border-radius: var(--unity-border-radius);
+}
