@@ -18,7 +18,6 @@
 /* GLOBAL VARIABLES */
 *[class*=theme-] {
   --unity-custom-font: unset;
-  --unity-wordmark: unset;
   --unity-gaps: 1;
   --unity-background-image: unset;
   --unity-background-blur: unset;
@@ -32,7 +31,6 @@
   --unity-chat-bubble-max-width: 90%;
   --unity-chat-bubble-border-radius: var(--unity-border-radius);
   --unity-badge-color: var(--unity-orange-2);
-  --threads-margin-right: unset;
   --unity-background-floating: rgba(var(--unity-background-secondary-rgb), 0.5);
 }
 
