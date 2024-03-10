@@ -480,6 +480,15 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
   border-radius: var(--radius-round);
   z-index: 3;
 }
+.container__8ee50 {
+  border-top: none;
+}
+.container__8ee50 + .divider_ffec75 {
+  width: 95%;
+  margin: auto;
+  border-radius: var(--radius-round);
+}
+
 .content__1a4fe .container__93316 + aside {
   padding-left: calc(var(--unity-inset) * var(--enable-gaps));
 }
@@ -500,7 +509,7 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
 .form__13a2c .wrapper_fbbb73 {
   border-radius: var(--unity-border-radius);
   margin-bottom: 4px;
-  background: transparent;
+  background: var(--background-primary);
   box-shadow: var(--elevation-low);
 }
 .form__13a2c::before {
@@ -882,13 +891,6 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
   background: transparent;
   /* Set backgrounds to transparent so we can see wrapper's background */
 }
-.base__3e6af .container__8ee50 {
-  border-top: none;
-}
-.base__3e6af .container__8ee50 + .divider_ffec75 {
-  width: 98%;
-  border-radius: var(--radius-round);
-}
 
 main:not(.container_a87c5e) {
   background-color: var(--chat-background-color, var(--background-primary));
@@ -1217,12 +1219,12 @@ section .contentWrapper__321ed,
 div[id^=popout]:not(:has(#account, [class*=userPopout])) > div {
   border-radius: var(--unity-border-radius);
   overflow: hidden;
-  z-index: 101;
+  z-index: 102;
 }
 div[id^=popout] .streamPreview__1846c {
   background: transparent;
 }
-div[id^=popout]::before {
+div[id^=popout]::after {
   height: 100%;
   width: 100%;
   content: " ";
@@ -1231,7 +1233,7 @@ div[id^=popout]::before {
   border-radius: var(--unity-border-radius);
   position: absolute;
   display: block;
-  z-index: 0;
+  z-index: -1;
   top: 0;
   left: 0;
 }

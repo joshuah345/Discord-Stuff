@@ -20,3 +20,12 @@
 
     .notFloating__80043~& {}
 }
+
+.container__8ee50 {
+    border-top: none;
+    +.divider_ffec75 {
+        width: 95%;
+        margin: auto;
+        border-radius: var(--radius-round);
+    }
+}
