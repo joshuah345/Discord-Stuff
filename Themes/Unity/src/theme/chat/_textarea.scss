@@ -27,6 +27,12 @@
 
     .channelTextArea__2e60f {
         margin-bottom: 8px;
+
+        .threadSuggestionBar_b633f7 {
+            border-radius: var(--unity-border-radius);
+            margin-top: 5px;
+            box-shadow: none;
+        }
     
 
         :root.full-motion & {

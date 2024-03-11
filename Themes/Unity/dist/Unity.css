@@ -524,6 +524,11 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
 .form__13a2c .channelTextArea__2e60f {
   margin-bottom: 8px;
 }
+.form__13a2c .channelTextArea__2e60f .threadSuggestionBar_b633f7 {
+  border-radius: var(--unity-border-radius);
+  margin-top: 5px;
+  box-shadow: none;
+}
 :root.full-motion .form__13a2c .channelTextArea__2e60f {
   transition: margin-bottom ease-out 0.2s;
 }
@@ -1224,7 +1229,7 @@ div[id^=popout]:not(:has(#account, [class*=userPopout])) > div {
 div[id^=popout] .streamPreview__1846c {
   background: transparent;
 }
-div[id^=popout]::after {
+div[id^=popout]:not(:has(#account)):after {
   height: 100%;
   width: 100%;
   content: " ";

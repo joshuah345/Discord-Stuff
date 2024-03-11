@@ -15,7 +15,7 @@
     .streamPreview__1846c {
       background: transparent;
     }
-    &::after {
+    &:not(:has(#account)):after {
       height: 100%;
       width: 100%;
       content: " ";
