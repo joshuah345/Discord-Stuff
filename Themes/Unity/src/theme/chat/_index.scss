@@ -31,7 +31,7 @@
             transition: border-radius 2s keyframes.$cubic-bezier1;
         }
 
-        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
         
         &::after {
@@ -40,6 +40,7 @@
             top:0;
             left: 0;
             backdrop-filter: blur(var(--header-background-blur));
+            z-index: -1;
         }
 
 
@@ -110,6 +111,8 @@
             top: 0;
             left:0;
             animation: chat-blur linear 1s forwards;
+            border-radius: calc(var(--unity-border-radius ) * var(--enable-gaps));
+            z-index: -1;
         }
 
         .tabBody_b3d268 {

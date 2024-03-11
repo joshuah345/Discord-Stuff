@@ -37,6 +37,7 @@ body {
                         background-repeat: no-repeat;
                         -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
                         backdrop-filter: blur(var(--unity-background-blur, 0));
+                        z-index: -3;
 
                     }
                 }

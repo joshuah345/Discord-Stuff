@@ -15,7 +15,11 @@
     .streamPreview__1846c {
       background: transparent;
     }
-    &:not(:has(#account)):after {
+
+    & [class*="animator"] > *:not(:has(#account)) {
+        border-radius: var(--unity-border-radius);
+    
+    &::after {
       height: 100%;
       width: 100%;
       content: " ";
@@ -24,11 +28,14 @@
       position: absolute;
       display: block;
       z-index: -1;
-      top: 0;
+      top:0;
       left: 0;
+      margin-left: inherit;
+      margin-right: inherit;
+      box-sizing: border-box;
     }
   }
-
+  }
 
 .tooltip__01384 {
   backdrop-filter: blur(var(--unity-floating-blur-radius));

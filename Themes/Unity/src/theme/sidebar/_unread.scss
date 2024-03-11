@@ -1,7 +1,22 @@
 .sidebar_ded4b5 {
     nav {
+        .bar__004d9 {
+            --backdrop-blur: var(--unity-floating-blur-radius);
+        &::after {
+            backdrop-filter: blur(var(--backdrop-blur));
+            content:"";
+            position: absolute;
+            width:100%;
+            height: 100%;
+            border-radius: inherit;
+            z-index: -1;
+            top:0;
+            left:0;
+        }
+    }
         ul li {
             border-radius: calc(var(--unity-border-radius) - 8px);
+
             &:hover {
                 &[class] {
                     .wrapper__7bcde.modeUnreadImportant_efb53e {
@@ -23,6 +38,7 @@
                         }
                     }
                 }
+
                 .wrapper__7bcde {
                     &::before {
                         position: absolute;
@@ -37,10 +53,12 @@
 
                         transition: height cubic-bezier(0.39, 0.46, 0, 0.98) 350ms, background-color 1.5s ease;
                     }
+
                     .unread__48cf4 {
                         display: none;
                     }
                 }
+
                 .wrapper__7bcde.modeUnreadImportant_efb53e {
                     &::before {
                         background-color: var(--interactive-active);

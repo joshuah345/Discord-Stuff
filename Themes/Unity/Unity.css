@@ -226,9 +226,6 @@
   }
 }
 /* container for sidebar and chat) */
-.base__3e6af {
-  border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
-}
 :root.platform-osx .base__3e6af::after {
   content: "";
   width: 100vw;
@@ -238,23 +235,6 @@
   position: absolute;
   top: 0;
   right: 0;
-}
-.base__3e6af::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: var(--base-background-image);
-  background-blend-mode: multiply;
-  /* blends background color and image if set */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-backdrop-filter: blur(var(--base-background-blur));
-          backdrop-filter: blur(var(--base-background-blur));
-  position: absolute;
-  z-index: 0;
-  border-radius: var(--unity-border-radius);
-  background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
 }
 :root[class*=full-motion] .base__3e6af {
   transition: padding 1s cubic-bezier(0.09, 0.675, 0.185, 0.98);
@@ -280,6 +260,25 @@
 }
 :root[class*=full-motion] .base__3e6af .content__4bf10 {
   transition: padding 1s cubic-bezier(0.09, 0.675, 0.185, 0.98), border-radius 0.5s cubic-bezier(0.09, 0.675, 0.185, 0.98);
+}
+.base__3e6af .content__4bf10::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: var(--base-background-image);
+  background-blend-mode: multiply;
+  /* blends background color and image if set */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(var(--base-background-blur));
+          backdrop-filter: blur(var(--base-background-blur));
+  position: absolute;
+  z-index: -2;
+  border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));
+  background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
+  top: 0;
+  left: 0;
 }
 [customTitlebar] .base__3e6af .content__4bf10 {
   border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
@@ -317,6 +316,7 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
   background-repeat: no-repeat;
   -webkit-backdrop-filter: blur(var(--unity-background-blur, 0));
   backdrop-filter: blur(var(--unity-background-blur, 0));
+  z-index: -3;
 }
 
 .badge__63b33 {
@@ -325,6 +325,21 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
 }
 
 /* SIDEBAR */
+.sidebar_ded4b5 nav .bar__004d9 {
+  --backdrop-blur: var(--unity-floating-blur-radius);
+}
+.sidebar_ded4b5 nav .bar__004d9::after {
+  -webkit-backdrop-filter: blur(var(--backdrop-blur));
+          backdrop-filter: blur(var(--backdrop-blur));
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
 .sidebar_ded4b5 nav ul li {
   border-radius: calc(var(--unity-border-radius) - 8px);
 }
@@ -375,14 +390,8 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
 [class*=platform] .sidebar_ded4b5 > nav, [class*=platform] .sidebar_ded4b5.scrollerBase-_bVAAt,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477 > nav,
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt {
-  background-color: var(--sidebar-background-color, var(--background-secondary));
-  background-image: var(--sidebar-background-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  background-color: transparent;
   border: calc(var(--sidebar-border-width, 0) * var(--enable-gaps)) solid var(--sidebar-border-color, transparent);
-  -webkit-backdrop-filter: blur(var(--sidebar-background-blur));
-          backdrop-filter: blur(var(--sidebar-background-blur));
   border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
   margin-bottom: calc(var(--unity-inset) * var(--enable-gaps));
 }
@@ -404,19 +413,38 @@ body #app-mount .app_b1f720 .app_de4237 .bg__12180 {
 [class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt button.searchBarComponent__22760 {
   border-radius: calc(var(--unity-border-radius) - 10px);
 }
-[class*=platform] .panels__58331 {
-  opacity: var(--unity-opacity, 1);
-  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
-  background-color: var(--panels-background-color, var(--background-secondary));
-  background-image: var(--panels-background-image);
-  -webkit-backdrop-filter: blur(var(--panels-background-blur));
-  backdrop-filter: blur(var(--panels-background-blur));
+[class*=platform] .sidebar_ded4b5 > nav::after, [class*=platform] .sidebar_ded4b5.scrollerBase-_bVAAt::after,
+[class*=platform] .sidebar_ded4b5.hasNotice__1d477 > nav::after,
+[class*=platform] .sidebar_ded4b5.hasNotice__1d477.scrollerBase-_bVAAt::after {
+  -webkit-backdrop-filter: blur(var(--sidebar-background-blur));
+          backdrop-filter: blur(var(--sidebar-background-blur));
+  background-color: var(--sidebar-background-color, var(--background-secondary));
+  background-image: var(--sidebar-background-image);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+}
+[class*=platform] .panels__58331 {
+  opacity: var(--unity-opacity, 1);
   border: calc(var(--panels-border-width, 0) * var(--enable-gaps)) solid var(--panels-border-color, transparent);
   overflow: hidden;
+  background: none;
+  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+  background-color: var(--panels-background-color, var(--background-tertiary));
+  background-image: var(--panels-background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  -webkit-backdrop-filter: blur(var(--panels-background-blur));
+          backdrop-filter: blur(var(--panels-background-blur));
 }
 [class*=platform] .panels__58331 .avatarWrapper_ba5175 {
   border-radius: calc(var(--unity-border-radius) - 8px) 0 0 calc(var(--unity-border-radius) - 8px);
@@ -791,7 +819,7 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
 .base__3e6af .title_b7d661,
 .base__3e6af .subtitleContainer_f754d4,
 .base__3e6af .container__11d72.themed_b152d4:not(:has(+ .chat_f9a759)) {
-  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
+  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
   background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
 }
 :root.full-motion .base__3e6af .title_b7d661,
@@ -808,6 +836,7 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
   left: 0;
   -webkit-backdrop-filter: blur(var(--header-background-blur));
           backdrop-filter: blur(var(--header-background-blur));
+  z-index: -1;
 }
 .base__3e6af .title_b7d661 + *, .base__3e6af .title_b7d661 ~ .container__0eeef,
 .base__3e6af .subtitleContainer_f754d4 + *,
@@ -877,6 +906,8 @@ nav.wrapper_a7e7a8 .scroller__3d071 {
   top: 0;
   left: 0;
   animation: chat-blur linear 1s forwards;
+  border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
+  z-index: -1;
 }
 .base__3e6af .noChannel__7bbff .tabBody_b3d268 .nowPlayingColumn_f5023f,
 .base__3e6af .sidebar_ded4b5 + * .tabBody_b3d268 .nowPlayingColumn_f5023f,
@@ -1289,7 +1320,10 @@ div[id^=popout]:not(:has(#account, [class*=userPopout])) > div {
 div[id^=popout] .streamPreview__1846c {
   background: transparent;
 }
-div[id^=popout]:not(:has(#account)):after {
+div[id^=popout] [class*=animator] > *:not(:has(#account)) {
+  border-radius: var(--unity-border-radius);
+}
+div[id^=popout] [class*=animator] > *:not(:has(#account))::after {
   height: 100%;
   width: 100%;
   content: " ";
@@ -1301,6 +1335,9 @@ div[id^=popout]:not(:has(#account)):after {
   z-index: -1;
   top: 0;
   left: 0;
+  margin-left: inherit;
+  margin-right: inherit;
+  box-sizing: border-box;
 }
 
 .tooltip__01384 {
@@ -2013,7 +2050,8 @@ button.bd-button:not(.bd-button-color-transparent):not(.bd-addon-button, .bd-vie
 }
 
 :is(.platform-osx, [armcord-platform=darwin]) .wrapper_a7e7a8 {
-  margin-top: var(--guilds-top-bottom-inset, calc(32px + var(--enable-gaps) * var(--unity-inset))) !important;
+  margin-top: var(--guilds-top-bottom-inset, calc(32px * (var(--enable-gaps) - 1) + 32px));
+  padding-top: calc(32px * (1 - var(--enable-gaps)));
 }
 
 :root.custom-theme-background .typeMacOS__496b0 {
