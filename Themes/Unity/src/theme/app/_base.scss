@@ -2,7 +2,7 @@
 
 /* container for sidebar and chat) */
 .base__3e6af {
-    :root.platform-osx &:before {
+    :root.platform-osx &::after {
         content:"";
         width: 100vw;
         height:30px;
@@ -11,6 +11,26 @@
         position:absolute;
         top: 0;
         right: 0;
+}
+
+border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
+
+&::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-image: var(--base-background-image);
+    background-blend-mode: multiply;
+    /* blends background color and image if set */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(var(--base-background-blur));
+    position: absolute;
+    z-index: 0;
+    border-radius: var(--unity-border-radius);
+    background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
+
 }
 
     :root[class*="full-motion"] & {
@@ -45,26 +65,11 @@
 
         padding: calc(var(--unity-inset) * var(--enable-gaps));
         border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));
-        background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
-        border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
+        background-color: transparent;
         opacity: var(--unity-opacity, 1);
         /* disable tiling of image */
 
-        &::before{
-            content:"";
-            width: 100%;
-            height: 100%;
-            background-image: var(--base-background-image);
-            background-blend-mode: multiply;
-            /* blends background color and image if set */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            backdrop-filter: blur(var(--base-background-blur));
-            position: absolute;
-            z-index: 0;
-
-        }
+        
 
         [customTitlebar] & {
             border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;

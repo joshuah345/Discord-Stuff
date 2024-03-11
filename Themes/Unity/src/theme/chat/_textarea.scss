@@ -46,7 +46,16 @@
         .autocomplete_df266d {
             border-radius: var(--unity-border-radius);
             background-color: var(--unity-background-floating);
-            backdrop-filter: blur(var(--unity-floating-blur-radius));
+             &::before {
+                content:"";
+                backdrop-filter: blur(30px);
+                position:absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+             }
 
             .rail_ad1aea {
 
