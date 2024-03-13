@@ -2,23 +2,85 @@
 @use "./contextmenu";
 @use "./contentpicker";
 
+div[id^="popout"] {
+  &:not(:has(#account, [class*="userPopout"])) {
+    > div {
+      border-radius: var(--unity-border-radius);
+      overflow: hidden;
+      z-index: 102;
 
-  div[id^="popout"] {
-    &:not(:has(#account, [class*="userPopout"])) {
-      > div {
+      &::after {
+        height: 100%;
+        width: 100%;
+        content: " ";
+        backdrop-filter: blur(var(--unity-floating-blur-radius));
         border-radius: var(--unity-border-radius);
-        overflow: hidden;
-        z-index: 102;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        margin-left: inherit;
+        margin-right: inherit;
+        box-sizing: border-box;
+      }
+
+      > div[class] {
+        background-color: var(--unity-background-floating);
+
+        &::after {
+          height: 100%;
+          width: 100%;
+          content: " ";
+          backdrop-filter: blur(var(--unity-floating-blur-radius));
+          border-radius: var(--unity-border-radius);
+          position: absolute;
+          display: block;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          margin-left: inherit;
+          margin-right: inherit;
+          box-sizing: border-box;
+        }
+
+        /* INBOX FIX */
+
+        .scroller__1c703 {
+          div:first-of-type {
+            .channel_d48f2d {
+              margin-top: 10px;
+            }
+          }
+
+          .channel_d48f2d {
+            border-radius: var(--unity-border-radius);
+            overflow: hidden;
+            padding-bottom:0;
+            margin-bottom: 16px;
+
+            .messages_f7999e {
+              border-radius: 0;
+            }
+            .channelHeader__5d30c {
+              padding: 12px 20px 12px 30px;
+            }
+            .collapseButton_b18eab {
+              left: 5px;
+            }
+          }
+        }
       }
     }
+  }
 
-    .streamPreview__1846c {
-      background: transparent;
-    }
+  .streamPreview__1846c {
+    background: transparent;
+  }
 
-    & [class*="animator"] > *:not(:has(#account)) {
-        border-radius: var(--unity-border-radius);
-    
+  & [class*="animator"] > *:not(:has(#account)) {
+    border-radius: var(--unity-border-radius);
+
     &::after {
       height: 100%;
       width: 100%;
@@ -28,14 +90,14 @@
       position: absolute;
       display: block;
       z-index: -1;
-      top:0;
+      top: 0;
       left: 0;
       margin-left: inherit;
       margin-right: inherit;
       box-sizing: border-box;
     }
   }
-  }
+}
 
 .tooltip__01384 {
   backdrop-filter: blur(var(--unity-floating-blur-radius));

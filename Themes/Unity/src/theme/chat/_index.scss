@@ -110,7 +110,7 @@
             position:absolute;
             top: 0;
             left:0;
-            animation: chat-blur linear 1s forwards;
+            animation: chat-blur linear 250ms forwards;
             border-radius: calc(var(--unity-border-radius ) * var(--enable-gaps));
             z-index: -1;
         }
