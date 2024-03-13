@@ -1316,6 +1316,48 @@ section .contentWrapper__321ed,
   border-radius: var(--unity-border-radius);
 }
 
+.container__2c498 {
+  background-color: var(--unity-background-floating);
+}
+
+.messagesPopout__22763:not(.scroller__1c703), .scroller__1c703:not(.scroller__1c703) {
+  margin-top: 10px;
+}
+.messagesPopout__22763 div:first-of-type .channel_d48f2d, .scroller__1c703 div:first-of-type .channel_d48f2d {
+  margin-top: 10px;
+}
+.messagesPopout__22763 .container__56e52, .scroller__1c703 .container__56e52 {
+  margin: 10px auto 0 auto;
+  border-radius: var(--unity-border-radius);
+}
+.messagesPopout__22763 .container__56e52 .messageContainer_aa7d14, .scroller__1c703 .container__56e52 .messageContainer_aa7d14 {
+  border-radius: unset;
+  overflow: hidden;
+  background-color: transparent;
+}
+.messagesPopout__22763 .container__56e52 .channelHeader__5d30c, .scroller__1c703 .container__56e52 .channelHeader__5d30c {
+  margin-left: 16px;
+  padding: 0 20px;
+  border-radius: var(--unity-border-radius);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.messagesPopout__22763 .channel_d48f2d, .scroller__1c703 .channel_d48f2d {
+  border-radius: var(--unity-border-radius);
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+.messagesPopout__22763 .channel_d48f2d .messages_f7999e, .scroller__1c703 .channel_d48f2d .messages_f7999e {
+  border-radius: 0;
+}
+.messagesPopout__22763 .channel_d48f2d .channelHeader__5d30c, .scroller__1c703 .channel_d48f2d .channelHeader__5d30c {
+  padding: 12px 20px 12px 30px;
+}
+.messagesPopout__22763 .channel_d48f2d .collapseButton_b18eab, .scroller__1c703 .channel_d48f2d .collapseButton_b18eab {
+  left: 5px;
+}
+
 div[id^=popout]:not(:has(#account, [class*=userPopout])) > div {
   border-radius: var(--unity-border-radius);
   overflow: hidden;
@@ -1356,24 +1398,6 @@ div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class]::aft
   margin-left: inherit;
   margin-right: inherit;
   box-sizing: border-box;
-}
-div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class] .scroller__1c703 div:first-of-type .channel_d48f2d {
-  margin-top: 10px;
-}
-div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class] .scroller__1c703 .channel_d48f2d {
-  border-radius: var(--unity-border-radius);
-  overflow: hidden;
-  padding-bottom: 0;
-  margin-bottom: 16px;
-}
-div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class] .scroller__1c703 .channel_d48f2d .messages_f7999e {
-  border-radius: 0;
-}
-div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class] .scroller__1c703 .channel_d48f2d .channelHeader__5d30c {
-  padding: 12px 20px 12px 30px;
-}
-div[id^=popout]:not(:has(#account, [class*=userPopout])) > div > div[class] .scroller__1c703 .channel_d48f2d .collapseButton_b18eab {
-  left: 5px;
 }
 div[id^=popout] .streamPreview__1846c {
   background: transparent;
@@ -1612,6 +1636,11 @@ div[id^=popout] [class*=animator] > *:not(:has(#account))::after {
   overflow: hidden;
 }
 
+.standardSidebarView__1129a .contentColumn_dc7d36#my-account-tab > div > .marginTop40__2b1fe:last-of-type .sectionTitle_e32631 > h2 {
+  font-size: unset;
+  margin-bottom: initial;
+  margin-top: initial;
+}
 .standardSidebarView__1129a .contentColumn_dc7d36 .sectionTitle_e32631 > .defaultMarginh1__902c1,
 .standardSidebarView__1129a .contentColumn_dc7d36 h2:first-of-type:not([class*=bd-]) {
   text-align: center;
@@ -2107,41 +2136,11 @@ button.bd-button:not(.bd-button-color-transparent):not(.bd-addon-button, .bd-vie
   border-radius: var(--unity-border-radius);
 }
 
-.children__32014:has([src*="419610859392860162"]) .overflow__87fe8,
-.children__32014:has([src*="419610859392860162"]) .headerText_f47574,
-.children__32014:has([src*="419610859392860162"]) .username__81ee6,
-.children__32014:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div,
-.contents_f41bb2:has([src*="419610859392860162"]) .overflow__87fe8,
-.contents_f41bb2:has([src*="419610859392860162"]) .headerText_f47574,
-.contents_f41bb2:has([src*="419610859392860162"]) .username__81ee6,
-.contents_f41bb2:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div,
-.link__2e8e1:has([src*="419610859392860162"]) .overflow__87fe8,
-.link__2e8e1:has([src*="419610859392860162"]) .headerText_f47574,
-.link__2e8e1:has([src*="419610859392860162"]) .username__81ee6,
-.link__2e8e1:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div,
-.userInfo__18240:has([src*="419610859392860162"]) .overflow__87fe8,
-.userInfo__18240:has([src*="419610859392860162"]) .headerText_f47574,
-.userInfo__18240:has([src*="419610859392860162"]) .username__81ee6,
-.userInfo__18240:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div {
+:where(.children__32014, .contents_f41bb2, .link__2e8e1, .userInfo__18240):has([src*="419610859392860162"]) :where(.overflow__87fe8, .headerText_f47574, .username__81ee6, .titleWrapper__482dc > h1 > div) {
   display: inline-flex;
   flex-wrap: wrap;
 }
-.children__32014:has([src*="419610859392860162"]) .overflow__87fe8:after,
-.children__32014:has([src*="419610859392860162"]) .headerText_f47574:after,
-.children__32014:has([src*="419610859392860162"]) .username__81ee6:after,
-.children__32014:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div:after,
-.contents_f41bb2:has([src*="419610859392860162"]) .overflow__87fe8:after,
-.contents_f41bb2:has([src*="419610859392860162"]) .headerText_f47574:after,
-.contents_f41bb2:has([src*="419610859392860162"]) .username__81ee6:after,
-.contents_f41bb2:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div:after,
-.link__2e8e1:has([src*="419610859392860162"]) .overflow__87fe8:after,
-.link__2e8e1:has([src*="419610859392860162"]) .headerText_f47574:after,
-.link__2e8e1:has([src*="419610859392860162"]) .username__81ee6:after,
-.link__2e8e1:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div:after,
-.userInfo__18240:has([src*="419610859392860162"]) .overflow__87fe8:after,
-.userInfo__18240:has([src*="419610859392860162"]) .headerText_f47574:after,
-.userInfo__18240:has([src*="419610859392860162"]) .username__81ee6:after,
-.userInfo__18240:has([src*="419610859392860162"]) .titleWrapper__482dc > h1 > div:after {
+:where(.children__32014, .contents_f41bb2, .link__2e8e1, .userInfo__18240):has([src*="419610859392860162"]) :where(.overflow__87fe8, .headerText_f47574, .username__81ee6, .titleWrapper__482dc > h1 > div):after {
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: row;

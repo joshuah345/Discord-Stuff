@@ -1,0 +1,50 @@
+.container__2c498 {
+    background-color: var(--unity-background-floating);
+}
+
+.messagesPopout__22763, .scroller__1c703 {
+    &:not(.scroller__1c703) {
+        margin-top: 10px;
+    }
+  div:first-of-type {
+    .channel_d48f2d {
+      margin-top: 10px;
+    }
+  }
+
+  .container__56e52 {
+    margin: 10px auto 0 auto;
+    border-radius: var(--unity-border-radius);
+
+    .messageContainer_aa7d14 {
+        border-radius: unset;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    .channelHeader__5d30c {
+        margin-left: 16px;
+        padding: 0 20px;
+        border-radius: var(--unity-border-radius);
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+  }
+
+  .channel_d48f2d {
+    border-radius: var(--unity-border-radius);
+    overflow: hidden;
+    padding-bottom:0;
+    margin-bottom: 16px;
+
+    .messages_f7999e {
+      border-radius: 0;
+    }
+    .channelHeader__5d30c {
+      padding: 12px 20px 12px 30px;
+    }
+    .collapseButton_b18eab {
+      left: 5px;
+    }
+  }
+}

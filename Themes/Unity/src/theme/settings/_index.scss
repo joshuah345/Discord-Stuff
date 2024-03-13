@@ -11,8 +11,14 @@
 
     .contentColumn_dc7d36 {
 
+        &#my-account-tab > div > .marginTop40__2b1fe:last-of-type .sectionTitle_e32631 > h2 {
+            font-size: unset;
+            margin-bottom: initial;
+            margin-top: initial;
+        }
+
         .sectionTitle_e32631>.defaultMarginh1__902c1,
-        h2:first-of-type:not([class*="bd-"]) {
+         h2:first-of-type:not([class*="bd-"]) {
             text-align: center;
             font-size: 30px;
             margin-bottom: 50px;
