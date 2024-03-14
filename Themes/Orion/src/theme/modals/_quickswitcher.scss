@@ -1,0 +1,121 @@
+[class*="layerContainer"] {
+    &:has(.quickswitcher_a3d29a) {
+        .backdrop__7e89b {
+            background: transparent !important;
+        }
+    }
+}
+
+@keyframes heightmax {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 600px;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+[role=dialog] {
+
+    &:has(.quickswitcher_a3d29a) {
+        margin-left: 150px;
+    }
+
+    .container_f03f1d {
+
+        .quickswitcher_a3d29a {
+            opacity: 0;
+            width: 660px;
+            animation: fadein 0.2s 350ms ease-out forwards;
+
+            .match_a540b5 {
+                opacity: 0;;
+            }
+
+
+            .scroller__52ae7>[role=listbox] {
+                transition: height 500ms cubic-bezier(0, 0.21, 0.05, 0.99);
+            }
+
+            >input {
+                animation: fadein 200ms ease forwards;
+            }
+        }
+    }
+}
+
+
+
+#app-mount {
+
+    .searchBar_e4ea2a {
+
+        button {
+            transition: color 200ms ease;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                position: absolute;
+                border-radius: inherit;
+                display: block;
+            }
+        }
+
+        &:focus-within {
+            button {
+                color: transparent;
+            }
+        }
+    }
+
+    [role=dialog] .rootWithShadow__073a7:not(:has(.modal__6a96b))::after {
+        content: none;
+    }
+
+    @keyframes searchmagic {
+        from {
+            top: 0;
+        }
+
+        to {
+            top: calc(50vh - 180px);
+            height: 380px;
+            width: 660px;
+            border-radius: var(--unity-border-radius);
+        }
+    }
+
+    &:has(.quickswitcher_a3d29a) {
+        .searchBar_e4ea2a {
+
+            button {
+                color: transparent;
+
+                :root.full-motion & {
+                    &::after {
+                        animation: searchmagic 0.3s cubic-bezier(0, 0.21, 0.05, 0.99) forwards;
+                        background-color: var(--unity-background-floating);
+                        backdrop-filter: blur(var(--unity-floating-blur-radius));
+                        transition: background-color 0.1s ease, backdrop-filter 0.2s ease-out;
+                        left: calc(50vw - 660px);
+
+                    }
+                }
+            }
+        }
+    }
+}

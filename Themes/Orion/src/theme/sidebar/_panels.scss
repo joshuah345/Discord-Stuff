@@ -51,6 +51,7 @@
     justify-content: space-around;
     order: -1;
     width: 100%;
+    margin-left:4px;
 
     &:has(.avatarSpeaking__61fb1) {
         animation: speak-sweep 0.2s both ;

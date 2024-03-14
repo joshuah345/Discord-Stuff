@@ -1,11 +1,15 @@
 .sidebar_ded4b5 {
   &:has(+ [aria-label="Friends"]) {
     nav.privateChannels__93473 {
+      position: static;
       .searchBar_e4ea2a {
+        box-shadow: none;
         position: absolute;
-        left: 250px;
-        width: calc(100vw - 500px);
-        z-index: 3; 
+        left: 380px;
+        width: calc(100vw - 720px);
+        top:0;
+        height: 48px;
+        z-index: 6; 
         button {
             text-align: center;
         }
@@ -14,8 +18,9 @@
   }
 }
 
+main.container__5c7e7 {
 
-main.container__5c7e7[aria-label="Friends"] {
+&[aria-label="Friends"] {
     .tabBody_b3d268 {
         [role=tabpanel] {
         padding-top: 40px;
@@ -23,12 +28,19 @@ main.container__5c7e7[aria-label="Friends"] {
     }
 
     .upperContainer__993ba {
-        justify-content: flex-end;
+        justify-content: flex-start;
        .children__32014 {
         position: absolute;
         top: 60px;
         left: 20px;
+        width: calc(45vw + 70px);
+        overflow-x: scroll;
+        &::-webkit-scrollbar  {
+          background-color: transparent;
+        }
+       
        }
 
     }
+}
 }
