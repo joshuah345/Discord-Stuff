@@ -1,0 +1,34 @@
+.sidebar_ded4b5 {
+  &:has(+ [aria-label="Friends"]) {
+    nav.privateChannels__93473 {
+      .searchBar_e4ea2a {
+        position: absolute;
+        left: 250px;
+        width: calc(100vw - 500px);
+        z-index: 3; 
+        button {
+            text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+main.container__5c7e7[aria-label="Friends"] {
+    .tabBody_b3d268 {
+        [role=tabpanel] {
+        padding-top: 40px;
+        }
+    }
+
+    .upperContainer__993ba {
+        justify-content: flex-end;
+       .children__32014 {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+       }
+
+    }
+}
