@@ -4,8 +4,8 @@
 
 [class*=platform] {
 
-    .sidebar_ded4b5,
-    .sidebar_ded4b5.hasNotice__1d477 {
+    .sidebar_e031be,
+    .sidebar_e031be.hasNotice_cc284c {
         border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps)) 0 0;
         margin-right: calc(var(--unity-inset) / 2 * var(--enable-gaps));
         opacity: var(--unity-opacity, 1);
@@ -14,7 +14,7 @@
         /* hide overflow so borders will actually be rounded */
 
     
-        @at-root :root.theme-dark:not(.custom-theme-background) .scroller__4b984 {
+        @at-root :root.theme-dark:not(.custom-theme-background) .scroller__89969 {
             background: var(--sidebar-background-color, var(--background-secondary));
         }
 
@@ -38,7 +38,7 @@
                 background: var(--bg-overlay-3, var((--sidebar-background-color), var(--background-secondary)));
             }
 
-            button.searchBarComponent__22760 {
+            button.searchBarComponent__8f95f {
                 border-radius: calc(var(--unity-border-radius) - 10px);
             }
 
@@ -76,7 +76,7 @@
         backdrop-filter: blur(var(--panels-background-blur));
 
 
-        .avatarWrapper_ba5175 {
+        .avatarWrapper__500a6 {
             border-radius: calc(var(--unity-border-radius) - 8px) 0 0 calc(var(--unity-border-radius) - 8px);
         }
 
@@ -85,13 +85,13 @@
             background: var(--background-secondary);
         }
 
-        .container_ca50b9 {
+        .container_debb33 {
             margin-bottom: 0;
             background: none;
 
         }
 
-        .container_d667ff {
+        .container_e1958d {
             background: transparent;
 
             .custom-theme-background & {
@@ -102,7 +102,7 @@
 
     }
 
-    :root:not(.custom-theme-background) .container_ca50b9 {
+    :root:not(.custom-theme-background) .container_debb33 {
         background: none;
     }
 }

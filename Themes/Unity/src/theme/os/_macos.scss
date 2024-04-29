@@ -1,14 +1,14 @@
 // adjust margin for guilds on macOS because of titlebar/CSD
-:is(.platform-osx, [armcord-platform="darwin"]) .wrapper_a7e7a8 {
-    margin-top: var(--guilds-top-bottom-inset, calc( 32px * calc(var(--enable-gaps) - 1) + 32px ) );
+:is(.platform-osx, [armcord-platform="darwin"]) .wrapper__216eb {
+  margin-top: var(--guilds-top-bottom-inset, calc( 32px * calc(var(--enable-gaps) - 1) + 32px ) );
 
- // Move guilds container up but add padding when gaps is off (for blur) to display under buttons  
-  padding-top: calc(32px * calc(1 - var(--enable-gaps)));
+// Move guilds container up but add padding when gaps is off (for blur) to display under buttons  
+padding-top: calc(32px * calc(1 - var(--enable-gaps)));
 
-    
+  
 }
 
 // don't color (workaround) drag area on mac while nitro theme is enabled, but only when gaps is on.
-:root.custom-theme-background .typeMacOS__496b0 {
+:root.custom-theme-background .typeMacOS_cacc59 {
 opacity: calc(var(--unity-gaps) / -1);
 }

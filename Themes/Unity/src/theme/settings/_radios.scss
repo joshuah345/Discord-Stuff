@@ -2,7 +2,7 @@
 
 [role="radiogroup"] {
 
-    &:has(.radioBar__40e1b) {
+    &:has(.radioBar__70669) {
         background-color: var(--background-secondary);
         border-radius: var(--unity-border-radius);
         overflow: hidden;
@@ -22,7 +22,7 @@
             border-radius: 0 0 var(--unity-border-radius)   var(--unity-border-radius) ;
             margin-bottom: 0px;
 
-            >.radioBar__40e1b {
+            >.radioBar__70669 {
                 margin-bottom: 0px;
             }
         
@@ -38,7 +38,7 @@
 
         &[role="radio"] {
 
-            >.radioBar__40e1b {
+            >.radioBar__70669 {
                 border-left: none;
             }
 
@@ -47,7 +47,7 @@
                 &:not(:hover) {
                     background-color: transparent;
 
-                >.radioBar__40e1b {
+                >.radioBar__70669 {
 
                 
 
@@ -59,7 +59,7 @@
         }
 
             &[aria-checked="true"] {
-                >.radioBar__40e1b {
+                >.radioBar__70669 {
                     color: var(--radio-bar-accent-color, var(--brand-experiment));
 
 

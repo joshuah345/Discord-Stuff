@@ -1,5 +1,5 @@
 /* Switch Body dimensions and position. also adjust the <input> for bd switches  */
-.container__871ba:not(.mini-6F2SSa),
+.container__2ed72:not(.mini-6F2SSa),
 .bd-switch-body,
 .bd-switch input {
     height: 20px;
@@ -8,12 +8,12 @@
 }
 
 /* Enabled Switch Body */
-.container__871ba.checked__6bdb0 {
+.container__2ed72.checked__36fdc {
     background-color: var(--brand-experiment) !important;
 }
 
 /* Disabled Switch Body */
-.container__871ba:not(.checked__6bdb0, .mini-6F2SSa){
+.container__2ed72:not(.checked__36fdc, .mini-6F2SSa){
     border: 1.5px solid rgb(var(--unity-inactive-rgb));
 }
 
@@ -24,7 +24,7 @@
 }
 
 /* Subtle border on switch handle when disabled */
-:not(.checked__6bdb0, .mini-6F2SSa)>.slider__41d94>rect {
+:not(.checked__36fdc, .mini-6F2SSa)>.slider__41d94>rect {
     stroke: rgb(var(--unity-inactive-rgb));
     /* use stroke instead of border as this element is a basic shape */
     stroke-width: 2px;
@@ -47,7 +47,7 @@
     margin: 0 auto;
 }
 
-.container__4bde3 {
+.container__827e6 {
     display: none;
     width: 50%;
     height: 50%;
@@ -55,11 +55,11 @@
 
 
 
-    .container__871ba {
+    .container__2ed72 {
 
         margin-right: 6px;
 
-        &.checked__6bdb0 {
+        &.checked__36fdc {
             background-color: var(--brand-experiment) !important;
 
             svg.slider__41d94 {
@@ -75,7 +75,7 @@
             }
         }
 
-        &:not(.checked__6bdb0) {
+        &:not(.checked__36fdc) {
             background-color: transparent !important;
 
             svg.slider__41d94 {

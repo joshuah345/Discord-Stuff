@@ -1,27 +1,27 @@
 /* USER PROFILE MODAL */
 
 [role="dialog"][aria-modal="true"] {
-    .root_ba16f0:has(.userProfileModalOuter__3fe6b) {
+    .root_ba16f0:has(.userProfileModalOuter__90b4a) {
         --modal-background: transparent;
         /* all modals have this background, even the profile ones that have an overlay */
     }
 
-    .userProfileModalOuter__3fe6b {
+    .userProfileModalOuter__90b4a {
         border-radius: var(--unity-border-radius);
 
-        >.userProfileModalInner__7c87d {
+        >.userProfileModalInner__84e47 {
 
             &::before {
                 border-radius: calc(var(--unity-border-radius) - 4px);
             }
 
-            .topSection_dfb73b {
-                .bannerSVGWrapper__3e7b0 {
+            .topSection__2d8b8 {
+                .bannerSVGWrapper__8a38c {
                     border-radius: calc(var(--unity-border-radius) - 4px) calc(var(--unity-border-radius) - 4px) 0 0;
                 }
             }
 
-            >.userProfileModalOverlayBackground__52d65 {
+            >.userProfileModalOverlayBackground_a5b043 {
                 border-radius: calc(var(--unity-border-radius) - 8px);
 
                 .tabBar__35f81 {
@@ -31,7 +31,7 @@
                     flex-wrap: wrap;
                     gap: 10px 5px;
 
-                    .tabBarItem_b56b35 {
+                    .tabBarItem_ce14f3 {
                         border-radius: var(--radius-round);
                         border: 1px solid transparent;
                         text-align: center;
@@ -40,16 +40,16 @@
                         padding: 5px 10px;
 
                         &:hover,
-                        &.selected__5711d {
+                        &.selected_a523ff {
                             border: 1px solid var(--interactive-hover);
                             transition: border 100ms ease-in;
                         }
 
-                        &.disabled__85bca:hover {
+                        &.disabled__2717e:hover {
                             border-color: var(--interactive-muted);
                         }
 
-                        &.selected__5711d {
+                        &.selected_a523ff {
                             border: 1px solid var(--interactive-active);
 
                             &.brand_ce3ecf {
@@ -66,7 +66,7 @@
 
 
 
-.profileBadges__7a7cb,
-.badgeList_ef4131 {
+.profileBadges__1f2ab,
+.badgeList__76720 {
     border-radius: var(--unity-border-radius);
 }

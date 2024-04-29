@@ -1,8 +1,8 @@
-.checkbox_c7f690 {
+.checkbox_fcf2ad {
     border-radius: var(--radius-round);
     overflow: hidden;
 
-    &.checked__24ad6 {
+    &.checked__16f88 {
         background: var(--brand-experiment);
 
         >svg>path {
@@ -15,7 +15,7 @@
 [role="menuitemcheckbox"] {
     svg {
         &:has(.check__8d1bd) {
-            path.checkbox__45366 {
+            path.checkbox__378d3 {
             clip-path: circle(50% at 50% 50%);
             transform: scale(1.2);
             transform-origin: center center;

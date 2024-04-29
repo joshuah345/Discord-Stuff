@@ -3,15 +3,15 @@
 .list__5ced9 {
 
     .card__691f2 {
-        .mainCard__8a660 {
+        .mainCard__0ec2c {
             border-radius: var(--unity-border-radius);
 
-            + .matchingPostsRow__510be {
+            + .matchingPostsRow__6cdb0 {
                 border-radius: var(--unity-border-radius);
                 margin-top: 4px;
             }
         }
-        .container__1b27a {
+        .container__852f7 {
 
             border-radius: calc(var(--unity-border-radius) + 12px);
         }
@@ -19,8 +19,8 @@
 }
 
 
-.chat__52833:has(.threadSidebarOpen_fa231d) {
-    .list__5ced9>div:first-child, .grid__36f14>div:first-child, .headerRow__16d8e {
+.chat__52833:has(.threadSidebarOpen__62c31) {
+    .list__5ced9>div:first-child, .grid_c2bdfe>div:first-child, .headerRow__86f2e {
         min-width: none;
     }
         width: 95%;

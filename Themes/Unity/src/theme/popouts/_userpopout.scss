@@ -1,15 +1,15 @@
 /* -- User Popouts + User Profile Panel -- */
 
 
-.userPopoutOuter_d739b2 {
+.userPopoutOuter_d67f56 {
     border-radius: var(--unity-border-radius);
 
-    >.userPopoutInner_f545a3 {
+    >.userPopoutInner_ac0960 {
         &::before {
             border-radius: calc(var(--unity-border-radius) - 4px);
         }
 
-        .bannerSVGWrapper__3e7b0 {
+        .bannerSVGWrapper__8a38c {
             border-radius: calc(var(--unity-border-radius) - 4px) calc(var(--unity-border-radius) - 4px) 0 0;
         }
     }
@@ -30,16 +30,16 @@
 
 /* "Underline" input boxes when focused  */
 
-:where(.messageInput__3b049, .input_d266e7):focus:not(.searchBoxInput__73c9c, .select-1Ia3hD, .select__0eb48) {
+:where(.messageInput_c423ff, .input_f27786):focus:not(.searchBoxInput__56498, .select-1Ia3hD, .select_fe2671) {
     border-bottom: var(--border-width) solid var(--brand-experiment);
 }
 
-:where(.messageInput__3b049, .input_d266e7):not(.searchBoxInput__73c9c, .select-1Ia3hD, .select__0eb48) {
+:where(.messageInput_c423ff, .input_f27786):not(.searchBoxInput__56498, .select-1Ia3hD, .select_fe2671) {
     border-bottom: var(--border-width) solid var(--profile-message-input-border-color, var(--interactive-muted));
     border-radius: 0px;
 }
 
-:where(.messageInput__3b049, .input_d266e7):not(.searchBoxInput__73c9c, .select-1Ia3hD, .select__0eb48, .focused-1AtTHC, :focus):hover {
+:where(.messageInput_c423ff, .input_f27786):not(.searchBoxInput__56498, .select-1Ia3hD, .select_fe2671, .focused-1AtTHC, :focus):hover {
     border-bottom: var(--border-width) solid var(--interactive-hover);
 }
 

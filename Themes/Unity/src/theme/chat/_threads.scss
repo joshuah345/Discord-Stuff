@@ -1,4 +1,4 @@
-.container_def45c
+.container__694a1
 
 /* floating container for open thread */
     {
@@ -10,7 +10,7 @@
     backdrop-filter: blur(var(--threads-blur-radius));
     background: var(--threads-background-color, var(--background-primary));
 
-    &+.resizeHandle_f1a098 {
+    &+.resizeHandle_cc9d34 {
         margin: auto calc(var(--unity-inset) / 2);
         height: 80vh;
         border-radius: var(--radius-round);
@@ -18,12 +18,12 @@
 
     }
 
-    .notFloating__80043~& {}
+    .notFloating__20d50~& {}
 }
 
-.container__8ee50 {
+.container__68e43 {
     border-top: none;
-    +.divider_ffec75 {
+    +.divider__4df9f {
         width: 95%;
         margin: auto;
         border-radius: var(--radius-round);

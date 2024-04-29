@@ -1,7 +1,7 @@
 @use '../keyframes';
 
 /* container for sidebar and chat) */
-.base__3e6af {
+.base_c0676e {
 
     :root.platform-osx &::after {
         content: "";
@@ -13,9 +13,6 @@
         top: 0;
         right: 0;
     }
-
-
-
 
 
     :root[class*="full-motion"] & {
@@ -41,7 +38,7 @@
         }
     }
 
-    .content__4bf10 {
+    .content__76dcf {
         :root[class*="full-motion"] & {
 
             transition: padding 1s keyframes.$cubic-bezier-launch,

@@ -1,4 +1,4 @@
-.sidebar_ded4b5 {
+.sidebar_e031be {
     nav {
         .bar__004d9 {
             --backdrop-blur: var(--unity-floating-blur-radius);
@@ -19,7 +19,7 @@
 
             &:hover {
                 &[class] {
-                    .wrapper__7bcde.modeUnreadImportant_efb53e {
+                    .wrapper__612a5.modeUnreadImportant__35358 {
 
                         &::before {
                             height: 20px;
@@ -29,8 +29,8 @@
             }
 
             &[class] {
-                .base__3e6af:has(.newMessagesBar__8b6d7) & {
-                    .wrapper__7bcde.modeSelected__487d6 {
+                .base_c0676e:has(.newMessagesBar__8b272) & {
+                    .wrapper__612a5.modeSelected__473f1 {
                         &::before {
                             height: 20px;
                             background-color: var(--interactive-active);
@@ -39,7 +39,7 @@
                     }
                 }
 
-                .wrapper__7bcde {
+                .wrapper__612a5 {
                     &::before {
                         position: absolute;
                         content: "";
@@ -59,7 +59,7 @@
                     }
                 }
 
-                .wrapper__7bcde.modeUnreadImportant_efb53e {
+                .wrapper__612a5.modeUnreadImportant__35358 {
                     &::before {
                         background-color: var(--interactive-active);
                         height: 10px;

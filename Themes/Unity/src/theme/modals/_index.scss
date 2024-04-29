@@ -4,15 +4,15 @@
 @use "./quickswitcher";
 
 .root_a28985,
-.container__9d271,
-.focusLock__10aa5[aria-modal="true"]
-  > :not(.fullscreenOnMobile__96797)
+.container_a30b97,
+.focusLock__28507[aria-modal="true"]
+  > :not(.fullscreenOnMobile__05784)
   .modal_d2e7a7
   > .wrapper-2bCxfR
   > div:not([class|="imageWrapper"]),
-.modalRoot__51794,
-.messagesPopoutWrap_b3b384,
-.container__8261a {
+.modalRoot_d45f8d,
+.messagesPopoutWrap__10dd1,
+.container_f93da8 {
   border-radius: var(--unity-border-radius);
 }
 
@@ -23,7 +23,7 @@
     background: transparent;
   }
 
-  .rootWithShadow__073a7:not(:has(.modal__6a96b)) {
+  .rootWithShadow_d20cd6:not(:has(.modal__6a96b)) {
     background-color: var(--unity-background-floating);
 
     &::after {
@@ -39,12 +39,12 @@
       }
   }
 
-  .header__6d5ea,
-  .content__1b8a0 {
+  .header__5e5a6,
+  .content__3ea16 {
     border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
   }
 
-  .footer__89240 {
+  .footer_e0b400 {
     border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
     justify-content: space-around;
 
@@ -55,7 +55,7 @@
         background-color: var(--brand-experiment-35a);
         transition: background-color ease 0.2s;
 
-        &.lookLink__93965.colorPrimary__6ed40 {
+        &.lookLink_a2da25.colorPrimary_ebe632 {
           color: var(--interactive-active);
         }
 
@@ -63,7 +63,7 @@
           background-color: var(--brand-experiment);
         }
 
-        .contents_fb6220 {
+        .contents__322f4 {
           background-image: none;
         }
       }

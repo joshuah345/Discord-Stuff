@@ -2,20 +2,20 @@
 
 #my-account-tab {
 
-    .userInfo__8f826,
-    .settingsBanner__8c4ee,
-    .accountProfileCard__22589>.bannerSVGWrapper__3e7b0,
-    .accountProfileCard__22589>.bannerSVGWrapper__3e7b0>foreignObject {
+    .userInfo_fb7651,
+    .settingsBanner__01382,
+    .accountProfileCard__744d8>.bannerSVGWrapper__8a38c,
+    .accountProfileCard__744d8>.bannerSVGWrapper__8a38c>foreignObject {
         height: 260px;
     }
 
-    .children_b15c64 {
+    .children_aba8cb {
     
-        :has(.bannerSVGWrapper__3e7b0) {
+        :has(.bannerSVGWrapper__8a38c) {
             justify-content: center;
         }
 
-        .accountProfileCard__22589 {
+        .accountProfileCard__744d8 {
             display: flex;
             align-content: center;
             flex-direction: column;
@@ -24,7 +24,7 @@
             border-radius: calc(var(--unity-border-radius) + 16px);
 
 
-            .bannerSVGWrapper__3e7b0 {
+            .bannerSVGWrapper__8a38c {
                 z-index: 0;
                 width: auto;
                 /* 100% width (default) breaks margin, so do auto */
@@ -44,13 +44,13 @@
                     transition-delay: 450ms;
                 }
 
-                &:hover+.userInfo__8f826 {
+                &:hover+.userInfo_fb7651 {
                     opacity: 5%;
                     transition: opacity ease-out 1s;
                     transition-delay: 450ms;
                 }
 
-                &:not(:has(.panelBanner__90b8a)) {
+                &:not(:has(.panelBanner__7d7e2)) {
                     border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
                 }
 
@@ -68,7 +68,7 @@
             }
 
 
-            .userInfo__8f826 {
+            .userInfo_fb7651 {
                 filter: drop-shadow(0px 0px 0px var(--unity-background-secondary-alt));
                 display: flex;
                 flex-direction: column;
@@ -105,25 +105,28 @@
                     }
                 }
 
-                .badgeList__243e0 {
+                .badgeList__6b2c7 {
                     justify-content: center;
                     padding-right: 0;
+                    display:flex;
+                    flex-wrap: nowrap;
+                    padding: 5px;
                 }
 
-                .profileCardUsernameRow__4cbd8 {
+                .profileCardUsernameRow_f8853e {
                     margin-top: 10px;
                     color: var(--interactive-active);
                     flex-direction: column;
                     flex: 1 1 0;
                     align-items: center;
 
-                    .userTag__4ca14 {
+                    .userTag__28f9c {
                         background-color: var(--unity-background-primary);
                         border-radius: var(--radius-round);
                         padding: 5px 8px;
                     }
 
-                    .overflowMenuButton__70c20 {
+                    .overflowMenuButton__38716 {
                         filter: drop-shadow(var(--guild-header-text-shadow));
                         margin: 0;
                         width: min-content;
