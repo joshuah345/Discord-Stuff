@@ -1,0 +1,98 @@
+/* Haircut (adjust icons in header lol) */
+
+:root {
+
+    /* DM/GROUP SPECIFIC */
+    --voice-call-button-display: ;
+    --voice-call-button-order: ;
+
+    --video-call-button-display: ;
+    --video-call-button-order: ;
+
+    --user-profile-button-display: ;
+    --user-profile-button-order: ;
+
+    --new-group-dm-button-display: ;
+
+    /* ANY CHANNEL */
+    --search-bar-order: ;
+
+    --pins-button-order: ;
+    --pins-button-display: ;
+
+    --threads-button-order: ;
+    --threads-button-display: ;
+
+    /* ANY PAGE */
+    --update-button-display: ;
+    --update-button-order: ;
+
+    --inbox-button-display: ;
+    --inbox-button-order: ;
+
+    --help-button-display: ;
+    --help-button-order: ;
+}
+
+.toolbar__88c63 {
+    .search__07df0 {
+        order: var(--search-bar-order);
+        /* SEARCH BAR */
+    }
+
+    [role="button"] {
+
+        &:is([aria-label*="group dm"i], :has(path[d^="M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z"]:not(:only-of-type))) {
+            display: var(--new-group-dm-button-display);
+            /* NEW GROUP DM */
+        }
+
+        &:is([aria-label*="threads"i], :has(path[d^="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2"])) {
+            display: var(--threads-button-display);
+            order: var(--threads-button-order);
+            /* THREADS BUTTON */
+        }
+
+        &:is([aria-label*="pinned"i], :has(path[d^="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0"])) {
+            display: var(--pins-button-display);
+            order: var(--pins-button-order);
+            /* PINNED MESSAGES BUTTON */
+        }
+
+        &:is([aria-label*="voice"i], :has(path[d^="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0"])) {
+            display: var(--voice-call-button-display);
+            order: var(--voice-call-button-order);
+            /* VOICE CALL BUTTON */
+        }
+
+        &:is([aria-label*="video"i], :has(path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1"])) {
+            display: var(--video-call-button-display);
+            order: var(--video-call-button-order);
+            /* VIDEO CALL BUTTON */
+        }
+
+        &:is([aria-label*="user profile"i], :has(path[d^="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0"])) {
+            display: var(--user-profile-button-display);
+            order: var(--user-profile-button-order);
+            /* USER PROFILE BUTTON */
+        }
+
+        &:is(:has(.updateIconForeground__30084), [aria-label*="Update"i]) {
+            display: var(--update-button-display);
+            order: var(--update-button-order);
+            /* UPDATE BUTTON */
+        }
+    }
+
+    >a:is([href*=support], :has(path[d^="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98"])) {
+        display: var(--help-button-display);
+        order: var(--help-button-order);
+        /* HELP BUTTON */
+    }
+
+    >div:is(.recentsIcon__3c4cf, :has(path[d^="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3"])) {
+        display: var(--inbox-button-display);
+        order: var(--inbox-button-order);
+        /* INBOX BUTTON */
+    }
+}

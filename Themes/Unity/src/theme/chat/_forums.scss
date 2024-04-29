@@ -19,9 +19,9 @@
 }
 
 
-.chat__52833:has(~ .notFloating__80043) {
-    .content__23cab[role=list] {
-        min-width: unset;
-        width: 95%;
+.chat__52833:has(.threadSidebarOpen_fa231d) {
+    .list__5ced9>div:first-child, .grid__36f14>div:first-child, .headerRow__16d8e {
+        min-width: none;
     }
+        width: 95%;
 }

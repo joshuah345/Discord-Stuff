@@ -12,10 +12,12 @@
 
 /* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide.
  Some are omitted from this theme file as they are considered optional. */
+@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Unity.css");
+@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOne.css");
+@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans.css");
 /* GLOBAL VARIABLES */
 *[class*=theme-] {
   --unity-custom-font: unset;
-  --unity-wordmark: unset;
   --unity-gaps: 1;
   --unity-background-image: unset;
   --unity-background-blur: unset;
@@ -29,7 +31,6 @@
   --unity-chat-bubble-max-width: 90%;
   --unity-chat-bubble-border-radius: var(--unity-border-radius);
   --unity-badge-color: var(--unity-orange-2);
-  --threads-margin-right: unset;
   --unity-background-floating: rgba(var(--unity-background-secondary-rgb), 0.5);
 }
 

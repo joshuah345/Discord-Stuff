@@ -3,6 +3,21 @@
 /* container for sidebar and chat) */
 .base__3e6af {
 
+    :root.platform-osx &::after {
+        content: "";
+        width: 100vw;
+        height: 30px;
+        z-index: 2;
+        -webkit-app-region: drag;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+
+
+
     :root[class*="full-motion"] & {
         transition:
             padding 1s keyframes.$cubic-bezier-launch;
@@ -35,18 +50,29 @@
 
         padding: calc(var(--unity-inset) * var(--enable-gaps));
         border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));
-        background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
-        border: calc(var(--base-border-width, 0) * var(--enable-gaps)) solid var(--base-border-color, transparent);
+        background-color: transparent;
         opacity: var(--unity-opacity, 1);
-        background-image: var(--base-background-image);
-        background-blend-mode: multiply;
-        /* blends background color and image if set */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        -webkit-backdrop-filter: blur(var(--base-background-blur, 0px));
-        backdrop-filter: blur(var(--base-background-blur, 0px));
         /* disable tiling of image */
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: var(--base-background-image);
+            background-blend-mode: multiply;
+            /* blends background color and image if set */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(var(--base-background-blur));
+            position: absolute;
+            z-index: -2;
+            border-radius: calc(var(--unity-border-radius) + var(--unity-inset) * var(--enable-gaps));
+            background-color: var(--bg-overlay-1, var(--base-background-color, var(--background-primary)));
+            top:0;
+            left:0;
+
+        }
 
         [customTitlebar] & {
             border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;

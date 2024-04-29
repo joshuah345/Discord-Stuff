@@ -1,0 +1,54 @@
+
+.userPopoutOuter_d739b2:not(:has(#account)) .userPopoutOverlayBackground_d8afa4 > .scroller__83262 {
+    display: flex;
+    flex-direction: column;
+    order: 10000; /* scroller should always be last */
+  }
+  
+  .userPopoutOverlayBackground_d8afa4:not(:has(#account)) > .section__6f61e.usernameSection__53868 {
+    order: var(--username-section-position);
+    /* USERNAME + PRONOUN SECTION */
+  }
+  .userPopoutOverlayBackground_d8afa4:not(:has(#account)) > .section__6f61e.customStatusSection_ce6c27 {
+    order: var(--custom-status-position);
+    /* CUSTOM STATUS */
+  }
+  .userPopoutOverlayBackground_d8afa4:not(:has(#account)) > .mainContainer_ec6e51.profileMutuals__5a6ff {
+    order: var(--profile-mutuals-position);
+    /* PROFILE MUTUALS (experiement) */
+  }
+  .userPopoutOverlayBackground_d8afa4:not(:has(#account)) > .divider__2bbbc {
+    order: 500;
+    /* Divider before scroller, always before scroller */
+  }
+  
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.markup_a7e664) {
+    order: var(--about-me-position);
+    /* ABOUT ME */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.memberSinceContainer__0a28b) {
+    order: var(--member-since-position);
+    /* MEMBER SINCE */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.activity__20c1e) {
+    order: var(--activity-position);
+    /* ACTIVITY */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has([data-list-item-id^=roles]) {
+    order: var(--role-list-position);
+    /* ROLES */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.connections_pPr4as) {
+    order: var(--connections-position);
+    /* CONNECTIONS */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.note_ba0c31) {
+    order: var(--notes-position);
+    /* NOTES */
+  }
+  :not(:has(#account)) .scroller__83262 > .section__6f61e:has(.messageInputContainer__768e6) {
+    order: var(--message-box-position);
+    /* MESSAGE USER */
+    /* !! Set notes and message to the same number to have them appear in this order (notes -> message user) */
+  }
+  

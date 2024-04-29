@@ -12,14 +12,15 @@
         background-color: var(--unity-green-2);
     }
 
-   &.toast-danger, &.toast-error {
-    background-color: var(--unity-red);
-}
+    &.toast-danger,
+    &.toast-error {
+        background-color: var(--unity-red);
+    }
 
-&.toast-warning,
-&.toast-warn {
-    background-color: var(--unity-orange);
+    &.toast-warning,
+    &.toast-warn {
+        background-color: var(--unity-orange);
 
-}
+    }
 
 }

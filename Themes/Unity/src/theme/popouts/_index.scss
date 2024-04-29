@@ -1,16 +1,83 @@
-@use './userpopout';
-@use './contextmenu';
-@use './contentpicker';
+@use "./userpopout";
+@use "./contextmenu";
+@use "./contentpicker";
+@use './inbox';
 
+div[id^="popout"] {
+  &:not(:has(#account, [class*="userPopout"])) {
+    > div {
+      border-radius: var(--unity-border-radius);
+      overflow: hidden;
+      z-index: 102;
 
-[id^="popout"] {
-    [class^="popout__"], [role="dialog"]{
+      &::after {
+        height: 100%;
+        width: 100%;
+        content: " ";
         backdrop-filter: blur(var(--unity-floating-blur-radius));
         border-radius: var(--unity-border-radius);
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        margin-left: inherit;
+        margin-right: inherit;
+        box-sizing: border-box;
+      }
+
+      > div[class] {
+        background-color: var(--unity-background-floating);
+
+        &::after {
+          height: 100%;
+          width: 100%;
+          content: " ";
+          backdrop-filter: blur(var(--unity-floating-blur-radius));
+          border-radius: var(--unity-border-radius);
+          position: absolute;
+          display: block;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          margin-left: inherit;
+          margin-right: inherit;
+          box-sizing: border-box;
+        }
+
+        /* INBOX FIX */
+
+       
+      }
     }
+  }
+
+  .streamPreview__1846c {
+    background: transparent;
+  }
+
+  & [class*="animator"] > *:not(:has(#account)) {
+    border-radius: var(--unity-border-radius);
+
+    &::after {
+      height: 100%;
+      width: 100%;
+      content: " ";
+      backdrop-filter: blur(var(--unity-floating-blur-radius));
+      border-radius: var(--unity-border-radius);
+      position: absolute;
+      display: block;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      margin-left: inherit;
+      margin-right: inherit;
+      box-sizing: border-box;
+    }
+  }
 }
 
 .tooltip__01384 {
-    backdrop-filter: blur(var(--unity-floating-blur-radius));
-        border-radius: var(--unity-border-radius);
+  backdrop-filter: blur(var(--unity-floating-blur-radius));
+  border-radius: var(--unity-border-radius);
 }

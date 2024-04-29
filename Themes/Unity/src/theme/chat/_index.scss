@@ -5,15 +5,21 @@
 @use '../keyframes';
 @use './forums';
 
+@include keyframes.blur-anim(chat);
+@include keyframes.blur-anim(header);
+
+
 
 .base__3e6af {
+
+    .searchResultsWrap__9f374 {
+        background: transparent;
+    }
 
     .noChat_ce920d {
         border-radius: var(--unity-border-radius);
         overflow:hidden;
     }
-
-
 
     /* HEADER */
 
@@ -25,9 +31,17 @@
             transition: border-radius 2s keyframes.$cubic-bezier1;
         }
 
-        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) calc(var(--unity-border-radius) * var(--enable-gaps));
+        border-radius: calc(var(--unity-border-radius) * var(--enable-gaps));
         background-color: var(--header-background-color, var(--chat-background-color, var(--background-primary)));
-        backdrop-filter: blur(var(--header-background-blur));
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            backdrop-filter: blur(var(--header-background-blur));
+            z-index: -1;
+        }
 
 
         &+*,
@@ -47,9 +61,6 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
-
-
         }
 
         &::before {
@@ -71,10 +82,12 @@
     .container__5c7e7,
     .container__10dc7 {
 
+        :root.full-motion & {
         transition:
             margin-left 3s keyframes.$cubic-bezier1,
             border-radius 2s keyframes.$cubic-bezier1,
             opacity 1s keyframes.$cubic-bezier1;
+    }
 
         margin-left: calc(var(--unity-inset) / 2 * var(--enable-gaps));
         border: calc(var(--chat-border-width, 0) * var(--enable-gaps)) solid var(--chat-border-color, transparent);
@@ -87,12 +100,20 @@
         background-position: center;
         background-repeat: no-repeat;
         // disable tiling of image 
-        -webkit-backdrop-filter: blur(var(--chat-background-blur, 0px));
-        backdrop-filter: blur(var(--chat-background-blur, 0px));
         overflow: hidden;
-
-
-
+   
+        &::before {
+            content: "";
+            backdrop-filter: blur(var(--chat-background-blur));
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            top: 0;
+            left:0;
+            animation: chat-blur linear 250ms forwards;
+            border-radius: calc(var(--unity-border-radius ) * var(--enable-gaps));
+            z-index: -1;
+        }
 
         .tabBody_b3d268 {
 
@@ -119,7 +140,6 @@
                 border-radius: var(--unity-border-radius);
             }
 
-
             &::before {
                 display: none;
             }
@@ -130,8 +150,6 @@
 
                     .button_d553e5 {
 
-
-
                         &:first-child {
                             border-radius: var(--unity-border-radius) 0 0 var(--unity-border-radius);
                         }
@@ -139,9 +157,7 @@
                         &:last-child {
                             border-radius: 0 var(--unity-border-radius) var(--unity-border-radius) 0;
                         }
-
                     }
-
                 }
             }
         }
@@ -149,16 +165,17 @@
         :root.custom-theme-background & {
             background-blend-mode: normal;
         }
-
     }
 
     .container__0eeef,
     .channelTextArea__2e60f,
     .header_b5ab54,
-    .wrapper__5c5cd {
+    .wrapper__5c5cd,
+    .container__8ee50 {
         background: transparent;
         /* Set backgrounds to transparent so we can see wrapper's background */
     }
+
 
 }
 
@@ -186,3 +203,8 @@ main:not(.container_a87c5e) {
 [customTitlebar] .base__3e6af {
     border-top-left-radius: calc(var(--unity-border-radius) * var(--enable-gaps)) !important;
 }
+
+.searchResultsWrap__9f374 {
+    border-radius: 0 var(--unity-border-radius) var(--unity-border-radius) 0;
+                    }
+                    

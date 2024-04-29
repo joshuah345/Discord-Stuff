@@ -1,0 +1,26 @@
+:where(.children__32014, .contents_f41bb2, .link__2e8e1, .userInfo__18240) {
+  &:has([src*="419610859392860162"]) {
+    :where(.overflow__87fe8, .headerText_f47574, .username__81ee6, .titleWrapper__482dc > h1 > div) {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+      &:after {
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: center;
+        content: "unity developer";
+        text-transform: uppercase;
+        border: 1px solid var(--brand-experiment-600);
+        padding: 0 4px;
+        background-color: var(--brand-experiment-50a);
+        font-size: 10px;
+        height: 15px;
+        border-radius: 4px;
+        margin: auto 0 auto 4px;
+        text-decoration: none !important;
+        color: var(--interactive-active);
+      }
+    }
+  }
+}

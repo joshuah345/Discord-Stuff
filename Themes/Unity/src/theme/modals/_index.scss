@@ -1,48 +1,72 @@
 /* MODALS */
 
-@use './userprofile';
-@use './quickswitcher';
+@use "./userprofile";
+@use "./quickswitcher";
 
 .root_a28985,
 .container__9d271,
-.focusLock__10aa5[aria-modal=true]>:not(.fullscreenOnMobile__96797)
-.modal_d2e7a7>.wrapper-2bCxfR>div:not([class|="imageWrapper"]),
+.focusLock__10aa5[aria-modal="true"]
+  > :not(.fullscreenOnMobile__96797)
+  .modal_d2e7a7
+  > .wrapper-2bCxfR
+  > div:not([class|="imageWrapper"]),
 .modalRoot__51794,
 .messagesPopoutWrap_b3b384,
 .container__8261a {
-    border-radius: var(--unity-border-radius);
+  border-radius: var(--unity-border-radius);
 }
 
-[role=dialog] {
+[role="dialog"] {
+  &:has(div .modal__6a96b),
+  &:has(> .modal__6a96b),
+  & > div:has(.modal__6a96b) {
+    background: transparent;
+  }
 
-    &:has(div .modal__6a96b), &:has(> .modal__6a96b), & >div:has(.modal__6a96b) {
-        background: transparent;
-    }
+  .rootWithShadow__073a7:not(:has(.modal__6a96b)) {
+    background-color: var(--unity-background-floating);
 
-    .rootWithShadow__073a7:not(:has(.modal__6a96b)) {
+    &::after {
+        content: "";
+        position:absolute;
+        width:100%;
+        height:100%;
+        border-radius: var(--unity-border-radius);
         backdrop-filter: blur(var(--unity-floating-blur-radius));
-        background-color: var(--unity-background-floating);
-    }
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+  }
 
-        .footer__89240 {
-            border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
-            justify-content: space-around;
-    
-            button {
-                width: auto;
-                border-radius: var(--unity-border-radius);
-                &:not([type=submit]) {
-                    background-color: var(--brand-experiment-35a);
-                    transition: background-color ease 0.2s;
+  .header__6d5ea,
+  .content__1b8a0 {
+    border-radius: var(--unity-border-radius) var(--unity-border-radius) 0 0;
+  }
 
-                    &:hover {
-                        background-color: var(--brand-experiment);
-                    }
+  .footer__89240 {
+    border-radius: 0 0 var(--unity-border-radius) var(--unity-border-radius);
+    justify-content: space-around;
 
-                    .contents_fb6220 {
-                        background-image: none;
-                    }
-                }
-            }
+    button {
+      width: auto;
+      border-radius: var(--unity-border-radius);
+      &:not([type="submit"]) {
+        background-color: var(--brand-experiment-35a);
+        transition: background-color ease 0.2s;
+
+        &.lookLink__93965.colorPrimary__6ed40 {
+          color: var(--interactive-active);
         }
-    }    
+
+        &:hover {
+          background-color: var(--brand-experiment);
+        }
+
+        .contents_fb6220 {
+          background-image: none;
+        }
+      }
+    }
+  }
+}
