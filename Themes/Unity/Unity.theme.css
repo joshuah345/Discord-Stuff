@@ -2,16 +2,16 @@
  * @name Unity
  * @author super.user
  * @authorId 419610859392860162
- * @version 1.5
+ * @version 1.6
  * @description A highly customizable theme inspired by Samsung's OneUI
  * @source https://github.com/joshuah345/Discord-Stuff/tree/master/Themes/Unity
  * @invite BDGSZDYSQ
 */
 
 
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Unity.css");
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOne.css");
-@import url("https://joshuah345.github.io/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans.css");
+@import url("https://tanuki.page/Discord-Stuff/Themes/Unity/dist/Unity.css");
+@import url("https://tanuki.page/Discord-Stuff/Themes/Unity/Fonts/SamsungOne/SamsungOne.css");
+@import url("https://tanuki.page/Discord-Stuff/Themes/Unity/Fonts/SamsungSharpSans/SamsungSharpSans.css");
 
 
 /* Please visit https://github.com/joshuah345/Discord-Stuff/wiki/Themes#unity for a variable guide.
